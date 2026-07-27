@@ -96,7 +96,7 @@ export const itIT: Dictionary = {
     ],
     quote:
       "Credo nel potenziale delle professioniste brasiliane di trasformare la propria vita e il mondo attraverso la bellezza.",
-    photoAlt: "Ritratto professionale di Camila Maia",
+    photoAlt: "Camila Maia che rappresenta il suo percorso professionale internazionale",
     talkPhotoAlt: "Camila Maia mentre condivide le sue conoscenze in una conferenza",
     timeline: {
       eyebrow: "Linea del tempo",
