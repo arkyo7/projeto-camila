@@ -65,13 +65,14 @@ export function Hero() {
             className="absolute -bottom-4 -right-4 hidden h-40 w-40 border-b border-r border-gold/50 sm:block"
           />
           <BrandImage
-            src={undefined}
-            alt={t.hero.photoAlt}
+            src="/images/camila/camila-hero.png"
+            alt="Camila Maia, consultora e palestrante do mercado da beleza"
             width={860}
             height={1080}
             priority
             tone="navy"
             className="relative"
+            imgClassName="!object-[center_20%] md:!object-[center_25%]"
           />
           <div className="relative mt-[-1px] border border-gold/25 bg-navy-soft px-6 py-5">
             <p className="font-serif text-xl text-cream">{t.hero.badgeName}</p>
