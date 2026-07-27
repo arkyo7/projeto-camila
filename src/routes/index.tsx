@@ -1,24 +1,88 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AboutSection } from "@/components/site/AboutSection";
+import { BeautySection } from "@/components/site/BeautySection";
+import { BsfSection } from "@/components/site/BsfSection";
+import { ContactSection } from "@/components/site/ContactSection";
+import { EventsSection } from "@/components/site/EventsSection";
+import { FaqSection } from "@/components/site/FaqSection";
+import { FinalCta } from "@/components/site/FinalCta";
+import { Hero } from "@/components/site/Hero";
+import { PathsSection } from "@/components/site/PathsSection";
+import { PositioningStrip } from "@/components/site/PositioningStrip";
+import { SiteLayout } from "@/components/site/SiteLayout";
+import { SolutionsSection } from "@/components/site/SolutionsSection";
+import { TestimonialsSection } from "@/components/site/TestimonialsSection";
+import { siteConfig } from "@/config/siteConfig";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Camila Maia | Consultoria, Palestras e Beleza Sem Fronteiras";
+const description =
+  "Consultoria, palestras, eventos e conexões para mulheres brasileiras empreendedoras da beleza e da estética. Conheça Camila Maia e o projeto Beleza Sem Fronteiras.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Person",
+              name: "Camila Maia",
+              jobTitle: "Consultora e palestrante",
+              description:
+                "Consultora, palestrante e idealizadora do Beleza Sem Fronteiras.",
+              sameAs: [siteConfig.instagram.url],
+              areaServed: siteConfig.location.country,
+            },
+            {
+              "@type": "Organization",
+              name: "Beleza Sem Fronteiras",
+              description:
+                "Projeto de conexões, eventos e experiências para profissionais brasileiras da beleza e da estética.",
+              founder: { "@type": "Person", name: "Camila Maia" },
+              sameAs: [siteConfig.instagram.url],
+            },
+            {
+              "@type": "Service",
+              serviceType: "Consultoria, mentoria e palestras",
+              provider: { "@type": "Person", name: "Camila Maia" },
+              description:
+                "Consultorias individuais, mentorias e palestras para profissionais da beleza e da estética.",
+            },
+          ],
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <SiteLayout>
+      <Hero />
+      <PositioningStrip />
+      <PathsSection />
+      <AboutSection />
+      <SolutionsSection />
+      <BsfSection />
+      <EventsSection />
+      <TestimonialsSection />
+      <BeautySection />
+      <FaqSection />
+      <ContactSection />
+      <FinalCta />
+    </SiteLayout>
   );
 }
