@@ -16,11 +16,14 @@ export function AboutSection() {
             className="absolute -bottom-5 -left-5 hidden h-32 w-32 border-b border-l border-gold sm:block"
           />
           <BrandImage
+            src="/images/camila/camila-sobre.png"
             alt={t.about.photoAlt}
             width={800}
             height={960}
             tone="cream"
             className="relative border border-gold/20"
+            objectPosition="center 55%"
+            imgClassName="md:!object-[center_50%]"
           />
         </Reveal>
 

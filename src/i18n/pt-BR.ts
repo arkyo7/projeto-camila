@@ -94,7 +94,7 @@ export const ptBR = {
     ],
     quote:
       "Acredito no potencial das profissionais brasileiras para transformarem suas vidas e o mundo por meio da beleza.",
-    photoAlt: "Retrato profissional de Camila Maia",
+    photoAlt: "Camila Maia representando sua trajetória profissional internacional",
     talkPhotoAlt: "Camila Maia compartilhando conhecimentos em uma palestra",
     timeline: {
       eyebrow: "Linha do tempo",
