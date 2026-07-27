@@ -1,0 +1,40 @@
+import { BrandImage } from "./BrandImage";
+import { Reveal } from "./Reveal";
+import { SectionHeading } from "./SectionHeading";
+import { useI18n } from "@/i18n";
+
+export function AboutSection() {
+  const { t } = useI18n();
+
+  return (
+    <section id="sobre" className="bg-cream py-20 lg:py-28">
+      <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
+        <Reveal className="relative">
+          <div
+            aria-hidden="true"
+            className="absolute -bottom-5 -left-5 hidden h-32 w-32 border-b border-l border-gold sm:block"
+          />
+          <BrandImage
+            alt={t.about.photoAlt}
+            width={800}
+            height={960}
+            tone="cream"
+            className="relative border border-gold/20"
+          />
+        </Reveal>
+
+        <Reveal delay={100} className="min-w-0">
+          <SectionHeading eyebrow={t.about.eyebrow} title={t.about.title} />
+          {t.about.paragraphs.map((p) => (
+            <p key={p} className="mt-5 text-base leading-relaxed text-muted-foreground">
+              {p}
+            </p>
+          ))}
+          <blockquote className="mt-9 border-l-2 border-gold pl-6 text-xl leading-relaxed text-navy sm:text-2xl">
+            {t.about.quote}
+          </blockquote>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
