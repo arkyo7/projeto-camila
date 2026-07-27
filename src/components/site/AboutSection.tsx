@@ -1,4 +1,5 @@
 import { BrandImage } from "./BrandImage";
+import { JourneyTimeline } from "./JourneyTimeline";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { useI18n } from "@/i18n";
@@ -34,6 +35,20 @@ export function AboutSection() {
             {t.about.quote}
           </blockquote>
         </Reveal>
+      </div>
+
+      <div className="mx-auto mt-20 max-w-7xl px-5 sm:px-8 lg:mt-24">
+        <Reveal>
+          <SectionHeading
+            eyebrow={t.about.timeline.eyebrow}
+            title={t.about.timeline.title}
+          />
+        </Reveal>
+        <JourneyTimeline
+          className="mt-12"
+          ariaLabel={t.about.timeline.title}
+          items={t.about.timeline.items}
+        />
       </div>
     </section>
   );

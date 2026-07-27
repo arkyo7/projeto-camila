@@ -31,7 +31,7 @@ export const itIT: Dictionary = {
     badgeName: "Camila Maia",
     badgeRole:
       "Consulente di donne brasiliane imprenditrici della bellezza e dell'estetica.",
-    photoAlt: "Ritratto professionale di Camila Maia",
+    photoAlt: "Camila Maia, consulente e ideatrice di Beleza Sem Fronteiras",
   },
   pillars: {
     items: [
@@ -86,15 +86,60 @@ export const itIT: Dictionary = {
     ],
   },
   about: {
-    eyebrow: "Chi è Camila Maia",
-    title: "Un percorso costruito tra bellezza, business e connessioni",
+    eyebrow: "CONOSCI CAMILA MAIA",
+    title: "Un percorso tra marketing, bellezza ed esperienze internazionali",
     paragraphs: [
-      "Camila Maia è consulente, relatrice e ideatrice di Beleza Sem Fronteiras. Il suo lavoro è dedicato in particolare alle donne brasiliane che fanno impresa nel mercato della bellezza e dell'estetica, in Brasile e all'estero.",
-      "Attraverso orientamento strategico, incontri, conferenze ed esperienze professionali, Camila aiuta queste donne ad ampliare la propria visione, rafforzare il posizionamento e creare nuove possibilità per la carriera e per il proprio business.",
+      "Originaria di Fortaleza, nel Ceará (nordest del Brasile), Camila Maia è laureata in Gestione del Marketing e ha costruito parte della sua esperienza professionale lavorando in aziende multinazionali e nel rapporto con il pubblico.",
+      "Nel 2018 ha lasciato il Brasile per un'esperienza di studio in Irlanda, dando inizio a un percorso internazionale che l'ha poi portata a stabilirsi in Italia.",
+      "Il suo ingresso nel mondo della bellezza ha rappresentato una trasformazione personale e professionale. Certificata in Brasile e all'estero, Camila si è specializzata in trattamenti estetici del viso e benessere.",
+      "Appassionata di apprendere, condividere esperienze e connettere persone, oggi mette il suo percorso al servizio delle professioniste brasiliane che desiderano crescere attraverso la bellezza, l'imprenditoria e nuove opportunità.",
     ],
     quote:
-      "Più che attraversare confini geografici, crescere senza confini significa ampliare la visione su ciò che è possibile costruire.",
-    photoAlt: "Camila Maia in uno scatto professionale",
+      "Credo nel potenziale delle professioniste brasiliane di trasformare la propria vita e il mondo attraverso la bellezza.",
+    photoAlt: "Ritratto professionale di Camila Maia",
+    talkPhotoAlt: "Camila Maia mentre condivide le sue conoscenze in una conferenza",
+    timeline: {
+      eyebrow: "Linea del tempo",
+      title: "Momenti del percorso",
+      items: [
+        {
+          marker: "Fortaleza, Ceará",
+          title: "Origini e formazione",
+          description:
+            "Originaria di Fortaleza e laureata in Gestione del Marketing.",
+        },
+        {
+          marker: "Esperienza professionale",
+          title: "Multinazionali e rapporto con il pubblico",
+          description:
+            "Ha costruito esperienza professionale in aziende multinazionali e nel rapporto diretto con il pubblico.",
+        },
+        {
+          marker: "2018 — Irlanda",
+          title: "Inizio del percorso internazionale",
+          description:
+            "Ha lasciato il Brasile per un'esperienza di studio in Irlanda, ampliando il proprio percorso personale e professionale.",
+        },
+        {
+          marker: "Italia",
+          title: "Una nuova tappa",
+          description:
+            "Si è poi stabilita in Italia, dove ha dato continuità al suo percorso internazionale.",
+        },
+        {
+          marker: "Mercato della bellezza",
+          title: "Una trasformazione professionale",
+          description:
+            "Ha trovato nella bellezza, nei trattamenti estetici del viso e nel benessere una nuova strada di crescita e di scopo.",
+        },
+        {
+          marker: "Beleza Sem Fronteiras",
+          title: "Conoscenza che crea connessioni",
+          description:
+            "Ha iniziato a condividere esperienze, incoraggiare le professioniste brasiliane e creare connessioni nel mercato della bellezza.",
+        },
+      ],
+    },
   },
   solutions: {
     eyebrow: "Soluzioni",
