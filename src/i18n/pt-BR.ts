@@ -29,7 +29,7 @@ export const ptBR = {
     badgeName: "Camila Maia",
     badgeRole:
       "Consultora de mulheres brasileiras empreendedoras da beleza e da estética.",
-    photoAlt: "Retrato profissional de Camila Maia",
+    photoAlt: "Camila Maia, consultora e idealizadora do Beleza Sem Fronteiras",
   },
   pillars: {
     items: [
@@ -84,15 +84,59 @@ export const ptBR = {
     ],
   },
   about: {
-    eyebrow: "Sobre Camila Maia",
-    title: "Uma trajetória construída entre beleza, negócios e conexões",
+    eyebrow: "CONHEÇA CAMILA MAIA",
+    title: "Uma trajetória entre marketing, beleza e experiências internacionais",
     paragraphs: [
-      "Camila Maia atua como consultora, palestrante e idealizadora do Beleza Sem Fronteiras. Seu trabalho é direcionado especialmente às mulheres brasileiras que empreendem no mercado da beleza e da estética, dentro e fora do Brasil.",
-      "Por meio de orientação estratégica, encontros, palestras e experiências profissionais, Camila ajuda essas mulheres a ampliarem sua visão, fortalecerem seu posicionamento e criarem novas possibilidades para suas carreiras e seus negócios.",
+      "Nordestina de Fortaleza, Ceará, Camila Maia é graduada em Gestão de Marketing e construiu parte de sua experiência profissional atuando em empresas multinacionais e no atendimento ao público.",
+      "Em 2018, deixou o Brasil para realizar um intercâmbio na Irlanda, dando início a uma trajetória internacional que posteriormente a levou a estabelecer-se na Itália.",
+      "Sua entrada no universo da beleza representou uma transformação pessoal e profissional. Certificada no Brasil e no exterior, Camila especializou-se em embelezamento facial e bem-estar.",
+      "Apaixonada por aprender, compartilhar experiências e conectar pessoas, hoje utiliza sua trajetória para incentivar e orientar profissionais brasileiras que desejam crescer por meio da beleza, do empreendedorismo e de novas oportunidades.",
     ],
     quote:
-      "Mais do que atravessar fronteiras geográficas, crescer sem fronteiras significa ampliar a visão sobre aquilo que é possível construir.",
-    photoAlt: "Camila Maia em sessão fotográfica profissional",
+      "Acredito no potencial das profissionais brasileiras para transformarem suas vidas e o mundo por meio da beleza.",
+    photoAlt: "Retrato profissional de Camila Maia",
+    talkPhotoAlt: "Camila Maia compartilhando conhecimentos em uma palestra",
+    timeline: {
+      eyebrow: "Linha do tempo",
+      title: "Momentos da trajetória",
+      items: [
+        {
+          marker: "Fortaleza, Ceará",
+          title: "Origem e formação",
+          description: "Nordestina de Fortaleza e graduada em Gestão de Marketing.",
+        },
+        {
+          marker: "Experiência profissional",
+          title: "Multinacionais e atendimento",
+          description:
+            "Construiu experiência profissional em empresas multinacionais e no relacionamento direto com o público.",
+        },
+        {
+          marker: "2018 — Irlanda",
+          title: "Início da trajetória internacional",
+          description:
+            "Deixou o Brasil para realizar um intercâmbio na Irlanda e ampliar sua experiência pessoal e profissional.",
+        },
+        {
+          marker: "Itália",
+          title: "Uma nova etapa",
+          description:
+            "Posteriormente estabeleceu-se na Itália, onde deu continuidade à sua trajetória internacional.",
+        },
+        {
+          marker: "Mercado da beleza",
+          title: "Uma transformação profissional",
+          description:
+            "Encontrou na beleza, no embelezamento facial e no bem-estar um novo caminho de desenvolvimento e propósito.",
+        },
+        {
+          marker: "Beleza Sem Fronteiras",
+          title: "Conhecimento que gera conexões",
+          description:
+            "Passou a compartilhar experiências, incentivar profissionais brasileiras e criar conexões dentro do mercado da beleza.",
+        },
+      ],
+    },
   },
   solutions: {
     eyebrow: "Soluções",
