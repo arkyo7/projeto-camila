@@ -12,6 +12,7 @@ import { PositioningStrip } from "@/components/site/PositioningStrip";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { SolutionsSection } from "@/components/site/SolutionsSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
+import { UniverseBeautySection } from "@/components/site/UniverseBeautySection";
 import { siteConfig } from "@/config/siteConfig";
 
 const title = "Camila Maia | Consultoria, Palestras e Beleza Sem Fronteiras";
@@ -60,6 +61,14 @@ export const Route = createFileRoute("/")({
               description:
                 "Consultorias individuais, mentorias e palestras para profissionais da beleza e da estética.",
             },
+            {
+              "@type": "Organization",
+              name: "Universe Beauty",
+              description: "Marca de beleza liderada por Camila Maia como CEO.",
+              sameAs: [siteConfig.socials.universeBeauty.url],
+              areaServed: "Veneto, Italy",
+              employee: { "@type": "Person", name: "Camila Maia" },
+            },
           ],
         }),
       },
@@ -76,6 +85,7 @@ function Index() {
       <PathsSection />
       <AboutSection />
       <SolutionsSection />
+      <UniverseBeautySection />
       <BsfSection />
       <EventsSection />
       <TestimonialsSection />

@@ -99,6 +99,12 @@ export function ContactSection() {
 
   const fieldClass = "mt-2";
 
+  const socialEntries = [
+    { label: t.contact.socials.main, ...siteConfig.socials.main },
+    { label: t.contact.socials.beauty, ...siteConfig.socials.beauty },
+    { label: t.contact.socials.universe, ...siteConfig.socials.universeBeauty },
+  ];
+
   return (
     <section id="contato" className="bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
