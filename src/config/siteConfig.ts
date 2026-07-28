@@ -42,7 +42,7 @@ export const siteConfig = {
     locationPt: "Vêneto, Itália",
     locationIt: "Veneto, Italia",
     /** Preencher quando a logo oficial for fornecida. */
-    logo: "",
+    logo: "/images/camila/universe-beauty-logo.webp",
     instagramUrl: "https://www.instagram.com/universebeauty_store/",
     /** Preencher quando existir loja online. */
     shopUrl: "",
