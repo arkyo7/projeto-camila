@@ -46,7 +46,7 @@ export function BrandImage({
           width={width}
           height={height}
           loading={priority ? "eager" : "lazy"}
-          decoding={priority ? "sync" : "async"}
+          decoding="async"
           fetchPriority={priority ? "high" : undefined}
           style={{ objectPosition }}
           className={cn("h-full w-full object-cover", imgClassName)}

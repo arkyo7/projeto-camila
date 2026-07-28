@@ -83,13 +83,9 @@ export function ContactSection() {
     ].join("\n");
 
     setPreparedMessage(body);
-    setStatus("sending");
     setCopied(false);
-
-    window.setTimeout(() => {
-      setStatus("ready");
-      window.open(whatsappLink(body), "_blank", "noopener,noreferrer");
-    }, 700);
+    setStatus("ready");
+    window.open(whatsappLink(body), "_blank", "noopener,noreferrer");
   }
 
   async function copyMessage() {

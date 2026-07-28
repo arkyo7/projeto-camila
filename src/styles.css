@@ -191,14 +191,16 @@
 
 @utility reveal {
   opacity: 0;
-  transform: translateY(18px);
+  transform: translateY(10px);
+  will-change: opacity, transform;
   transition:
-    opacity 500ms ease,
-    transform 500ms ease;
+    opacity 350ms ease-out,
+    transform 350ms ease-out;
 
   &[data-visible="true"] {
     opacity: 1;
     transform: none;
+    will-change: auto;
   }
 }
 
