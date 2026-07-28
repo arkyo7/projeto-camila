@@ -3,11 +3,15 @@ import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { pastEvents, upcomingEvents } from "@/data/siteContent";
+import type { LocalizedText } from "@/data/types";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export function EventsSection() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
+  const featured = upcomingEvents.length === 1;
+
+  const getText = (value: LocalizedText) => value[lang];
 
   return (
     <section id="eventos" className="bg-cream py-20 lg:py-28">
@@ -19,57 +23,150 @@ export function EventsSection() {
         </h3>
 
         {upcomingEvents.length > 0 ? (
-          <ul className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {upcomingEvents.map((event, i) => (
-              <Reveal as="li" key={event.id} delay={i * 80} className="flex">
-                <article className="flex w-full flex-col border border-border bg-card">
-                  <BrandImage
-                    src={event.image}
-                    alt={event.name}
-                    width={720}
-                    height={480}
-                    tone="cream"
-                  />
-                  <div className="flex flex-1 flex-col p-7">
-                    <span className="self-start border border-gold px-3 py-1 text-[0.65rem] uppercase tracking-[0.18em] text-navy">
-                      {t.events.status[event.status]}
-                    </span>
-                    <h4 className="mt-4 text-xl text-navy">{event.name}</h4>
-                    <p className="mt-3 flex items-center gap-2 text-sm text-muted-foreground">
-                      <CalendarDays size={15} aria-hidden="true" className="text-gold" />
-                      {event.date}
-                    </p>
-                    <p className="mt-1.5 flex items-center gap-2 text-sm text-muted-foreground">
-                      <MapPin size={15} aria-hidden="true" className="text-gold" />
-                      {event.city}, {event.country}
-                    </p>
-                    {event.description ? (
-                      <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
-                        {event.description}
-                      </p>
-                    ) : null}
-                    <a
-                      href={
-                        event.link ??
-                        whatsappLink(`${t.events.emptyMessage} (${event.name})`)
+          <ul
+            className={
+              featured
+                ? "mt-6"
+                : "mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+            }
+          >
+            {upcomingEvents.map((event, i) => {
+              const name = getText(event.name);
+              const date = getText(event.date);
+              const city = getText(event.city);
+              const country = getText(event.country);
+              const description = event.description
+                ? getText(event.description)
+                : "";
+              const imageAlt = event.imageAlt
+                ? getText(event.imageAlt)
+                : name;
+
+              const statusLabel =
+                featured && event.status === "waitlist"
+                  ? lang === "it"
+                    ? "Lista d’interesse"
+                    : "Lista de interesse"
+                  : t.events.status[event.status];
+
+              const buttonText = featured
+                ? lang === "it"
+                  ? "Entra nella lista d’interesse"
+                  : "Entrar na lista de interesse"
+                : t.events.eventCta;
+
+              const whatsappMessage =
+                lang === "it"
+                  ? `Ciao Camila! Sono interessata a ${name} e vorrei ricevere maggiori informazioni sulla lista d’interesse.`
+                  : `Olá, Camila! Tenho interesse no ${name} e gostaria de receber mais informações sobre a lista de interesse.`;
+
+              return (
+                <Reveal
+                  as="li"
+                  key={event.id}
+                  delay={i * 80}
+                  className="flex"
+                >
+                  <article
+                    className={
+                      featured
+                        ? "grid w-full overflow-hidden border border-gold/30 bg-card lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch"
+                        : "flex w-full flex-col border border-border bg-card"
+                    }
+                  >
+                    <BrandImage
+                      src={event.image}
+                      alt={imageAlt}
+                      width={featured ? 1200 : 720}
+                      height={featured ? 1500 : 480}
+                      tone="cream"
+                      className={featured ? "border-0" : undefined}
+                      imgClassName="object-cover"
+                    />
+
+                    <div
+                      className={
+                        featured
+                          ? "flex flex-col justify-center p-7 sm:p-10 lg:p-12"
+                          : "flex flex-1 flex-col p-7"
                       }
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-7 inline-flex items-center justify-center border border-navy px-5 py-2.5 text-sm font-medium text-navy transition-colors hover:bg-navy hover:text-cream"
                     >
-                      {t.events.eventCta}
-                    </a>
-                  </div>
-                </article>
-              </Reveal>
-            ))}
+                      {featured ? (
+                        <p className="text-[0.65rem] font-medium uppercase tracking-[0.24em] text-gold">
+                          {lang === "it"
+                            ? "Prossima destinazione"
+                            : "Próximo destino"}
+                        </p>
+                      ) : null}
+
+                      <span
+                        className={`self-start border border-gold px-3 py-1 text-[0.65rem] uppercase tracking-[0.18em] text-navy ${
+                          featured ? "mt-5" : ""
+                        }`}
+                      >
+                        {statusLabel}
+                      </span>
+
+                      <h4
+                        className={
+                          featured
+                            ? "mt-5 font-serif text-3xl leading-tight text-navy sm:text-4xl"
+                            : "mt-4 text-xl text-navy"
+                        }
+                      >
+                        {name}
+                      </h4>
+
+                      <p className="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
+                        <CalendarDays
+                          size={16}
+                          aria-hidden="true"
+                          className="shrink-0 text-gold"
+                        />
+                        {date}
+                      </p>
+
+                      <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
+                        <MapPin
+                          size={16}
+                          aria-hidden="true"
+                          className="shrink-0 text-gold"
+                        />
+                        {city}, {country}
+                      </p>
+
+                      {description ? (
+                        <p className="mt-6 flex-1 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                          {description}
+                        </p>
+                      ) : null}
+
+                      <a
+                        href={
+                          event.link ??
+                          whatsappLink(whatsappMessage)
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${buttonText}: ${name}`}
+                        className="mt-8 inline-flex w-full items-center justify-center bg-navy px-6 py-3.5 text-sm font-medium text-cream transition-colors hover:bg-navy-soft sm:w-auto sm:self-start"
+                      >
+                        {buttonText}
+                      </a>
+                    </div>
+                  </article>
+                </Reveal>
+              );
+            })}
           </ul>
         ) : (
           <Reveal className="mt-6 border border-gold/30 bg-background px-7 py-14 text-center">
             <p className="font-serif text-2xl text-navy sm:text-3xl">
               {t.events.emptyTitle}
             </p>
+
             <div aria-hidden="true" className="gold-rule mx-auto mt-6" />
+
             <a
               href={whatsappLink(t.events.emptyMessage)}
               target="_blank"
@@ -86,6 +183,7 @@ export function EventsSection() {
             <h3 className="mt-20 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
               {t.events.pastTitle}
             </h3>
+
             <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {pastEvents.map((event, i) => (
                 <Reveal as="li" key={event.id} delay={i * 70}>
@@ -97,11 +195,14 @@ export function EventsSection() {
                       height={520}
                       tone="cream"
                     />
+
                     <div className="p-6">
                       <h4 className="text-lg text-navy">{event.name}</h4>
+
                       <p className="mt-2 text-sm text-muted-foreground">
                         {event.place} — {event.year}
                       </p>
+
                       {event.description ? (
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                           {event.description}
