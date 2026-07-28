@@ -277,6 +277,9 @@ export const itIT: Dictionary = {
     cta: "Prenota su WhatsApp",
     message:
       "Ciao Camila! Ho conosciuto Camila Maia Beauty dal sito e vorrei verificare gli orari disponibili per un appuntamento.",
+    instagramText:
+      "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
+    instagramCta: "Segui su Instagram",
   },
   faq: {
     eyebrow: "Domande",
@@ -334,6 +337,7 @@ export const itIT: Dictionary = {
       palestra: "Conferenza o evento",
       bsf: "Beleza Sem Fronteiras",
       beauty: "Trattamento Camila Maia Beauty",
+      universe: "Universe Beauty e collaborazioni",
       parcerias: "Collaborazioni",
       outro: "Altro argomento",
     },

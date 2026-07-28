@@ -274,6 +274,9 @@ export const ptBR = {
     cta: "Agendar pelo WhatsApp",
     message:
       "Olá, Camila! Conheci a Camila Maia Beauty pelo site e gostaria de verificar os horários disponíveis para um atendimento.",
+    instagramText:
+      "Acompanhe resultados, novidades e conteúdos profissionais da Camila Maia Beauty.",
+    instagramCta: "Seguir no Instagram",
   },
   faq: {
     eyebrow: "Dúvidas",
@@ -331,6 +334,7 @@ export const ptBR = {
       palestra: "Palestra ou evento",
       bsf: "Beleza Sem Fronteiras",
       beauty: "Atendimento Camila Maia Beauty",
+      universe: "Universe Beauty e parcerias",
       parcerias: "Parcerias",
       outro: "Outro assunto",
     },
@@ -362,6 +366,13 @@ export const ptBR = {
     },
     intro: "Olá, Camila! Conheci seu trabalho pelo site.",
     directTitle: "Contato direto",
+    socialsTitle: "Perfis oficiais",
+    socials: {
+      main: "Camila Maia e Beleza Sem Fronteiras",
+      beauty: "Camila Maia Beauty",
+      universe: "Universe Beauty",
+    },
+    socialAria: "Abrir o Instagram de {brand} em uma nova aba",
   },
   finalCta: {
     headline: "Seu próximo passo pode começar com uma nova conexão.",
