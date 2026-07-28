@@ -6,7 +6,37 @@ import type { GalleryImage, PastEvent, SiteEvent, Testimonial } from "./types";
  */
 
 /** Próximos eventos. Nunca cadastrar datas fictícias. */
-export const upcomingEvents: SiteEvent[] = [];
+export const upcomingEvents: SiteEvent[] = [
+  {
+    id: "barcelona-2027",
+    name: {
+      pt: "Beleza Sem Fronteiras — Barcelona 2027",
+      it: "Beleza Sem Fronteiras — Barcellona 2027",
+    },
+    date: {
+      pt: "21, 22 e 23 de maio de 2027",
+      it: "21, 22 e 23 maggio 2027",
+    },
+    city: {
+      pt: "Barcelona",
+      it: "Barcellona",
+    },
+    country: {
+      pt: "Espanha",
+      it: "Spagna",
+    },
+    description: {
+      pt: "Três dias de negócios, inovação, networking e crescimento estratégico no Mediterrâneo. Uma experiência criada para conectar mulheres inspiradoras e profissionais da beleza.",
+      it: "Tre giorni di business, innovazione, networking e crescita strategica nel Mediterraneo. Un’esperienza pensata per connettere donne ispiratrici e professioniste della bellezza.",
+    },
+    image: "/images/camila/bsf-barcelona-2027.webp",
+    imageAlt: {
+      pt: "Barcelona, próximo destino do Beleza Sem Fronteiras em maio de 2027",
+      it: "Barcellona, prossima destinazione di Beleza Sem Fronteiras a maggio 2027",
+    },
+    status: "waitlist",
+  },
+];
 
 /** Eventos já realizados. Manter vazio até termos informações confirmadas. */
 export const pastEvents: PastEvent[] = [];
