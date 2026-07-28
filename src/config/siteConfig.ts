@@ -19,6 +19,36 @@ export const siteConfig = {
     handle: "@abelezasemfronteiras",
     url: "https://www.instagram.com/abelezasemfronteiras/",
   },
+  /** Perfis sociais separados por frente de atuação. */
+  socials: {
+    main: {
+      handle: "@abelezasemfronteiras",
+      url: "https://www.instagram.com/abelezasemfronteiras/",
+    },
+    beauty: {
+      handle: "@camilamaia.beauty",
+      url: "https://www.instagram.com/camilamaia.beauty/",
+    },
+    universeBeauty: {
+      handle: "@universebeauty_store",
+      url: "https://www.instagram.com/universebeauty_store/",
+    },
+  },
+  /** Universe Beauty — marca liderada por Camila Maia como CEO. */
+  universeBeauty: {
+    name: "Universe Beauty",
+    rolePt: "CEO",
+    roleIt: "CEO",
+    locationPt: "Vêneto, Itália",
+    locationIt: "Veneto, Italia",
+    /** Preencher quando a logo oficial for fornecida. */
+    logo: "",
+    instagramUrl: "https://www.instagram.com/universebeauty_store/",
+    /** Preencher quando existir loja online. */
+    shopUrl: "",
+    /** Preencher quando existir catálogo. */
+    catalogUrl: "",
+  },
   /** Deixe vazio enquanto nenhum e-mail profissional for fornecido. */
   email: "",
   location: {
