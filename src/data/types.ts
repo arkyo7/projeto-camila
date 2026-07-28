@@ -1,3 +1,8 @@
+export type LocalizedText = {
+  pt: string;
+  it: string;
+};
+
 export interface Service {
   id: string;
   icon: string;
@@ -6,12 +11,13 @@ export interface Service {
 
 export interface SiteEvent {
   id: string;
-  name: string;
-  date: string;
-  city: string;
-  country: string;
-  description?: string;
+  name: LocalizedText;
+  date: LocalizedText;
+  city: LocalizedText;
+  country: LocalizedText;
+  description?: LocalizedText;
   image?: string;
+  imageAlt?: LocalizedText;
   status: "open" | "waitlist" | "closed";
   link?: string;
 }
