@@ -211,6 +211,22 @@ export const ptBR = {
   bsf: {
     eyebrow: "Projeto idealizado por Camila Maia",
     title: "Beleza Sem Fronteiras",
+  },
+  universe: {
+    eyebrow: "Empreendedorismo e beleza",
+    title: "Universe Beauty",
+    text: "À frente da Universe Beauty como CEO, Camila Maia amplia sua atuação no mercado da beleza e desenvolve uma nova frente dedicada ao cuidado, à autoestima e à experiência de se sentir bem.",
+    roleLabel: "CEO",
+    locationLabel: "Localização",
+    primaryCta: "Conhecer a Universe Beauty",
+    secondaryCta: "Falar sobre parcerias",
+    shopCta: "Ver a loja",
+    catalogCta: "Ver o catálogo",
+    logoAlt: "Logotipo da Universe Beauty",
+    message:
+      "Olá, Camila! Gostaria de conversar sobre uma possível parceria com a Universe Beauty.",
+  },
+  bsfRest: {
     headline: "Conexões que transformam carreiras e aproximam mulheres.",
     text: "O Beleza Sem Fronteiras conecta profissionais brasileiras da beleza e da estética por meio de encontros, experiências, palestras, networking e oportunidades de desenvolvimento.",
     pillars: [
