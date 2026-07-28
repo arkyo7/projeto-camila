@@ -46,7 +46,7 @@ export function BrandImage({
           width={width}
           height={height}
           loading={priority ? "eager" : "lazy"}
-          decoding={priority ? "sync" : "async"}
+          decoding="async"
           fetchPriority={priority ? "high" : undefined}
           style={{ objectPosition }}
           className={cn("h-full w-full object-cover", imgClassName)}
@@ -55,10 +55,7 @@ export function BrandImage({
         <div
           role="img"
           aria-label={alt}
-          className={cn(
-            "flex h-full w-full items-center justify-center",
-            tones[tone],
-          )}
+          className={cn("flex h-full w-full items-center justify-center", tones[tone])}
         >
           <div
             aria-hidden="true"
@@ -68,10 +65,7 @@ export function BrandImage({
                 "radial-gradient(circle at 20% 15%, color-mix(in oklab, var(--gold) 22%, transparent), transparent 55%), radial-gradient(circle at 80% 85%, color-mix(in oklab, var(--gold-light) 16%, transparent), transparent 60%)",
             }}
           />
-          <div
-            aria-hidden="true"
-            className="absolute inset-5 border border-current opacity-25"
-          />
+          <div aria-hidden="true" className="absolute inset-5 border border-current opacity-25" />
           <Monogram className="relative h-14 w-14 opacity-70" />
         </div>
       )}

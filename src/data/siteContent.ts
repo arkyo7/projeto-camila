@@ -23,32 +23,32 @@ export const testimonials: Testimonial[] = [];
 export const bsfGallery: GalleryImage[] = [
   {
     id: "evento-01",
-    src: "/images/camila/evento-01.png",
+    src: "/images/camila/evento-01.webp",
     alt: "Camila Maia e participantes em um encontro do Beleza Sem Fronteiras",
   },
   {
     id: "evento-02",
-    src: "/images/camila/evento-02.png",
+    src: "/images/camila/evento-02.webp",
     alt: "Participantes reunidos durante uma premiação do Beleza Sem Fronteiras",
   },
   {
     id: "evento-03",
-    src: "/images/camila/evento-03.png",
+    src: "/images/camila/evento-03.webp",
     alt: "Camila Maia apresentando conteúdo para profissionais da beleza",
   },
   {
     id: "evento-04",
-    src: "/images/camila/evento-04.png",
+    src: "/images/camila/evento-04.webp",
     alt: "Camila Maia durante uma palestra do Beleza Sem Fronteiras",
   },
   {
     id: "evento-05",
-    src: "/images/camila/evento-05.png",
+    src: "/images/camila/evento-05.webp",
     alt: "Conexões e networking entre participantes de uma experiência profissional",
   },
   {
     id: "evento-06",
-    src: "/images/camila/evento-06.png",
+    src: "/images/camila/evento-06.webp",
     alt: "Mulheres reunidas em uma experiência promovida pelo Beleza Sem Fronteiras",
   },
 ];
@@ -57,12 +57,12 @@ export const bsfGallery: GalleryImage[] = [
 export const beautyGallery: GalleryImage[] = [
   {
     id: "beauty-01",
-    src: "/images/camila/beauty-01.png",
+    src: "/images/camila/beauty-01.webp",
     alt: "Resultado profissional de design e embelezamento de sobrancelhas",
   },
   {
     id: "beauty-02",
-    src: "/images/camila/beauty-02.png",
+    src: "/images/camila/beauty-02.webp",
     alt: "Resultado profissional de extensão e valorização dos cílios",
   },
 ];
