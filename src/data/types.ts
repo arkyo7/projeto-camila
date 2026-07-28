@@ -51,5 +51,6 @@ export type ContactInterest =
   | "palestra"
   | "bsf"
   | "beauty"
+  | "universe"
   | "parcerias"
   | "outro";
