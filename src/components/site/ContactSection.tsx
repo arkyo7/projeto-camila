@@ -68,8 +68,7 @@ export function ContactSection() {
     setErrors({});
     const v = parsed.data;
     const l = t.contact.labels;
-    const subject =
-      t.contact.interests[v.interest as ContactInterest] ?? v.interest;
+    const subject = t.contact.interests[v.interest as ContactInterest] ?? v.interest;
     const body = [
       t.contact.intro,
       "",
@@ -276,7 +275,11 @@ export function ContactSection() {
                       onClick={copyMessage}
                       className="inline-flex items-center gap-2 border border-navy px-4 py-2 text-xs font-medium text-navy transition-colors hover:bg-navy hover:text-cream"
                     >
-                      {copied ? <Check size={14} aria-hidden="true" /> : <Copy size={14} aria-hidden="true" />}
+                      {copied ? (
+                        <Check size={14} aria-hidden="true" />
+                      ) : (
+                        <Copy size={14} aria-hidden="true" />
+                      )}
                       {copied ? t.contact.copied : t.contact.copy}
                     </button>
                     <a

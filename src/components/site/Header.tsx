@@ -37,9 +37,7 @@ export function Header() {
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-colors duration-300",
-        scrolled || open
-          ? "border-b border-cream/10 bg-navy/98"
-          : "bg-transparent",
+        scrolled || open ? "border-b border-cream/10 bg-navy/98" : "bg-transparent",
       )}
     >
       <div className="mx-auto grid h-20 max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:px-8 lg:grid-cols-[auto_1fr_auto]">
@@ -51,19 +49,14 @@ export function Header() {
         >
           <Monogram className="h-9 w-9 shrink-0 text-gold" />
           <span className="min-w-0 leading-tight">
-            <span className="block truncate font-serif text-lg tracking-wide">
-              Camila Maia
-            </span>
+            <span className="block truncate font-serif text-lg tracking-wide">Camila Maia</span>
             <span className="block text-[0.6rem] uppercase tracking-[0.26em] text-cream/55">
               Beleza Sem Fronteiras
             </span>
           </span>
         </Link>
 
-        <nav
-          aria-label={t.nav.home}
-          className="hidden justify-center lg:flex lg:gap-7"
-        >
+        <nav aria-label={t.nav.home} className="hidden justify-center lg:flex lg:gap-7">
           {navItems.map((item) => (
             <Link
               key={item.id}
@@ -100,10 +93,7 @@ export function Header() {
       </div>
 
       {open ? (
-        <div
-          id="mobile-menu"
-          className="border-t border-cream/10 bg-navy lg:hidden"
-        >
+        <div id="mobile-menu" className="border-t border-cream/10 bg-navy lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col px-5 py-4 sm:px-8">
             {navItems.map((item) => (
               <Link
