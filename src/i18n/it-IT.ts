@@ -211,6 +211,20 @@ export const itIT: Dictionary = {
     note:
       "I temi sono esempi di possibilità. Formato, disponibilità e condizioni vengono presentati in base a ciascuna richiesta.",
   },
+  universe: {
+    eyebrow: "Imprenditorialità e bellezza",
+    title: "Universe Beauty",
+    text: "Come CEO di Universe Beauty, Camila Maia amplia la sua presenza nel settore della bellezza e sviluppa una nuova realtà dedicata alla cura, all'autostima e all'esperienza di sentirsi bene.",
+    roleLabel: "CEO",
+    locationLabel: "Dove",
+    primaryCta: "Scopri Universe Beauty",
+    secondaryCta: "Parla di collaborazioni",
+    shopCta: "Vai allo shop",
+    catalogCta: "Vedi il catalogo",
+    logoAlt: "Logo di Universe Beauty",
+    message:
+      "Ciao Camila! Vorrei parlare di una possibile collaborazione con Universe Beauty.",
+  },
   bsf: {
     eyebrow: "Progetto ideato da Camila Maia",
     title: "Beleza Sem Fronteiras",
