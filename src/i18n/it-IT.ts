@@ -369,6 +369,13 @@ export const itIT: Dictionary = {
     },
     intro: "Ciao Camila! Ho conosciuto il tuo lavoro dal sito.",
     directTitle: "Contatto diretto",
+    socialsTitle: "Profili ufficiali",
+    socials: {
+      main: "Camila Maia e Beleza Sem Fronteiras",
+      beauty: "Camila Maia Beauty",
+      universe: "Universe Beauty",
+    },
+    socialAria: "Apri l'Instagram di {brand} in una nuova scheda",
   },
   finalCta: {
     headline: "Il tuo prossimo passo può iniziare da una nuova connessione.",
