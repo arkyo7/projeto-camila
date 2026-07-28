@@ -1,11 +1,18 @@
-import { ArrowUpRight, CalendarHeart, Compass, Mic2, Users } from "lucide-react";
+import {
+  ArrowUpRight,
+  CalendarHeart,
+  Compass,
+  Mic2,
+  Sparkles,
+  Users,
+} from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
-const cardIcons = [Compass, Mic2, Users, CalendarHeart];
+const cardIcons = [Compass, Mic2, Users, CalendarHeart, Sparkles];
 
 export function PathsSection() {
   const { t } = useI18n();
@@ -19,10 +26,11 @@ export function PathsSection() {
           align="center"
         />
 
-        <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {t.paths.cards.map((card, i) => {
             const Icon = cardIcons[i] ?? Compass;
             const isBeauty = i === 3;
+            const href = card.href || whatsappLink(card.message);
             return (
               <Reveal as="li" key={card.title} delay={i * 80} className="flex">
                 <article
@@ -49,7 +57,7 @@ export function PathsSection() {
                     {card.description}
                   </p>
                   <a
-                    href={whatsappLink(card.message)}
+                    href={href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={cn(

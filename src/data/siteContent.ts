@@ -73,3 +73,16 @@ export const partners: {
   name: string;
   logo?: string;
 }[] = [];
+
+/**
+ * Texto opcional sobre parcerias/patrocínios da Universe Beauty.
+ * Enquanto vazio, nenhuma informação de patrocínio é exibida no site.
+ */
+export const universeBeautyPartnershipText = "";
+
+/** Produtos em destaque da Universe Beauty. Vazio = nada é exibido. */
+export const universeBeautyHighlights: {
+  id: string;
+  name: string;
+  image?: string;
+}[] = [];
