@@ -1,4 +1,4 @@
-import { Clock, MapPin } from "lucide-react";
+import { Clock, Instagram, MapPin } from "lucide-react";
 import { BeautyHours } from "./BeautyHours";
 import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
@@ -80,6 +80,23 @@ export function BeautySection() {
                 className="mt-8 inline-flex w-full items-center justify-center bg-navy px-6 py-3.5 text-sm font-medium text-cream transition-colors hover:bg-navy-soft"
               >
                 {t.beauty.cta}
+              </a>
+
+              <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+                {t.beauty.instagramText}
+              </p>
+              <a
+                href={siteConfig.socials.beauty.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={t.contact.socialAria.replace(
+                  "{brand}",
+                  "Camila Maia Beauty",
+                )}
+                className="mt-3 inline-flex items-center gap-2 border-b border-nude pb-1 text-sm font-medium text-navy transition-colors hover:text-nude"
+              >
+                <Instagram size={15} aria-hidden="true" className="text-gold" />
+                {siteConfig.socials.beauty.handle}
               </a>
             </div>
           </Reveal>
