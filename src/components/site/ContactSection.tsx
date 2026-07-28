@@ -17,6 +17,7 @@ const interestKeys: ContactInterest[] = [
   "palestra",
   "bsf",
   "beauty",
+  "universe",
   "parcerias",
   "outro",
 ];
@@ -311,17 +312,28 @@ export function ContactSection() {
                   {siteConfig.whatsapp.display}
                 </a>
               </li>
-              <li>
-                <a
-                  href={siteConfig.instagram.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
-                >
-                  <Instagram size={17} aria-hidden="true" className="text-gold" />
-                  {siteConfig.instagram.handle}
-                </a>
-              </li>
+            </ul>
+
+            <h3 className="mt-8 text-lg text-navy">{t.contact.socialsTitle}</h3>
+            <div aria-hidden="true" className="gold-rule mt-3" />
+            <ul className="mt-6 space-y-5 text-sm">
+              {socialEntries.map((entry) => (
+                <li key={entry.url} className="min-w-0">
+                  <p className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
+                    {entry.label}
+                  </p>
+                  <a
+                    href={entry.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={t.contact.socialAria.replace("{brand}", entry.label)}
+                    className="mt-1.5 inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
+                  >
+                    <Instagram size={17} aria-hidden="true" className="text-gold" />
+                    {entry.handle}
+                  </a>
+                </li>
+              ))}
             </ul>
             <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
               {siteConfig.location.country}
