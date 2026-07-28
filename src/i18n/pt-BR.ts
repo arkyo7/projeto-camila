@@ -208,10 +208,6 @@ export const ptBR = {
     note:
       "Os temas são exemplos de possibilidades. Formato, disponibilidade e condições são apresentados de acordo com cada solicitação.",
   },
-  bsf: {
-    eyebrow: "Projeto idealizado por Camila Maia",
-    title: "Beleza Sem Fronteiras",
-  },
   universe: {
     eyebrow: "Empreendedorismo e beleza",
     title: "Universe Beauty",
@@ -226,7 +222,9 @@ export const ptBR = {
     message:
       "Olá, Camila! Gostaria de conversar sobre uma possível parceria com a Universe Beauty.",
   },
-  bsfRest: {
+  bsf: {
+    eyebrow: "Projeto idealizado por Camila Maia",
+    title: "Beleza Sem Fronteiras",
     headline: "Conexões que transformam carreiras e aproximam mulheres.",
     text: "O Beleza Sem Fronteiras conecta profissionais brasileiras da beleza e da estética por meio de encontros, experiências, palestras, networking e oportunidades de desenvolvimento.",
     pillars: [
