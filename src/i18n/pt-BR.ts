@@ -51,6 +51,7 @@ export const ptBR = {
         description:
           "Orientação para profissionais da beleza que desejam fortalecer o posicionamento, organizar ideias, tomar decisões mais assertivas e construir uma trajetória profissional sustentável.",
         button: "Quero conhecer",
+        href: "",
         message:
           "Olá, Camila! Conheci seu trabalho pelo site e gostaria de receber mais informações sobre suas consultorias e mentorias.",
       },
@@ -60,6 +61,7 @@ export const ptBR = {
         description:
           "Palestras, encontros e participações voltadas ao empreendedorismo feminino, carreira internacional, posicionamento e mercado da beleza.",
         button: "Solicitar uma proposta",
+        href: "",
         message:
           "Olá, Camila! Conheci seu trabalho pelo site e gostaria de solicitar uma proposta para uma palestra, evento ou participação especial.",
       },
@@ -69,6 +71,7 @@ export const ptBR = {
         description:
           "Eventos, conexões, experiências e oportunidades voltadas às profissionais brasileiras do universo da beleza e da estética.",
         button: "Conhecer o projeto",
+        href: "",
         message:
           "Olá, Camila! Quero receber mais informações sobre o Beleza Sem Fronteiras e os próximos eventos.",
       },
@@ -78,8 +81,18 @@ export const ptBR = {
         description:
           "Atendimentos personalizados de beleza realizados por Camila Maia na Itália.",
         button: "Agendar atendimento",
+        href: "",
         message:
           "Olá, Camila! Conheci a Camila Maia Beauty pelo site e gostaria de agendar um atendimento de beleza.",
+      },
+      {
+        eyebrow: "Empreendedorismo e beleza",
+        title: "Universe Beauty",
+        description:
+          "Marca de beleza liderada por Camila Maia, criada para proporcionar uma experiência de cuidado, autoestima e valorização da beleza.",
+        button: "Conhecer a marca",
+        href: "https://www.instagram.com/universebeauty_store/",
+        message: "",
       },
     ],
   },
@@ -91,6 +104,7 @@ export const ptBR = {
       "Em 2018, deixou o Brasil para realizar um intercâmbio na Irlanda, dando início a uma trajetória internacional que posteriormente a levou a estabelecer-se na Itália.",
       "Sua entrada no universo da beleza representou uma transformação pessoal e profissional. Certificada no Brasil e no exterior, Camila especializou-se em embelezamento facial e bem-estar.",
       "Apaixonada por aprender, compartilhar experiências e conectar pessoas, hoje utiliza sua trajetória para incentivar e orientar profissionais brasileiras que desejam crescer por meio da beleza, do empreendedorismo e de novas oportunidades.",
+      "Além de sua atuação como consultora, palestrante e profissional da beleza, Camila Maia também é CEO da Universe Beauty, marca localizada no Vêneto, Itália, voltada ao universo da beleza, do cuidado e da autoestima.",
     ],
     quote:
       "Acredito no potencial das profissionais brasileiras para transformarem suas vidas e o mundo por meio da beleza.",
@@ -134,6 +148,12 @@ export const ptBR = {
           title: "Conhecimento que gera conexões",
           description:
             "Passou a compartilhar experiências, incentivar profissionais brasileiras e criar conexões dentro do mercado da beleza.",
+        },
+        {
+          marker: "Nova etapa",
+          title: "Liderança na Universe Beauty",
+          description:
+            "Camila amplia sua atuação empresarial como CEO da Universe Beauty, conectando beleza, cuidado, experiência e empreendedorismo na Itália.",
         },
       ],
     },
