@@ -16,7 +16,7 @@ export function AboutSection() {
             className="absolute -bottom-5 -left-5 hidden h-32 w-32 border-b border-l border-gold sm:block"
           />
           <BrandImage
-            src="/images/camila/camila-sobre.png"
+            src="/images/camila/camila-sobre.webp"
             alt={t.about.photoAlt}
             width={800}
             height={960}

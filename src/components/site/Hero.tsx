@@ -65,7 +65,7 @@ export function Hero() {
             className="absolute -bottom-4 -right-4 hidden h-40 w-40 border-b border-r border-gold/50 sm:block"
           />
           <BrandImage
-            src="/images/camila/camila-hero.png"
+            src="/images/camila/camila-hero.webp"
             alt="Camila Maia, consultora e palestrante do mercado da beleza"
             width={860}
             height={1080}
