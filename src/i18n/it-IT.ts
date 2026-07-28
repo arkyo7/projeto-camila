@@ -29,8 +29,7 @@ export const itIT: Dictionary = {
     ctaSecondary: "Invita a un evento",
     ctaTertiary: "Prenota un trattamento beauty in Italia",
     badgeName: "Camila Maia",
-    badgeRole:
-      "Consulente di donne brasiliane imprenditrici della bellezza e dell'estetica.",
+    badgeRole: "Consulente di donne brasiliane imprenditrici della bellezza e dell'estetica.",
     photoAlt: "Camila Maia, consulente e ideatrice di Beleza Sem Fronteiras",
   },
   pillars: {
@@ -80,8 +79,7 @@ export const itIT: Dictionary = {
       {
         eyebrow: "Camila Maia Beauty",
         title: "Prenota il tuo trattamento beauty",
-        description:
-          "Trattamenti di bellezza personalizzati realizzati da Camila Maia in Italia.",
+        description: "Trattamenti di bellezza personalizzati realizzati da Camila Maia in Italia.",
         button: "Prenota un appuntamento",
         href: "",
         message:
@@ -119,8 +117,7 @@ export const itIT: Dictionary = {
         {
           marker: "Fortaleza, Ceará",
           title: "Origini e formazione",
-          description:
-            "Originaria di Fortaleza e laureata in Gestione del Marketing.",
+          description: "Originaria di Fortaleza e laureata in Gestione del Marketing.",
         },
         {
           marker: "Esperienza professionale",
@@ -164,8 +161,7 @@ export const itIT: Dictionary = {
   solutions: {
     eyebrow: "Soluzioni",
     title: "Soluzioni per professioniste, brand ed eventi",
-    subtitle:
-      "Formati pensati per momenti diversi di carriera, di business e di evento.",
+    subtitle: "Formati pensati per momenti diversi di carriera, di business e di evento.",
     themesLabel: "Possibili temi",
     items: [
       {
@@ -198,18 +194,13 @@ export const itIT: Dictionary = {
         title: "Conferenze ed eventi",
         description:
           "Contenuti sviluppati per congressi, incontri, istituzioni, aziende ed eventi legati a imprenditoria, bellezza, carriera e connessioni internazionali.",
-        themes: [
-          "Connessioni professionali",
-          "Imprenditoria femminile",
-          "Carriera internazionale",
-        ],
+        themes: ["Connessioni professionali", "Imprenditoria femminile", "Carriera internazionale"],
         button: "Richiedi una proposta",
         message:
           "Ciao Camila! Ho conosciuto il tuo lavoro dal sito e vorrei richiedere una proposta per una conferenza o un evento.",
       },
     ],
-    note:
-      "I temi sono esempi di possibilità. Formato, disponibilità e condizioni vengono presentati in base a ciascuna richiesta.",
+    note: "I temi sono esempi di possibilità. Formato, disponibilità e condizioni vengono presentati in base a ciascuna richiesta.",
   },
   universe: {
     eyebrow: "Imprenditorialità e bellezza",
@@ -222,8 +213,7 @@ export const itIT: Dictionary = {
     shopCta: "Vai allo shop",
     catalogCta: "Vedi il catalogo",
     logoAlt: "Logo di Universe Beauty",
-    message:
-      "Ciao Camila! Vorrei parlare di una possibile collaborazione con Universe Beauty.",
+    message: "Ciao Camila! Vorrei parlare di una possibile collaborazione con Universe Beauty.",
   },
   bsf: {
     eyebrow: "Progetto ideato da Camila Maia",
@@ -231,8 +221,14 @@ export const itIT: Dictionary = {
     headline: "Connessioni che trasformano carriere e avvicinano donne.",
     text: "Beleza Sem Fronteiras collega le professioniste brasiliane della bellezza e dell'estetica attraverso incontri, esperienze, conferenze, networking e opportunità di crescita.",
     pillars: [
-      { title: "Connessione", description: "Incontri che avvicinano professioniste oltre i confini." },
-      { title: "Conoscenza", description: "Contenuti e scambi che ampliano la visione di mercato." },
+      {
+        title: "Connessione",
+        description: "Incontri che avvicinano professioniste oltre i confini.",
+      },
+      {
+        title: "Conoscenza",
+        description: "Contenuti e scambi che ampliano la visione di mercato.",
+      },
       { title: "Esperienza", description: "Esperienze professionali in Brasile e all'estero." },
       { title: "Opportunità", description: "Nuove strade per carriere e attività." },
     ],
@@ -268,7 +264,10 @@ export const itIT: Dictionary = {
     categories: [
       { title: "Sguardo e ciglia", description: "Trattamenti dedicati a valorizzare lo sguardo." },
       { title: "Sopracciglia", description: "Cura e design pensati per ogni viso." },
-      { title: "Trattamento beauty personalizzato", description: "Servizi definiti in base all'esigenza di ogni cliente." },
+      {
+        title: "Trattamento beauty personalizzato",
+        description: "Servizi definiti in base all'esigenza di ogni cliente.",
+      },
     ],
     hoursTitle: "Orari di apertura",
     locationTitle: "Dove",
@@ -277,8 +276,7 @@ export const itIT: Dictionary = {
     cta: "Prenota su WhatsApp",
     message:
       "Ciao Camila! Ho conosciuto Camila Maia Beauty dal sito e vorrei verificare gli orari disponibili per un appuntamento.",
-    instagramText:
-      "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
+    instagramText: "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
     instagramCta: "Segui su Instagram",
   },
   faq: {
@@ -329,8 +327,7 @@ export const itIT: Dictionary = {
       interest: "Area di interesse",
       interestPlaceholder: "Seleziona l'argomento",
       message: "Messaggio",
-      consent:
-        "Autorizzo l'uso dei miei dati per ricevere una risposta a questa richiesta.",
+      consent: "Autorizzo l'uso dei miei dati per ricevere una risposta a questa richiesta.",
     },
     interests: {
       consultoria: "Consulenza o mentoring",
@@ -343,8 +340,7 @@ export const itIT: Dictionary = {
     },
     submit: "Apri la chat su WhatsApp",
     preparing: "Stiamo preparando il tuo messaggio…",
-    ready:
-      "Il tuo messaggio è pronto. Stiamo aprendo WhatsApp per inviarlo a Camila.",
+    ready: "Il tuo messaggio è pronto. Stiamo aprendo WhatsApp per inviarlo a Camila.",
     fallback:
       "Se WhatsApp non si apre automaticamente, copia il messaggio qui sotto e invialo manualmente.",
     copy: "Copia il messaggio",
@@ -395,8 +391,7 @@ export const itIT: Dictionary = {
   },
   float: {
     label: "Parla con Camila",
-    message:
-      "Ciao Camila! Ho conosciuto il tuo lavoro dal sito e vorrei parlare con te.",
+    message: "Ciao Camila! Ho conosciuto il tuo lavoro dal sito e vorrei parlare con te.",
   },
   legal: {
     back: "Torna al sito",

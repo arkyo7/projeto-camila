@@ -29,9 +29,7 @@ export function BeautySection() {
               {t.beauty.categories.map((category, i) => (
                 <Reveal as="li" key={category.title} delay={i * 70}>
                   <article className="h-full border border-nude/50 bg-background p-6">
-                    <h3 className="text-lg leading-snug text-navy">
-                      {category.title}
-                    </h3>
+                    <h3 className="text-lg leading-snug text-navy">{category.title}</h3>
                     <div aria-hidden="true" className="gold-rule mt-3" />
                     <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                       {category.description}
@@ -89,10 +87,7 @@ export function BeautySection() {
                 href={siteConfig.socials.beauty.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={t.contact.socialAria.replace(
-                  "{brand}",
-                  "Camila Maia Beauty",
-                )}
+                aria-label={t.contact.socialAria.replace("{brand}", "Camila Maia Beauty")}
                 className="mt-3 inline-flex items-center gap-2 border-b border-nude pb-1 text-sm font-medium text-navy transition-colors hover:text-nude"
               >
                 <Instagram size={15} aria-hidden="true" className="text-gold" />

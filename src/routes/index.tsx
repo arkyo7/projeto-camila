@@ -41,8 +41,7 @@ export const Route = createFileRoute("/")({
               "@type": "Person",
               name: "Camila Maia",
               jobTitle: "Consultora e palestrante",
-              description:
-                "Consultora, palestrante e idealizadora do Beleza Sem Fronteiras.",
+              description: "Consultora, palestrante e idealizadora do Beleza Sem Fronteiras.",
               sameAs: [siteConfig.instagram.url],
               areaServed: siteConfig.location.country,
             },

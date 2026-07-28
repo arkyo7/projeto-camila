@@ -27,8 +27,7 @@ export const ptBR = {
     ctaSecondary: "Convidar para um evento",
     ctaTertiary: "Agendar atendimento de beleza na Itália",
     badgeName: "Camila Maia",
-    badgeRole:
-      "Consultora de mulheres brasileiras empreendedoras da beleza e da estética.",
+    badgeRole: "Consultora de mulheres brasileiras empreendedoras da beleza e da estética.",
     photoAlt: "Camila Maia, consultora e idealizadora do Beleza Sem Fronteiras",
   },
   pillars: {
@@ -78,8 +77,7 @@ export const ptBR = {
       {
         eyebrow: "Camila Maia Beauty",
         title: "Agende seu atendimento de beleza",
-        description:
-          "Atendimentos personalizados de beleza realizados por Camila Maia na Itália.",
+        description: "Atendimentos personalizados de beleza realizados por Camila Maia na Itália.",
         button: "Agendar atendimento",
         href: "",
         message:
@@ -161,8 +159,7 @@ export const ptBR = {
   solutions: {
     eyebrow: "Soluções",
     title: "Soluções para profissionais, marcas e eventos",
-    subtitle:
-      "Formatos pensados para diferentes momentos de carreira, de negócio e de evento.",
+    subtitle: "Formatos pensados para diferentes momentos de carreira, de negócio e de evento.",
     themesLabel: "Possíveis temas",
     items: [
       {
@@ -195,18 +192,13 @@ export const ptBR = {
         title: "Palestras e eventos",
         description:
           "Conteúdos desenvolvidos para congressos, encontros, instituições, empresas e eventos relacionados a empreendedorismo, beleza, carreira e conexões internacionais.",
-        themes: [
-          "Conexões profissionais",
-          "Empreendedorismo feminino",
-          "Carreira internacional",
-        ],
+        themes: ["Conexões profissionais", "Empreendedorismo feminino", "Carreira internacional"],
         button: "Solicitar uma proposta",
         message:
           "Olá, Camila! Conheci seu trabalho pelo site e gostaria de solicitar uma proposta para uma palestra ou evento.",
       },
     ],
-    note:
-      "Os temas são exemplos de possibilidades. Formato, disponibilidade e condições são apresentados de acordo com cada solicitação.",
+    note: "Os temas são exemplos de possibilidades. Formato, disponibilidade e condições são apresentados de acordo com cada solicitação.",
   },
   universe: {
     eyebrow: "Empreendedorismo e beleza",
@@ -228,7 +220,10 @@ export const ptBR = {
     headline: "Conexões que transformam carreiras e aproximam mulheres.",
     text: "O Beleza Sem Fronteiras conecta profissionais brasileiras da beleza e da estética por meio de encontros, experiências, palestras, networking e oportunidades de desenvolvimento.",
     pillars: [
-      { title: "Conexão", description: "Encontros que aproximam profissionais além das fronteiras." },
+      {
+        title: "Conexão",
+        description: "Encontros que aproximam profissionais além das fronteiras.",
+      },
       { title: "Conhecimento", description: "Conteúdos e trocas que ampliam a visão de mercado." },
       { title: "Experiência", description: "Vivências profissionais dentro e fora do Brasil." },
       { title: "Oportunidade", description: "Novos caminhos para carreiras e negócios." },
@@ -265,11 +260,22 @@ export const ptBR = {
     categories: [
       { title: "Olhar e cílios", description: "Atendimentos dedicados à valorização do olhar." },
       { title: "Sobrancelhas", description: "Cuidado e design pensados para cada rosto." },
-      { title: "Atendimento personalizado de beleza", description: "Serviços definidos conforme a necessidade de cada cliente." },
+      {
+        title: "Atendimento personalizado de beleza",
+        description: "Serviços definidos conforme a necessidade de cada cliente.",
+      },
     ],
     hoursTitle: "Horários de atendimento",
     locationTitle: "Localização",
-    days: ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"],
+    days: [
+      "Domingo",
+      "Segunda-feira",
+      "Terça-feira",
+      "Quarta-feira",
+      "Quinta-feira",
+      "Sexta-feira",
+      "Sábado",
+    ],
     closed: "Fechada",
     cta: "Agendar pelo WhatsApp",
     message:
@@ -326,8 +332,7 @@ export const ptBR = {
       interest: "Área de interesse",
       interestPlaceholder: "Selecione o assunto",
       message: "Mensagem",
-      consent:
-        "Autorizo o uso dos meus dados para receber retorno sobre esta solicitação.",
+      consent: "Autorizo o uso dos meus dados para receber retorno sobre esta solicitação.",
     },
     interests: {
       consultoria: "Consultoria ou mentoria",
@@ -340,8 +345,7 @@ export const ptBR = {
     },
     submit: "Abrir conversa no WhatsApp",
     preparing: "Preparando sua mensagem…",
-    ready:
-      "Sua mensagem foi preparada. Estamos abrindo o WhatsApp para você enviá-la a Camila.",
+    ready: "Sua mensagem foi preparada. Estamos abrindo o WhatsApp para você enviá-la a Camila.",
     fallback:
       "Se o WhatsApp não abrir automaticamente, copie a mensagem abaixo e envie manualmente.",
     copy: "Copiar mensagem",
@@ -392,8 +396,7 @@ export const ptBR = {
   },
   float: {
     label: "Fale com Camila",
-    message:
-      "Olá, Camila! Conheci seu trabalho pelo site e gostaria de conversar com você.",
+    message: "Olá, Camila! Conheci seu trabalho pelo site e gostaria de conversar com você.",
   },
   legal: {
     back: "Voltar ao site",

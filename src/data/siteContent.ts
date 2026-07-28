@@ -1,9 +1,4 @@
-import type {
-  GalleryImage,
-  PastEvent,
-  SiteEvent,
-  Testimonial,
-} from "./types";
+import type { GalleryImage, PastEvent, SiteEvent, Testimonial } from "./types";
 
 /**
  * Conteúdo estruturado do site.

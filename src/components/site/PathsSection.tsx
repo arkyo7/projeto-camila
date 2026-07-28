@@ -1,11 +1,4 @@
-import {
-  ArrowUpRight,
-  CalendarHeart,
-  Compass,
-  Mic2,
-  Sparkles,
-  Users,
-} from "lucide-react";
+import { ArrowUpRight, CalendarHeart, Compass, Mic2, Sparkles, Users } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { useI18n } from "@/i18n";
@@ -20,11 +13,7 @@ export function PathsSection() {
   return (
     <section id="caminhos" className="bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          title={t.paths.title}
-          subtitle={t.paths.subtitle}
-          align="center"
-        />
+        <SectionHeading title={t.paths.title} subtitle={t.paths.subtitle} align="center" />
 
         <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {t.paths.cards.map((card, i) => {
@@ -50,9 +39,7 @@ export function PathsSection() {
                   <p className="mt-6 text-[0.65rem] uppercase tracking-[0.22em] text-muted-foreground">
                     {card.eyebrow}
                   </p>
-                  <h3 className="mt-2 text-xl leading-snug text-navy">
-                    {card.title}
-                  </h3>
+                  <h3 className="mt-2 text-xl leading-snug text-navy">{card.title}</h3>
                   <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
                     {card.description}
                   </p>
