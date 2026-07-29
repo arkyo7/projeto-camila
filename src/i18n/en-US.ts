@@ -40,7 +40,7 @@ export const enUS: Dictionary = {
   pillars: {
     items: [
       "Personalized service",
-      "Eyes and lashes",
+      "Lashes",
       "Eyebrows",
       "International journey",
       "Direct contact on WhatsApp",
@@ -272,16 +272,25 @@ export const enUS: Dictionary = {
     priceLabel: "Price",
     differentialsTitle: "Why book with Camila?",
     differentials: [
-      { title: "Personalized service", text: "Every client is treated uniquely, respecting her style, features and goal." },
-      { title: "Beauty with technique and care", text: "Treatments designed to enhance beauty in a harmonious, elegant and safe way." },
-      { title: "Direct contact and follow-up", text: "Easy booking and direct support via WhatsApp." },
+      {
+        title: "Personalized service",
+        text: "Every client is treated uniquely, respecting her style, features and goal.",
+      },
+      {
+        title: "Beauty with technique and care",
+        text: "Treatments designed to enhance beauty in a harmonious, elegant and safe way.",
+      },
+      {
+        title: "Direct contact and follow-up",
+        text: "Easy booking and direct support via WhatsApp.",
+      },
     ],
-    scheduleCta: "Book my appointment on WhatsApp",
+    scheduleCta: "Check availability",
     scheduleMessage:
       "Hello, Camila! I discovered Camila Maia Beauty through the website and would like more information about the services.",
     hoursTitle: "Business hours",
     locationTitle: "Location",
-    locationNote: "A new chapter in Spain is coming soon. Information, availability and bookings directly via WhatsApp.",
+    locationNote: "Information about availability and services directly via WhatsApp.",
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     closed: "Closed",
     cta: "Message on WhatsApp",

@@ -38,7 +38,7 @@ export const ptBR = {
   pillars: {
     items: [
       "Atendimento personalizado",
-      "Olhar e cílios",
+      "Cílios",
       "Sobrancelhas",
       "Trajetória internacional",
       "Contato direto pelo WhatsApp",
@@ -277,16 +277,25 @@ export const ptBR = {
     priceLabel: "Valor",
     differentialsTitle: "Por que agendar com Camila?",
     differentials: [
-      { title: "Atendimento personalizado", text: "Cada cliente é atendida de forma única, respeitando estilo, traços e objetivo." },
-      { title: "Beleza com técnica e cuidado", text: "Procedimentos pensados para valorizar a beleza de forma harmoniosa, elegante e segura." },
-      { title: "Contato direto e acompanhamento", text: "Agendamento fácil e suporte direto pelo WhatsApp." },
+      {
+        title: "Atendimento personalizado",
+        text: "Cada cliente é atendida de forma única, respeitando estilo, traços e objetivo.",
+      },
+      {
+        title: "Beleza com técnica e cuidado",
+        text: "Procedimentos pensados para valorizar a beleza de forma harmoniosa, elegante e segura.",
+      },
+      {
+        title: "Contato direto e acompanhamento",
+        text: "Agendamento fácil e suporte direto pelo WhatsApp.",
+      },
     ],
-    scheduleCta: "Agendar meu horário pelo WhatsApp",
+    scheduleCta: "Consultar horários",
     scheduleMessage:
       "Olá, Camila! Conheci a Camila Maia Beauty pelo site e gostaria de receber informações sobre os serviços.",
     hoursTitle: "Horários de atendimento",
     locationTitle: "Localização",
-    locationNote: "Nova fase na Espanha em breve. Informações, disponibilidade e agendamentos diretamente pelo WhatsApp.",
+    locationNote: "Informações sobre disponibilidade e atendimentos diretamente pelo WhatsApp.",
     days: [
       "Domingo",
       "Segunda-feira",

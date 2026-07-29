@@ -56,10 +56,10 @@ export const beautyServices: BeautyService[] = [
     id: "lashes",
     image: "/images/camila/beauty-02.webp",
     name: {
-      pt: "Olhar e cílios",
-      it: "Sguardo e ciglia",
-      es: "Mirada y pestañas",
-      en: "Eyes and lashes",
+      pt: "Cílios",
+      it: "Ciglia",
+      es: "Pestañas",
+      en: "Lashes",
     },
     description: {
       pt: "Atendimentos dedicados à valorização do olhar, realizados de forma personalizada de acordo com o estilo e a necessidade de cada cliente.",

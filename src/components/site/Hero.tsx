@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { BrandImage } from "./BrandImage";
 import { useI18n } from "@/i18n";
-import { whatsappLink } from "@/lib/whatsapp";
 
 export function Hero() {
   const { t } = useI18n();
@@ -29,21 +28,13 @@ export function Hero() {
             {t.hero.subheadline}
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mt-9 flex">
             <a
               href="#beauty"
               className="inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy transition-colors hover:bg-gold-light"
             >
               {t.hero.ctaPrimary}
               <ArrowRight size={16} aria-hidden="true" />
-            </a>
-            <a
-              href={whatsappLink(t.hero.message)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center border border-cream/25 px-7 py-3.5 text-sm font-medium text-cream transition-colors hover:border-gold hover:text-gold"
-            >
-              {t.hero.ctaSecondary}
             </a>
           </div>
         </div>
