@@ -2,6 +2,7 @@ import { BrandImage } from "./BrandImage";
 import { JourneyTimeline } from "./JourneyTimeline";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
+import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 
 export function AboutSection() {
@@ -20,6 +21,7 @@ export function AboutSection() {
             alt={t.about.photoAlt}
             width={800}
             height={960}
+            sizes={imageSizes.twoCols}
             tone="cream"
             className="relative border border-gold/20"
             objectPosition="center 55%"
