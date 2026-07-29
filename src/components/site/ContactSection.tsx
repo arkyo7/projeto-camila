@@ -322,7 +322,7 @@ export function ContactSection() {
             <Button
               type="submit"
               disabled={status === "sending"}
-              className="mt-8 w-full rounded-none bg-navy px-7 py-6 text-sm font-medium text-cream hover:bg-navy-soft sm:w-auto"
+              className="btn-motion mt-8 w-full rounded-none bg-navy px-7 py-6 text-sm font-medium text-cream hover:bg-navy-soft sm:w-auto"
             >
               {status === "sending" ? t.contact.preparing : t.contact.submit}
             </Button>

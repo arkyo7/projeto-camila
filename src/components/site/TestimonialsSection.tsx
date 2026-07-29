@@ -16,8 +16,8 @@ export function TestimonialsSection() {
         <SectionHeading eyebrow={t.testimonials.eyebrow} title={t.testimonials.title} />
         <ul className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((item, i) => (
-            <Reveal as="li" key={item.id} delay={i * 80}>
-              <figure className="flex h-full flex-col border border-border bg-card p-7">
+            <Reveal as="li" key={item.id} delay={i * 90}>
+              <figure className="interactive-card flex h-full flex-col border border-border bg-card p-7">
                 <blockquote className="flex-1 text-base leading-relaxed text-navy">
                   “{item.quote}”
                 </blockquote>

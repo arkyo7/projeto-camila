@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Monogram } from "./Monogram";
+import { Reveal } from "./Reveal";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -12,24 +13,28 @@ export function FinalCta() {
         <Monogram className="h-72 w-72 text-gold/10" />
       </div>
       <div className="relative mx-auto max-w-4xl px-5 text-center sm:px-8">
-        <h2 className="text-3xl leading-[1.15] text-cream sm:text-4xl lg:text-[2.9rem]">
-          {t.finalCta.headline}
-        </h2>
-        <div aria-hidden="true" className="gold-rule mx-auto mt-6" />
-        <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-cream/70">
-          {t.finalCta.text}
-        </p>
-        <div className="mt-10 flex justify-center">
-          <a
-            href={whatsappLink(t.float.message)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy transition-colors hover:bg-gold-light"
-          >
-            {t.finalCta.primary}
-            <ArrowRight size={16} aria-hidden="true" />
-          </a>
-        </div>
+        <Reveal as="div">
+          <h2 className="text-3xl leading-[1.15] text-cream sm:text-4xl lg:text-[2.9rem]">
+            {t.finalCta.headline}
+          </h2>
+          <div aria-hidden="true" className="gold-rule mx-auto mt-6" />
+        </Reveal>
+        <Reveal as="div" delay={90}>
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-cream/70">
+            {t.finalCta.text}
+          </p>
+          <div className="mt-10 flex justify-center">
+            <a
+              href={whatsappLink(t.float.message)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-motion inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy hover:bg-gold-light"
+            >
+              {t.finalCta.primary}
+              <ArrowRight size={16} aria-hidden="true" className="btn-arrow" />
+            </a>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

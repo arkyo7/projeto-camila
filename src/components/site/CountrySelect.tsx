@@ -113,7 +113,11 @@ export function CountrySelect({
                     </span>
                   ) : null}
                   {country.code === value ? (
-                    <Check size={14} aria-hidden="true" className={cn("text-gold", !isDial && "ml-auto")} />
+                    <Check
+                      size={14}
+                      aria-hidden="true"
+                      className={cn("text-gold", !isDial && "ml-auto")}
+                    />
                   ) : null}
                 </CommandItem>
               ))}

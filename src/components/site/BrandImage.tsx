@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { Monogram } from "./Monogram";
 import { cn } from "@/lib/utils";
 
@@ -11,6 +12,7 @@ interface BrandImageProps {
   objectPosition?: string;
   priority?: boolean;
   tone?: "navy" | "cream" | "blush";
+  style?: CSSProperties;
 }
 
 const tones = {
@@ -33,11 +35,12 @@ export function BrandImage({
   objectPosition = "center",
   priority = false,
   tone = "navy",
+  style,
 }: BrandImageProps) {
   return (
     <div
       className={cn("relative overflow-hidden", className)}
-      style={{ aspectRatio: `${width} / ${height}` }}
+      style={{ aspectRatio: `${width} / ${height}`, ...style }}
     >
       {src ? (
         <img
