@@ -8,18 +8,16 @@ import { FaqSection } from "@/components/site/FaqSection";
 import { FinalCta } from "@/components/site/FinalCta";
 import { HighlightsSection } from "@/components/site/HighlightsSection";
 import { Hero } from "@/components/site/Hero";
-import { PathsSection } from "@/components/site/PathsSection";
 import { PositioningStrip } from "@/components/site/PositioningStrip";
 import { SiteLayout } from "@/components/site/SiteLayout";
-import { SolutionsSection } from "@/components/site/SolutionsSection";
 import { SponsorsSection } from "@/components/site/SponsorsSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { UniverseBeautySection } from "@/components/site/UniverseBeautySection";
 import { siteConfig } from "@/config/siteConfig";
 
-const title = "Camila Maia | Camila Maia Beauty e Beleza Sem Fronteiras";
+const title = "Camila Maia Beauty | Cílios, Sobrancelhas e Beleza Personalizada";
 const description =
-  "Empreendedora brasileira do setor da beleza na Europa. Conheça a Camila Maia Beauty, o projeto Beleza Sem Fronteiras, a Universe Beauty e a trajetória de Camila Maia.";
+  "Conheça os atendimentos de cílios e sobrancelhas da Camila Maia Beauty, a trajetória internacional de Camila Maia e seus projetos no mercado da beleza.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -42,10 +40,10 @@ export const Route = createFileRoute("/")({
             {
               "@type": "Person",
               name: "Camila Maia",
-              jobTitle: "Consultora e palestrante",
-              description: "Consultora, palestrante e idealizadora do Beleza Sem Fronteiras.",
+              jobTitle: "Empreendedora e profissional da beleza",
+              description:
+                "Profissional da beleza à frente da Camila Maia Beauty e idealizadora do Beleza Sem Fronteiras.",
               sameAs: [siteConfig.instagram.url],
-              areaServed: siteConfig.location.country,
             },
             {
               "@type": "Organization",
@@ -54,13 +52,6 @@ export const Route = createFileRoute("/")({
                 "Projeto de conexões, eventos e experiências para profissionais brasileiras da beleza e da estética.",
               founder: { "@type": "Person", name: "Camila Maia" },
               sameAs: [siteConfig.instagram.url],
-            },
-            {
-              "@type": "Service",
-              serviceType: "Consultoria, mentoria e palestras",
-              provider: { "@type": "Person", name: "Camila Maia" },
-              description:
-                "Consultorias individuais, mentorias e palestras para profissionais da beleza e da estética.",
             },
             {
               "@type": "Organization",
@@ -83,16 +74,14 @@ function Index() {
     <SiteLayout>
       <Hero />
       <PositioningStrip />
-      <AboutSection />
       <BeautySection />
+      <AboutSection />
+      <TestimonialsSection />
       <BsfSection />
       <SponsorsSection />
       <EventsSection />
       <UniverseBeautySection />
       <HighlightsSection />
-      <PathsSection />
-      <SolutionsSection />
-      <TestimonialsSection />
       <FaqSection />
       <ContactSection />
       <FinalCta />
