@@ -19,7 +19,7 @@ export function FinalCta() {
         <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-cream/70">
           {t.finalCta.text}
         </p>
-        <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+        <div className="mt-10 flex justify-center">
           <a
             href={whatsappLink(t.float.message)}
             target="_blank"
@@ -28,12 +28,6 @@ export function FinalCta() {
           >
             {t.finalCta.primary}
             <ArrowRight size={16} aria-hidden="true" />
-          </a>
-          <a
-            href="#beauty"
-            className="inline-flex items-center justify-center border border-cream/25 px-7 py-3.5 text-sm font-medium text-cream transition-colors hover:border-gold hover:text-gold"
-          >
-            {t.finalCta.secondary}
           </a>
         </div>
       </div>
