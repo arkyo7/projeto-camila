@@ -195,22 +195,6 @@ export function ContactSection() {
               </div>
 
               <div className="min-w-0">
-                <Label htmlFor="country">{t.contact.fields.country}</Label>
-                <CountrySelect
-                  id="country"
-                  value={country}
-                  onChange={handleCountryChange}
-                  invalid={Boolean(errors.country)}
-                  describedBy={errors.country ? "country-error" : undefined}
-                />
-                {errors.country ? (
-                  <p id="country-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.country}
-                  </p>
-                ) : null}
-              </div>
-
-              <div className="min-w-0">
                 <Label htmlFor="phone">{t.contact.fields.phone}</Label>
                 <div
                   className={`mt-2 flex h-11 min-w-0 items-stretch border border-input bg-background transition-colors focus-within:border-gold ${
@@ -249,6 +233,22 @@ export function ContactSection() {
                 {errors.phone ? (
                   <p id="phone-error" role="alert" className="mt-1.5 text-xs text-destructive">
                     {errors.phone}
+                  </p>
+                ) : null}
+              </div>
+
+              <div className="min-w-0">
+                <Label htmlFor="country">{t.contact.fields.country}</Label>
+                <CountrySelect
+                  id="country"
+                  value={country}
+                  onChange={handleCountryChange}
+                  invalid={Boolean(errors.country)}
+                  describedBy={errors.country ? "country-error" : undefined}
+                />
+                {errors.country ? (
+                  <p id="country-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                    {errors.country}
                   </p>
                 ) : null}
               </div>
