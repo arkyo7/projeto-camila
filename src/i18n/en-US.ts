@@ -16,7 +16,7 @@ export const enUS: Dictionary = {
     universe: "Universe Beauty",
     highlights: "Highlights",
     contact: "Contact",
-    cta: "Book an appointment",
+    cta: "Talk to Camila",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     language: "Language",
@@ -339,6 +339,7 @@ export const enUS: Dictionary = {
       article: "Leading with Passion and Purpose",
       cta: "View the publication",
       imageAlt: "Publication about Camila Maia in Eurritmia Magazine",
+      expandCta: "Enlarge publication",
     },
     voice: {
       category: "Communication project",

@@ -16,7 +16,7 @@ export const esES: Dictionary = {
     universe: "Universe Beauty",
     highlights: "Destacados",
     contact: "Contacto",
-    cta: "Agendar cita",
+    cta: "Hablar con Camila",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     language: "Idioma",
@@ -339,6 +339,7 @@ export const esES: Dictionary = {
       article: "Leading with Passion and Purpose",
       cta: "Ver la publicación",
       imageAlt: "Publicación sobre Camila Maia en Eurritmia Magazine",
+      expandCta: "Ampliar publicación",
     },
     voice: {
       category: "Proyecto de comunicación",
