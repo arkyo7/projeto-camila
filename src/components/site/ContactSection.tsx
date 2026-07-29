@@ -3,6 +3,7 @@ import { Check, Copy, Instagram, MessageCircle } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { z } from "zod";
 import { CountrySelect } from "./CountrySelect";
+import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -144,13 +145,16 @@ export function ContactSection() {
   return (
     <section id="contato" className="bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.contact.eyebrow}
-          title={t.contact.title}
-          subtitle={t.contact.subtitle}
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow={t.contact.eyebrow}
+            title={t.contact.title}
+            subtitle={t.contact.subtitle}
+          />
+        </Reveal>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
+          <Reveal delay={90} className="min-w-0">
           <form
             noValidate
             onSubmit={handleSubmit}
