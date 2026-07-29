@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle } from "lucide-react";
-import { BeautyHours } from "./BeautyHours";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Monogram } from "./Monogram";
 import { navItems } from "./navigation";
@@ -15,7 +14,7 @@ export function Footer() {
   return (
     <footer className="bg-navy-soft pb-24 pt-16 text-cream/70 sm:pb-16">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div className="grid gap-12 lg:grid-cols-4">
+        <div className="grid gap-12 lg:grid-cols-3">
           <div className="min-w-0">
             <div className="flex items-center gap-3 text-cream">
               <Monogram className="h-9 w-9 shrink-0 text-gold" />
@@ -68,15 +67,6 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          <div className="min-w-0">
-            <h2 className="text-[0.65rem] uppercase tracking-[0.22em] text-gold">
-              {t.footer.hoursTitle}
-            </h2>
-            <div className="mt-5">
-              <BeautyHours tone="dark" />
-            </div>
           </div>
         </div>
 

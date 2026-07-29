@@ -1,6 +1,8 @@
+import { AsYouType, isValidPhoneNumber, parsePhoneNumberFromString } from "libphonenumber-js";
 import { Check, Copy, Instagram, MessageCircle } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { z } from "zod";
+import { CountrySelect } from "./CountrySelect";
 import { SectionHeading } from "./SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -8,6 +10,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { siteConfig } from "@/config/siteConfig";
+import { findCountry } from "@/data/countries";
 import type { ContactInterest } from "@/data/types";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -22,20 +25,33 @@ const interestKeys: ContactInterest[] = [
   "outro",
 ];
 
-type FieldName = "name" | "email" | "phone" | "city" | "interest" | "message" | "consent";
+type FieldName = "name" | "email" | "phone" | "country" | "interest" | "message" | "consent";
 
 export function ContactSection() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [errors, setErrors] = useState<Partial<Record<FieldName, string>>>({});
   const [status, setStatus] = useState<"idle" | "sending" | "ready">("idle");
   const [preparedMessage, setPreparedMessage] = useState("");
   const [copied, setCopied] = useState(false);
+  const [country, setCountry] = useState("");
+  const [dialCountry, setDialCountry] = useState("");
+  const [phone, setPhone] = useState("");
+
+  function handleCountryChange(code: string) {
+    setCountry(code);
+    setDialCountry(code);
+  }
+
+  function handlePhoneChange(value: string) {
+    const cleaned = value.replace(/[^\d\s().-]/g, "").replace(/\s{2,}/g, " ");
+    const iso = findCountry(dialCountry)?.code;
+    setPhone(iso ? new AsYouType(iso as never).input(cleaned) : cleaned);
+  }
 
   const schema = z.object({
     name: z.string().trim().min(2, t.contact.errors.name).max(120),
     email: z.string().trim().email(t.contact.errors.email).max(200),
-    phone: z.string().trim().min(6, t.contact.errors.phone).max(40),
-    city: z.string().trim().min(2, t.contact.errors.city).max(120),
+    country: z.string().min(2, t.contact.errors.country),
     interest: z.string().min(1, t.contact.errors.interest),
     message: z.string().trim().min(5, t.contact.errors.message).max(1200),
     consent: z.literal(true, { message: t.contact.errors.consent }),
@@ -48,19 +64,27 @@ export function ContactSection() {
     const parsed = schema.safeParse({
       name: String(data.get("name") ?? ""),
       email: String(data.get("email") ?? ""),
-      phone: String(data.get("phone") ?? ""),
-      city: String(data.get("city") ?? ""),
+      country,
       interest: String(data.get("interest") ?? ""),
       message: String(data.get("message") ?? ""),
       consent: data.get("consent") === "on",
     });
 
-    if (!parsed.success) {
+    const dial = findCountry(dialCountry);
+    const e164 = dial
+      ? parsePhoneNumberFromString(`+${dial.dial}${phone.replace(/\D/g, "")}`)?.number
+      : undefined;
+    const phoneValid = Boolean(dial && phone.trim() && e164 && isValidPhoneNumber(e164 as string));
+
+    if (!parsed.success || !phoneValid) {
       const next: Partial<Record<FieldName, string>> = {};
-      for (const issue of parsed.error.issues) {
-        const key = issue.path[0] as FieldName;
-        if (!next[key]) next[key] = issue.message;
+      if (!parsed.success) {
+        for (const issue of parsed.error.issues) {
+          const key = issue.path[0] as FieldName;
+          if (!next[key]) next[key] = issue.message;
+        }
       }
+      if (!phoneValid) next.phone = t.contact.errors.phoneInvalid;
       setErrors(next);
       setStatus("idle");
       return;
@@ -76,8 +100,8 @@ export function ContactSection() {
       `${l.subject}: ${subject}`,
       `${l.name}: ${v.name}`,
       `${l.email}: ${v.email}`,
-      `${l.phone}: ${v.phone}`,
-      `${l.city}: ${v.city}`,
+      `${l.country}: ${findCountry(v.country)?.names[lang] ?? v.country}`,
+      `${l.phone}: ${e164}`,
       "",
       `${l.message}: ${v.message}`,
     ].join("\n");
@@ -159,39 +183,55 @@ export function ContactSection() {
               </div>
 
               <div className="min-w-0">
-                <Label htmlFor="phone">{t.contact.fields.phone}</Label>
-                <Input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  inputMode="tel"
-                  placeholder="+39 000 000 0000"
-                  autoComplete="tel"
-                  maxLength={40}
-                  aria-invalid={Boolean(errors.phone)}
-                  aria-describedby={errors.phone ? "phone-error" : undefined}
-                  className={fieldClass}
+                <Label htmlFor="country">{t.contact.fields.country}</Label>
+                <CountrySelect
+                  id="country"
+                  value={country}
+                  onChange={handleCountryChange}
+                  invalid={Boolean(errors.country)}
+                  describedBy={errors.country ? "country-error" : undefined}
                 />
-                {errors.phone ? (
-                  <p id="phone-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.phone}
+                {errors.country ? (
+                  <p id="country-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                    {errors.country}
                   </p>
                 ) : null}
               </div>
 
               <div className="min-w-0">
-                <Label htmlFor="city">{t.contact.fields.city}</Label>
-                <Input
-                  id="city"
-                  name="city"
-                  maxLength={120}
-                  aria-invalid={Boolean(errors.city)}
-                  aria-describedby={errors.city ? "city-error" : undefined}
-                  className={fieldClass}
-                />
-                {errors.city ? (
-                  <p id="city-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.city}
+                <Label htmlFor="phone">{t.contact.fields.phone}</Label>
+                <div className="flex min-w-0 items-start gap-2">
+                  <div className="w-[7.5rem] shrink-0">
+                    <CountrySelect
+                      id="phone-code"
+                      variant="dial"
+                      value={dialCountry}
+                      onChange={setDialCountry}
+                      ariaLabel={t.contact.fields.phoneCode}
+                      placeholder="+00"
+                      invalid={Boolean(errors.phone)}
+                      describedBy={errors.phone ? "phone-error" : undefined}
+                    />
+                  </div>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    inputMode="tel"
+                    autoComplete="tel-national"
+                    maxLength={24}
+                    value={phone}
+                    onChange={(event) => handlePhoneChange(event.target.value)}
+                    placeholder={t.contact.fields.phoneNumber}
+                    aria-label={t.contact.fields.phoneNumber}
+                    aria-invalid={Boolean(errors.phone)}
+                    aria-describedby={errors.phone ? "phone-error" : undefined}
+                    className="mt-2 h-11"
+                  />
+                </div>
+                {errors.phone ? (
+                  <p id="phone-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                    {errors.phone}
                   </p>
                 ) : null}
               </div>

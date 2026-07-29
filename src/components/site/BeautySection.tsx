@@ -1,5 +1,4 @@
 import { MapPin, MessageCircle } from "lucide-react";
-import { BeautyHours } from "./BeautyHours";
 import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -108,17 +107,6 @@ export function BeautySection() {
               {t.beauty.scheduleCta}
             </a>
           </div>
-
-          {siteConfig.showBeautyHours ? (
-            <div className="mt-8 border-t border-nude/50 pt-7">
-              <h3 className="text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
-                {t.beauty.hoursTitle}
-              </h3>
-              <div className="mt-5 max-w-md">
-                <BeautyHours />
-              </div>
-            </div>
-          ) : null}
         </div>
       </div>
     </section>

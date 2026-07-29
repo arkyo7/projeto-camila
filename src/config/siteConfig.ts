@@ -57,18 +57,6 @@ export const siteConfig = {
     address: "",
     city: "",
   },
-  /** Horários da Camila Maia Beauty (0 = domingo). */
-  /** Enquanto os horários não forem confirmados, mantenha em false. */
-  showBeautyHours: false,
-  beautyHours: [
-    { day: 1, from: "09:00", to: "18:00" },
-    { day: 2, from: "09:00", to: "18:00" },
-    { day: 3, from: "09:00", to: "18:00" },
-    { day: 4, from: "09:00", to: "18:00" },
-    { day: 5, from: "09:00", to: "18:00" },
-    { day: 6, from: "09:00", to: "13:00" },
-    { day: 0, from: null, to: null },
-  ] as { day: number; from: string | null; to: string | null }[],
   legal: {
     privacy: "/politica-de-privacidade",
     terms: "/termos",
