@@ -13,11 +13,11 @@ import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
 const interestKeys: ContactInterest[] = [
+  "beauty",
+  "bsf",
+  "universe",
   "consultoria",
   "palestra",
-  "bsf",
-  "beauty",
-  "universe",
   "parcerias",
   "outro",
 ];
