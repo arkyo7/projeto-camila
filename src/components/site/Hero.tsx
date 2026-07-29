@@ -29,7 +29,11 @@ export function Hero() {
           >
             {t.hero.headline}
           </h1>
-          <div aria-hidden="true" style={{ animationDelay: "280ms" }} className="hero-in gold-rule mt-7" />
+          <div
+            aria-hidden="true"
+            style={{ animationDelay: "280ms" }}
+            className="hero-in gold-rule mt-7"
+          />
           <p
             style={{ animationDelay: "340ms" }}
             className="hero-in mt-7 max-w-xl text-base leading-relaxed text-cream/70"

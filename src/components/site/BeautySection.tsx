@@ -85,7 +85,12 @@ export function BeautySection() {
 
           <ul className="mt-10 grid gap-8 md:grid-cols-3">
             {t.beauty.differentials.map((item, i) => (
-              <Reveal as="li" key={item.title} delay={i * 90} className="border-t border-gold/30 pt-5">
+              <Reveal
+                as="li"
+                key={item.title}
+                delay={i * 90}
+                className="border-t border-gold/30 pt-5"
+              >
                 <h4 className="text-base text-navy">{item.title}</h4>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
               </Reveal>
