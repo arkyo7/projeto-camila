@@ -302,6 +302,8 @@ export function ContactSection() {
               <Checkbox
                 id="consent"
                 name="consent"
+                checked={consent}
+                onCheckedChange={(value) => setConsent(value === true)}
                 aria-describedby={errors.consent ? "consent-error" : undefined}
                 className="mt-0.5"
               />
