@@ -14,8 +14,9 @@ export function EventsSection() {
   const getText = (value: LocalizedText) => value[lang] ?? value.pt;
 
   return (
-    <section id="eventos" className="bg-cream py-20 lg:py-28">
+    <section id="eventos" className="border-t border-gold/20 bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div aria-hidden="true" className="mx-auto mb-12 h-px w-16 bg-gold/50" />
         <SectionHeading eyebrow={t.events.eyebrow} title={t.events.title} />
 
         <h3 className="mt-14 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
@@ -23,24 +24,14 @@ export function EventsSection() {
         </h3>
 
         {upcomingEvents.length > 0 ? (
-          <ul
-            className={
-              featured
-                ? "mt-6"
-                : "mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3"
-            }
-          >
+          <ul className={featured ? "mt-6" : "mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3"}>
             {upcomingEvents.map((event, i) => {
               const name = getText(event.name);
               const date = getText(event.date);
               const city = getText(event.city);
               const country = getText(event.country);
-              const description = event.description
-                ? getText(event.description)
-                : "";
-              const imageAlt = event.imageAlt
-                ? getText(event.imageAlt)
-                : name;
+              const description = event.description ? getText(event.description) : "";
+              const imageAlt = event.imageAlt ? getText(event.imageAlt) : name;
 
               const statusLabel =
                 featured && event.status === "waitlist"
@@ -52,12 +43,7 @@ export function EventsSection() {
               const whatsappMessage = t.events.interestMessage.replace("{event}", name);
 
               return (
-                <Reveal
-                  as="li"
-                  key={event.id}
-                  delay={i * 80}
-                  className="flex"
-                >
+                <Reveal as="li" key={event.id} delay={i * 80} className="flex">
                   <article
                     className={
                       featured
@@ -107,20 +93,12 @@ export function EventsSection() {
                       </h4>
 
                       <p className="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
-                        <CalendarDays
-                          size={16}
-                          aria-hidden="true"
-                          className="shrink-0 text-gold"
-                        />
+                        <CalendarDays size={16} aria-hidden="true" className="shrink-0 text-gold" />
                         {date}
                       </p>
 
                       <p className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
-                        <MapPin
-                          size={16}
-                          aria-hidden="true"
-                          className="shrink-0 text-gold"
-                        />
+                        <MapPin size={16} aria-hidden="true" className="shrink-0 text-gold" />
                         {city}, {country}
                       </p>
 
@@ -131,10 +109,7 @@ export function EventsSection() {
                       ) : null}
 
                       <a
-                        href={
-                          event.link ??
-                          whatsappLink(whatsappMessage)
-                        }
+                        href={event.link ?? whatsappLink(whatsappMessage)}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${buttonText}: ${name}`}
@@ -150,9 +125,7 @@ export function EventsSection() {
           </ul>
         ) : (
           <Reveal className="mt-6 border border-gold/30 bg-background px-7 py-14 text-center">
-            <p className="font-serif text-2xl text-navy sm:text-3xl">
-              {t.events.emptyTitle}
-            </p>
+            <p className="font-serif text-2xl text-navy sm:text-3xl">{t.events.emptyTitle}</p>
 
             <div aria-hidden="true" className="gold-rule mx-auto mt-6" />
 

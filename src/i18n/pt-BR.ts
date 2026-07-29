@@ -14,7 +14,7 @@ export const ptBR = {
     universe: "Universe Beauty",
     highlights: "Destaques",
     contact: "Contato",
-    cta: "Agendar atendimento",
+    cta: "Falar com Camila",
     openMenu: "Abrir menu",
     closeMenu: "Fechar menu",
     language: "Idioma",
@@ -337,6 +337,7 @@ export const ptBR = {
       article: "Leading with Passion and Purpose",
       cta: "Ver publicação",
       imageAlt: "Publicação sobre Camila Maia na Eurritmia Magazine",
+      expandCta: "Ampliar publicação",
     },
     voice: {
       category: "Projeto de comunicação",

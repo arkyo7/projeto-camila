@@ -1,4 +1,4 @@
-import { ChevronDown, Globe } from "lucide-react";
+import { Check, ChevronDown, Globe } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { languageOptions, useI18n } from "@/i18n";
 import { cn } from "@/lib/utils";
@@ -37,8 +37,8 @@ export function LanguageSwitcher({
 
   const trigger =
     tone === "light"
-      ? "border-cream/20 text-cream/80 hover:border-gold hover:text-gold"
-      : "border-border text-muted-foreground hover:border-gold hover:text-navy";
+      ? "text-cream/80 hover:text-gold focus-visible:ring-gold/60"
+      : "text-muted-foreground hover:text-gold focus-visible:ring-gold/60";
 
   return (
     <div ref={containerRef} className={cn("relative", className)}>
@@ -49,14 +49,13 @@ export function LanguageSwitcher({
         aria-expanded={open}
         aria-label={`${t.nav.language}: ${current.label}`}
         className={cn(
-          "inline-flex items-center gap-1.5 border px-2.5 py-2 text-xs tracking-[0.14em] transition-colors",
+          "inline-flex items-center gap-1 rounded-sm bg-transparent px-2 py-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0",
           trigger,
         )}
       >
-        <Globe size={15} aria-hidden="true" />
-        <span>{current.code2}</span>
+        <Globe size={17} aria-hidden="true" />
         <ChevronDown
-          size={13}
+          size={12}
           aria-hidden="true"
           className={cn("transition-transform", open && "rotate-180")}
         />
@@ -84,7 +83,9 @@ export function LanguageSwitcher({
                 )}
               >
                 <span>{option.label}</span>
-                <span className="text-[0.65rem] tracking-[0.18em] text-gold">{option.code2}</span>
+                {option.code === lang ? (
+                  <Check size={15} aria-hidden="true" className="shrink-0 text-gold" />
+                ) : null}
               </button>
             </li>
           ))}
