@@ -1,11 +1,9 @@
 import { ArrowUpRight, BookOpen, Mic, Sparkles } from "lucide-react";
-import { useState } from "react";
 import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { siteConfig } from "@/config/siteConfig";
 import { useI18n } from "@/i18n";
-import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 /**
  * Destaques da trajetória: podcast, publicação na revista e o projeto
@@ -15,7 +13,6 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 export function HighlightsSection() {
   const { t } = useI18n();
   const { podcast, magazine } = siteConfig.media;
-  const [magazineOpen, setMagazineOpen] = useState(false);
 
   return (
     <section id="destaques" className="bg-cream py-20 lg:py-28">
