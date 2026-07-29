@@ -80,7 +80,7 @@ export const siteConfig = {
     beauty: "",
     bsf: "",
     universeBeauty: "/images/camila/universe-beauty-logo.webp",
-    voice: "",
+    voice: "/images/camila/voz-sem-fronteiras.png",
   },
   /**
    * Destaques da trajetória. Links e imagens oficiais.
@@ -88,7 +88,7 @@ export const siteConfig = {
    */
   media: {
     podcast: { url: "", image: "" },
-    magazine: { url: "", image: "" },
+    magazine: { url: "", image: "/images/camila/revista-eurritmia.png" },
   },
   languages: ["pt", "it", "es", "en"] as const,
   defaultLanguage: "pt" as const,
