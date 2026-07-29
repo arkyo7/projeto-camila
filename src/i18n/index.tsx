@@ -64,10 +64,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     window.localStorage.setItem(STORAGE_KEY, next);
   }, []);
 
-  const value = useMemo(
-    () => ({ lang, setLang, t: dictionaries[lang] }),
-    [lang, setLang],
-  );
+  const value = useMemo(() => ({ lang, setLang, t: dictionaries[lang] }), [lang, setLang]);
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }

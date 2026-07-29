@@ -288,7 +288,15 @@ export const ptBR = {
     locationTitle: "Localização",
     locationNote:
       "Nova localização na Espanha em breve. Informações e disponibilidade pelo WhatsApp.",
-    days: ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"],
+    days: [
+      "Domingo",
+      "Segunda-feira",
+      "Terça-feira",
+      "Quarta-feira",
+      "Quinta-feira",
+      "Sexta-feira",
+      "Sábado",
+    ],
     closed: "Fechada",
     cta: "Falar pelo WhatsApp",
     message:
@@ -379,8 +387,7 @@ export const ptBR = {
   contact: {
     eyebrow: "Contato",
     title: "Como podemos ajudar você?",
-    subtitle:
-      "Escolha o assunto e inicie uma conversa direta com Camila pelo WhatsApp.",
+    subtitle: "Escolha o assunto e inicie uma conversa direta com Camila pelo WhatsApp.",
     fields: {
       name: "Nome completo",
       email: "E-mail",
@@ -437,8 +444,7 @@ export const ptBR = {
   },
   finalCta: {
     headline: "Seu próximo cuidado começa com uma conversa.",
-    text:
-      "Conheça os serviços da Camila Maia Beauty e fale diretamente com Camila para receber informações e verificar a disponibilidade.",
+    text: "Conheça os serviços da Camila Maia Beauty e fale diretamente com Camila para receber informações e verificar a disponibilidade.",
     primary: "Falar com Camila",
     secondary: "Conhecer os serviços",
   },

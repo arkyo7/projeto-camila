@@ -16,15 +16,8 @@ export function PositioningStrip() {
               key={item}
               className="flex min-w-0 items-center gap-3 py-3 md:flex-col md:items-start md:gap-3"
             >
-              <Icon
-                size={20}
-                strokeWidth={1.4}
-                aria-hidden="true"
-                className="shrink-0 text-gold"
-              />
-              <span className="min-w-0 text-sm leading-snug text-navy">
-                {item}
-              </span>
+              <Icon size={20} strokeWidth={1.4} aria-hidden="true" className="shrink-0 text-gold" />
+              <span className="min-w-0 text-sm leading-snug text-navy">{item}</span>
             </li>
           );
         })}

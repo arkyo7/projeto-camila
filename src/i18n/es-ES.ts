@@ -290,15 +290,13 @@ export const esES: Dictionary = {
       "¡Hola, Camila! Conocí Camila Maia Beauty a través del sitio y me gustaría recibir información sobre los servicios.",
     hoursTitle: "Horarios de atención",
     locationTitle: "Ubicación",
-    locationNote:
-      "Próxima ubicación en España. Información y disponibilidad por WhatsApp.",
+    locationNote: "Próxima ubicación en España. Información y disponibilidad por WhatsApp.",
     days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
     closed: "Cerrado",
     cta: "Escribir por WhatsApp",
     message:
       "¡Hola, Camila! Conocí Camila Maia Beauty por el sitio y me gustaría conversar sobre los servicios.",
-    instagramText:
-      "Sigue resultados, novedades y contenidos profesionales de Camila Maia Beauty.",
+    instagramText: "Sigue resultados, novedades y contenidos profesionales de Camila Maia Beauty.",
     instagramCta: "Seguir en Instagram",
   },
   sponsors: {
@@ -383,8 +381,7 @@ export const esES: Dictionary = {
   contact: {
     eyebrow: "Contacto",
     title: "¿Cómo podemos ayudarte?",
-    subtitle:
-      "Elige el tema e inicia una conversación directa con Camila por WhatsApp.",
+    subtitle: "Elige el tema e inicia una conversación directa con Camila por WhatsApp.",
     fields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -441,8 +438,7 @@ export const esES: Dictionary = {
   },
   finalCta: {
     headline: "Tu próximo cuidado comienza con una conversación.",
-    text:
-      "Conoce los servicios de Camila Maia Beauty y habla directamente con Camila para recibir información y verificar la disponibilidad.",
+    text: "Conoce los servicios de Camila Maia Beauty y habla directamente con Camila para recibir información y verificar la disponibilidad.",
     primary: "Hablar con Camila",
     secondary: "Conocer los servicios",
   },

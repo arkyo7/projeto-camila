@@ -69,9 +69,7 @@ export function Hero() {
           />
           <div className="relative mt-[-1px] border border-gold/25 bg-navy-soft px-6 py-5">
             <p className="font-serif text-xl text-cream">{t.hero.badgeName}</p>
-            <p className="mt-1 text-sm leading-relaxed text-cream/60">
-              {t.hero.badgeRole}
-            </p>
+            <p className="mt-1 text-sm leading-relaxed text-cream/60">{t.hero.badgeRole}</p>
           </div>
         </div>
       </div>

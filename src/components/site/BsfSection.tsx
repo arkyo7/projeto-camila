@@ -50,10 +50,7 @@ export function BsfSection() {
   const { t } = useI18n();
 
   return (
-    <section
-      id="beleza-sem-fronteiras"
-      className="relative overflow-hidden bg-navy py-20 lg:py-28"
-    >
+    <section id="beleza-sem-fronteiras" className="relative overflow-hidden bg-navy py-20 lg:py-28">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-60"
@@ -64,19 +61,13 @@ export function BsfSection() {
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.bsf.eyebrow}
-          title={t.bsf.title}
-          tone="light"
-        />
+        <SectionHeading eyebrow={t.bsf.eyebrow} title={t.bsf.title} tone="light" />
 
         <p className="mt-8 max-w-3xl font-serif text-2xl leading-snug text-gold-light sm:text-3xl">
           {t.bsf.headline}
         </p>
 
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream/70">
-          {t.bsf.text}
-        </p>
+        <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream/70">{t.bsf.text}</p>
 
         <ul className="mt-12 grid gap-px border border-cream/10 sm:grid-cols-2 lg:grid-cols-4">
           {t.bsf.pillars.map((pillar, i) => (
@@ -90,9 +81,7 @@ export function BsfSection() {
 
               <div aria-hidden="true" className="gold-rule mt-3" />
 
-              <p className="mt-4 text-sm leading-relaxed text-cream/60">
-                {pillar.description}
-              </p>
+              <p className="mt-4 text-sm leading-relaxed text-cream/60">{pillar.description}</p>
             </Reveal>
           ))}
         </ul>
@@ -110,11 +99,7 @@ export function BsfSection() {
             };
 
             return (
-              <Reveal
-                key={image.id}
-                delay={i * 60}
-                className="mb-4 break-inside-avoid"
-              >
+              <Reveal key={image.id} delay={i * 60} className="mb-4 break-inside-avoid">
                 <BrandImage
                   src={image.src}
                   alt={image.alt}

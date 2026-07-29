@@ -33,11 +33,7 @@ export function SolutionsSection() {
                 <ul className="mt-3 flex-1 space-y-2">
                   {item.themes.map((theme) => (
                     <li key={theme} className="flex gap-2 text-sm text-navy/80">
-                      <Check
-                        size={15}
-                        aria-hidden="true"
-                        className="mt-1 shrink-0 text-gold"
-                      />
+                      <Check size={15} aria-hidden="true" className="mt-1 shrink-0 text-gold" />
                       <span className="min-w-0">{theme}</span>
                     </li>
                   ))}

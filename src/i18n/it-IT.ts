@@ -32,7 +32,8 @@ export const itIT: Dictionary = {
     ctaPrimary: "Scopri i servizi",
     ctaSecondary: "Parla con Camila",
     badgeName: "Camila Maia",
-    badgeRole: "Professionista della bellezza e imprenditrice brasiliana con un percorso internazionale.",
+    badgeRole:
+      "Professionista della bellezza e imprenditrice brasiliana con un percorso internazionale.",
     message:
       "Ciao Camila! Ho conosciuto Camila Maia Beauty attraverso il sito e vorrei ricevere informazioni sui servizi.",
     photoAlt: "Camila Maia, Camila Maia Beauty",
@@ -297,8 +298,7 @@ export const itIT: Dictionary = {
     cta: "Scrivi su WhatsApp",
     message:
       "Ciao Camila! Ho conosciuto Camila Maia Beauty dal sito e vorrei parlare dei trattamenti.",
-    instagramText:
-      "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
+    instagramText: "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
     instagramCta: "Segui su Instagram",
   },
   sponsors: {
@@ -383,8 +383,7 @@ export const itIT: Dictionary = {
   contact: {
     eyebrow: "Contatti",
     title: "Come possiamo aiutarti?",
-    subtitle:
-      "Scegli l'argomento e inizia una conversazione diretta con Camila su WhatsApp.",
+    subtitle: "Scegli l'argomento e inizia una conversazione diretta con Camila su WhatsApp.",
     fields: {
       name: "Nome e cognome",
       email: "E-mail",
@@ -441,8 +440,7 @@ export const itIT: Dictionary = {
   },
   finalCta: {
     headline: "La tua prossima coccola inizia da una conversazione.",
-    text:
-      "Scopri i servizi di Camila Maia Beauty e parla direttamente con Camila per ricevere informazioni e verificare la disponibilità.",
+    text: "Scopri i servizi di Camila Maia Beauty e parla direttamente con Camila per ricevere informazioni e verificare la disponibilità.",
     primary: "Parla con Camila",
     secondary: "Scopri i servizi",
   },
