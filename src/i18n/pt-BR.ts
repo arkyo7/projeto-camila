@@ -433,9 +433,6 @@ export const ptBR = {
       email: "E-mail",
       phone: "Telefone",
       country: "País",
-      countryPlaceholder: "Selecione o país",
-      countrySearch: "Pesquisar país",
-      countryEmpty: "Nenhum país encontrado.",
       message: "Mensagem",
     },
     intro: "Olá, Camila! Conheci seu trabalho pelo site.",
@@ -450,7 +447,7 @@ export const ptBR = {
   },
   finalCta: {
     headline: "Seu próximo cuidado começa com uma conversa.",
-    text: "Conheça os serviços da Camila Maia Beauty e fale diretamente com Camila para receber informações e verificar a disponibilidade.",
+    text: "Entre em contato com Camila para tirar dúvidas, conhecer os atendimentos e verificar a disponibilidade.",
     primary: "Falar com Camila",
   },
   footer: {

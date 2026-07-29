@@ -429,9 +429,6 @@ export const enUS: Dictionary = {
       email: "Email",
       phone: "Phone",
       country: "Country",
-      countryPlaceholder: "Select your country",
-      countrySearch: "Search country",
-      countryEmpty: "No country found.",
       message: "Message",
     },
     intro: "Hi, Camila! I found your work through the website.",
@@ -446,7 +443,7 @@ export const enUS: Dictionary = {
   },
   finalCta: {
     headline: "Your next beauty moment starts with a conversation.",
-    text: "Explore Camila Maia Beauty's services and talk directly with Camila to get information and check availability.",
+    text: "Get in touch with Camila to ask questions, learn about the treatments and check availability.",
     primary: "Talk to Camila",
   },
   footer: {

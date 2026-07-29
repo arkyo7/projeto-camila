@@ -439,9 +439,6 @@ export const itIT: Dictionary = {
       email: "E-mail",
       phone: "Telefono",
       country: "Paese",
-      countryPlaceholder: "Seleziona il paese",
-      countrySearch: "Cerca un paese",
-      countryEmpty: "Nessun paese trovato.",
       message: "Messaggio",
     },
     intro: "Ciao Camila! Ho conosciuto il tuo lavoro dal sito.",
@@ -456,7 +453,7 @@ export const itIT: Dictionary = {
   },
   finalCta: {
     headline: "La tua prossima coccola inizia da una conversazione.",
-    text: "Scopri i servizi di Camila Maia Beauty e parla direttamente con Camila per ricevere informazioni e verificare la disponibilità.",
+    text: "Contatta Camila per chiarire dubbi, conoscere i trattamenti e verificare la disponibilità.",
     primary: "Parla con Camila",
   },
   footer: {

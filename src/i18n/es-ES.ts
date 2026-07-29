@@ -438,9 +438,6 @@ export const esES: Dictionary = {
       email: "Correo electrónico",
       phone: "Teléfono",
       country: "País",
-      countryPlaceholder: "Selecciona el país",
-      countrySearch: "Buscar país",
-      countryEmpty: "No se encontró ningún país.",
       message: "Mensaje",
     },
     intro: "¡Hola, Camila! Conocí tu trabajo por el sitio web.",
@@ -455,7 +452,7 @@ export const esES: Dictionary = {
   },
   finalCta: {
     headline: "Tu próximo cuidado comienza con una conversación.",
-    text: "Conoce los servicios de Camila Maia Beauty y habla directamente con Camila para recibir información y verificar la disponibilidad.",
+    text: "Ponte en contacto con Camila para resolver dudas, conocer los servicios y verificar la disponibilidad.",
     primary: "Hablar con Camila",
   },
   footer: {
