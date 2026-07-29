@@ -306,14 +306,6 @@ export function ContactSection() {
           <aside className="min-w-0 border border-border bg-background p-7">
             <h3 className="text-lg text-navy">{t.contact.directTitle}</h3>
             <div aria-hidden="true" className="gold-rule mt-3" />
-            <a
-              href={whatsappLink(t.beauty.scheduleMessage)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex w-full items-center justify-center bg-gold px-6 py-3.5 text-sm font-medium text-navy transition-colors hover:bg-gold-light"
-            >
-              {t.beauty.scheduleCta}
-            </a>
             <ul className="mt-6 space-y-4 text-sm">
               <li>
                 <a
@@ -349,9 +341,6 @@ export function ContactSection() {
                 </li>
               ))}
             </ul>
-            <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
-              {siteConfig.location.country}
-            </p>
           </aside>
         </div>
       </div>

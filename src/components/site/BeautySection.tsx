@@ -102,7 +102,7 @@ export function BeautySection() {
               href={whatsappLink(t.beauty.scheduleMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-2 bg-gold px-8 py-4 text-sm font-medium uppercase tracking-[0.14em] text-navy transition-colors hover:bg-gold-light"
+              className="inline-flex w-fit shrink-0 items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium uppercase tracking-[0.14em] text-navy transition-colors hover:bg-gold-light"
             >
               <MessageCircle size={15} aria-hidden="true" className="text-navy" />
               {t.beauty.scheduleCta}
