@@ -2,11 +2,13 @@ import type { Dictionary } from "./pt-BR";
 
 export const itIT: Dictionary = {
   meta: {
-    title: "Camila Maia | Consulenza, Conferenze e Beleza Sem Fronteiras",
+    title: "Camila Maia Beauty | Ciglia, Sopracciglia e Bellezza Personalizzata",
     description:
-      "Consulenza, conferenze, eventi e connessioni per donne brasiliane imprenditrici della bellezza e dell'estetica. Scopri Camila Maia e il progetto Beleza Sem Fronteiras.",
+      "Scopri i trattamenti per ciglia e sopracciglia di Camila Maia Beauty, il percorso internazionale di Camila Maia e i suoi progetti nel mercato della bellezza.",
   },
   nav: {
+    services: "Servizi",
+    projects: "Progetti",
     home: "Home",
     about: "Chi è",
     solutions: "Soluzioni",
@@ -23,23 +25,25 @@ export const itIT: Dictionary = {
     languageOpen: "Seleziona la lingua",
   },
   hero: {
-    eyebrow: "CAMILA MAIA • BELLEZZA • IMPRENDITORIALITÀ • RESPIRO INTERNAZIONALE",
-    headline: "Bellezza, leadership e scopo costruiti oltre i confini.",
+    eyebrow: "CAMILA MAIA BEAUTY • TRATTAMENTI PERSONALIZZATI",
+    headline: "Valorizza la tua bellezza con cura, tecnica e attenzione ai dettagli.",
     subheadline:
-      "Camila Maia è un'imprenditrice brasiliana che collega bellezza, business, esperienze e opportunità tra il Brasile e l'Europa.",
-    ctaPrimary: "Scopri Camila Maia Beauty",
-    ctaSecondary: "Scopri il suo percorso",
+      "Trattamenti personalizzati per ciglia e sopracciglia, pensati per valorizzare la tua espressione e offrirti un'esperienza di bellezza dedicata a te.",
+    ctaPrimary: "Scopri i servizi",
+    ctaSecondary: "Parla con Camila",
     badgeName: "Camila Maia",
-    badgeRole: "Imprenditrice del settore beauty attiva tra il Brasile e l'Europa.",
-    photoAlt: "Camila Maia, consulente e ideatrice di Beleza Sem Fronteiras",
+    badgeRole: "Professionista della bellezza e imprenditrice brasiliana con un percorso internazionale.",
+    message:
+      "Ciao Camila! Ho conosciuto Camila Maia Beauty attraverso il sito e vorrei ricevere informazioni sui servizi.",
+    photoAlt: "Camila Maia, Camila Maia Beauty",
   },
   pillars: {
     items: [
-      "Consulenza e mentoring",
-      "Conferenze ed eventi",
-      "Connessioni internazionali",
-      "Mercato della bellezza",
-      "Camila Maia Beauty",
+      "Trattamenti personalizzati",
+      "Sguardo e ciglia",
+      "Sopracciglia",
+      "Percorso internazionale",
+      "Contatto diretto su WhatsApp",
     ],
   },
   paths: {
@@ -104,8 +108,7 @@ export const itIT: Dictionary = {
       "Originaria di Fortaleza, nel Ceará (nordest del Brasile), Camila Maia è laureata in Gestione del Marketing e ha costruito parte della sua esperienza professionale lavorando in aziende multinazionali e nel rapporto con il pubblico.",
       "Nel 2018 ha lasciato il Brasile per un'esperienza di studio in Irlanda, dando inizio a un percorso internazionale che l'ha poi portata a stabilirsi in Italia.",
       "Il suo ingresso nel mondo della bellezza ha rappresentato una trasformazione personale e professionale. Certificata in Brasile e all'estero, Camila si è specializzata in trattamenti estetici del viso e benessere.",
-      "Appassionata di apprendere, condividere esperienze e connettere persone, oggi mette il suo percorso al servizio delle professioniste brasiliane che desiderano crescere attraverso la bellezza, l'imprenditoria e nuove opportunità.",
-      "Oltre alla sua attività come consulente, relatrice e professionista della bellezza, Camila Maia è anche CEO di Universe Beauty, un marchio con sede in Veneto, Italia, dedicato al mondo della bellezza, della cura e dell'autostima.",
+      "Appassionata di apprendere e di connettere persone, Camila ha ideato Beleza Sem Fronteiras ed è CEO di Universe Beauty, marchio dedicato alla cura, alla bellezza e all'autostima.",
     ],
     quote:
       "Credo nel potenziale delle professioniste brasiliane di trasformare la propria vita e il mondo attraverso la bellezza.",
@@ -266,38 +269,36 @@ export const itIT: Dictionary = {
     title: "Storie che attraversano i confini",
   },
   beauty: {
-    eyebrow: "Attività principale • Servizio in presenza",
+    eyebrow: "Camila Maia Beauty • Trattamenti personalizzati",
     title: "Camila Maia Beauty",
     subtitle: "Bellezza, cura ed esperienza personalizzata.",
     intro:
-      "Camila Maia Beauty è l'attività principale di Camila Maia, dedicata a trattamenti di bellezza svolti in modo individuale, attento e personalizzato in Italia.",
+      "Trattamenti svolti in modo individuale e attento, con cura per lo stile, le preferenze e le esigenze di ogni cliente.",
     logoAlt: "Logo di Camila Maia Beauty",
-    servicesTitle: "Servizi principali",
+    servicesTitle: "Servizi",
+    serviceCta: "Richiedi informazioni",
+    durationLabel: "Durata",
+    priceLabel: "Prezzo",
     differentialsTitle: "Punti di forza",
     differentials: [
-      "Trattamento individuale e personalizzato per ogni cliente.",
-      "Professionista certificata in Brasile e all'estero in bellezza del viso e benessere.",
-      "Prenotazione diretta e assistenza su WhatsApp.",
+      "Trattamento individuale e personalizzato.",
+      "Formazione ed esperienza maturate in Brasile e in Europa.",
+      "Contatto diretto e assistenza su WhatsApp.",
     ],
-    scheduleCta: "Prenota un appuntamento",
+    scheduleCta: "Parla con Camila su WhatsApp",
     scheduleMessage:
-      "Ciao Camila! Ho conosciuto Camila Maia Beauty dal tuo sito e vorrei ricevere informazioni sui servizi e sugli orari disponibili.",
-    categories: [
-      { title: "Sguardo e ciglia", description: "Trattamenti dedicati a valorizzare lo sguardo." },
-      { title: "Sopracciglia", description: "Cura e design pensati per ogni viso." },
-      {
-        title: "Trattamento beauty personalizzato",
-        description: "Servizi definiti in base all'esigenza di ogni cliente.",
-      },
-    ],
+      "Ciao Camila! Ho conosciuto Camila Maia Beauty attraverso il sito e vorrei ricevere informazioni sui servizi.",
     hoursTitle: "Orari di apertura",
     locationTitle: "Dove",
+    locationNote:
+      "Nuova sede in Spagna prossimamente. Informazioni e disponibilità tramite WhatsApp.",
     days: ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
     closed: "Chiuso",
-    cta: "Prenota su WhatsApp",
+    cta: "Scrivi su WhatsApp",
     message:
-      "Ciao Camila! Ho conosciuto Camila Maia Beauty dal sito e vorrei verificare gli orari disponibili per un appuntamento.",
-    instagramText: "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
+      "Ciao Camila! Ho conosciuto Camila Maia Beauty dal sito e vorrei parlare dei trattamenti.",
+    instagramText:
+      "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
     instagramCta: "Segui su Instagram",
   },
   sponsors: {
@@ -381,8 +382,9 @@ export const itIT: Dictionary = {
   },
   contact: {
     eyebrow: "Contatti",
-    title: "Qual è il prossimo passo del tuo percorso?",
-    subtitle: "Scegli l'argomento per iniziare una conversazione diretta con Camila.",
+    title: "Come possiamo aiutarti?",
+    subtitle:
+      "Scegli l'argomento e inizia una conversazione diretta con Camila su WhatsApp.",
     fields: {
       name: "Nome e cognome",
       email: "E-mail",
@@ -438,10 +440,11 @@ export const itIT: Dictionary = {
     socialAria: "Apri l'Instagram di {brand} in una nuova scheda",
   },
   finalCta: {
-    headline: "Il tuo prossimo passo può iniziare da una nuova connessione.",
-    text: "Parla con Camila e scopri quale percorso ha più senso per il momento della tua carriera, della tua attività o del tuo evento.",
+    headline: "La tua prossima coccola inizia da una conversazione.",
+    text:
+      "Scopri i servizi di Camila Maia Beauty e parla direttamente con Camila per ricevere informazioni e verificare la disponibilità.",
     primary: "Parla con Camila",
-    secondary: "Scopri Beleza Sem Fronteiras",
+    secondary: "Scopri i servizi",
   },
   footer: {
     tagline: "Camila Maia — Consulenza, conferenze, connessioni e bellezza senza confini.",
@@ -464,7 +467,6 @@ export const itIT: Dictionary = {
       body: [
         "Questa pagina descrive come vengono utilizzati i dati inviati tramite questo sito.",
         "Le informazioni inserite nel modulo di contatto sono utilizzate esclusivamente per rispondere alla richiesta inviata. Il sito non conserva dati su server propri: le informazioni vengono inoltrate direttamente al WhatsApp di Camila Maia.",
-        "[Spazio riservato ai dati del titolare del trattamento, base giuridica, tempi di conservazione e canale per l'esercizio dei diritti, da fornire.]",
       ],
     },
     terms: {
@@ -472,7 +474,6 @@ export const itIT: Dictionary = {
       body: [
         "L'uso di questo sito comporta l'accettazione dei termini descritti in questa pagina.",
         "I contenuti pubblicati hanno carattere informativo. Formati, disponibilità, importi e condizioni di consulenze, mentoring, conferenze e trattamenti vengono presentati singolarmente, in base a ciascuna richiesta.",
-        "[Spazio riservato a condizioni contrattuali, politica di cancellazione e dati fiscali, da fornire.]",
       ],
     },
     notice: {
@@ -480,7 +481,6 @@ export const itIT: Dictionary = {
       body: [
         "Tutti i contenuti testuali e visivi di questo sito appartengono a Camila Maia, salvo diversa indicazione.",
         "Le informazioni pubblicate non costituiscono garanzia di risultati. Ogni percorso professionale dipende da fattori individuali.",
-        "[Spazio riservato a identificazione legale, sede e informazioni fiscali, da fornire.]",
       ],
     },
   },
