@@ -70,7 +70,7 @@ export const siteConfig = {
     beauty: "",
     bsf: "",
     universeBeauty: "/images/camila/universe-beauty-logo.webp",
-    voice: "/images/camila/voz-sem-fronteiras.png",
+    voice: "/images/camila/voz-sem-fronteiras.webp",
   },
   /**
    * Destaques da trajetória. Links e imagens oficiais.
@@ -80,7 +80,7 @@ export const siteConfig = {
     podcast: { url: "https://www.youtube.com/watch?v=RPm1bQXO7aU", image: "" },
     magazine: {
       url: "https://heyzine.com/flip-book/818ff816f3.html#page/32",
-      image: "/images/camila/revista-eurritmia.png",
+      image: "/images/camila/revista-eurritmia.webp",
     },
   },
   languages: ["pt", "it", "es", "en"] as const,
