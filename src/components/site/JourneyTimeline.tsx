@@ -40,9 +40,7 @@ export function JourneyTimeline({
             {item.marker}
           </p>
           <h3 className="mt-2 text-xl leading-snug text-navy">{item.title}</h3>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-            {item.description}
-          </p>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
         </Reveal>
       ))}
     </ol>

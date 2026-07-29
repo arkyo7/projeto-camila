@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { BrandImage } from "./BrandImage";
 import { useI18n } from "@/i18n";
+import { whatsappLink } from "@/lib/whatsapp";
 
 export function Hero() {
   const { t } = useI18n();
@@ -37,7 +38,9 @@ export function Hero() {
               <ArrowRight size={16} aria-hidden="true" />
             </a>
             <a
-              href="#sobre"
+              href={whatsappLink(t.hero.message)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center border border-cream/25 px-7 py-3.5 text-sm font-medium text-cream transition-colors hover:border-gold hover:text-gold"
             >
               {t.hero.ctaSecondary}
@@ -66,9 +69,7 @@ export function Hero() {
           />
           <div className="relative mt-[-1px] border border-gold/25 bg-navy-soft px-6 py-5">
             <p className="font-serif text-xl text-cream">{t.hero.badgeName}</p>
-            <p className="mt-1 text-sm leading-relaxed text-cream/60">
-              {t.hero.badgeRole}
-            </p>
+            <p className="mt-1 text-sm leading-relaxed text-cream/60">{t.hero.badgeRole}</p>
           </div>
         </div>
       </div>

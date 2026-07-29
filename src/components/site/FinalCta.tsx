@@ -30,7 +30,7 @@ export function FinalCta() {
             <ArrowRight size={16} aria-hidden="true" />
           </a>
           <a
-            href="#beleza-sem-fronteiras"
+            href="#beauty"
             className="inline-flex items-center justify-center border border-cream/25 px-7 py-3.5 text-sm font-medium text-cream transition-colors hover:border-gold hover:text-gold"
           >
             {t.finalCta.secondary}

@@ -32,11 +32,7 @@ export function Footer() {
             <ul className="mt-5 space-y-2.5 text-sm">
               {navItems.map((item) => (
                 <li key={item.id}>
-                  <Link
-                    to="/"
-                    hash={item.id}
-                    className="transition-colors hover:text-gold"
-                  >
+                  <Link to="/" hash={item.id} className="transition-colors hover:text-gold">
                     {t.nav[item.key]}
                   </Link>
                 </li>

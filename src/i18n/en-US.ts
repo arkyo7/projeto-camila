@@ -2,11 +2,13 @@ import type { Dictionary } from "./pt-BR";
 
 export const enUS: Dictionary = {
   meta: {
-    title: "Camila Maia | Consulting, Talks and Beleza Sem Fronteiras",
+    title: "Camila Maia Beauty | Lashes, Brows and Personalized Beauty",
     description:
-      "Consulting, talks, events and connections for Brazilian women entrepreneurs in beauty and aesthetics. Meet Camila Maia and the Beleza Sem Fronteiras project.",
+      "Discover Camila Maia Beauty's lash and brow services, Camila Maia's international journey and her projects in the beauty industry.",
   },
   nav: {
+    services: "Services",
+    projects: "Projects",
     home: "Home",
     about: "About",
     solutions: "Solutions",
@@ -23,23 +25,25 @@ export const enUS: Dictionary = {
     languageOpen: "Select language",
   },
   hero: {
-    eyebrow: "CAMILA MAIA • BEAUTY • ENTREPRENEURSHIP • INTERNATIONAL PRESENCE",
-    headline: "Beauty, leadership and purpose built beyond borders.",
+    eyebrow: "CAMILA MAIA BEAUTY • PERSONALIZED SERVICE",
+    headline: "Enhance your beauty with care, technique, and attention to detail.",
     subheadline:
-      "Camila Maia is a Brazilian entrepreneur who connects beauty, business, experiences and opportunities between Brazil and Europe.",
-    ctaPrimary: "Discover Camila Maia Beauty",
-    ctaSecondary: "Get to know her journey",
+      "Personalized lash and brow services designed to enhance your expression and offer a beauty experience dedicated to you.",
+    ctaPrimary: "Explore the services",
+    ctaSecondary: "Talk to Camila",
     badgeName: "Camila Maia",
-    badgeRole: "Beauty industry entrepreneur active between Brazil and Europe.",
-    photoAlt: "Camila Maia, consultant and creator of Beleza Sem Fronteiras",
+    badgeRole: "Beauty professional and Brazilian entrepreneur with an international journey.",
+    message:
+      "Hello, Camila! I discovered Camila Maia Beauty through the website and would like more information about the services.",
+    photoAlt: "Camila Maia, Camila Maia Beauty",
   },
   pillars: {
     items: [
-      "Consulting and mentoring",
-      "Talks and events",
-      "International connections",
-      "Beauty market",
-      "Camila Maia Beauty",
+      "Personalized service",
+      "Eyes and lashes",
+      "Eyebrows",
+      "International journey",
+      "Direct contact on WhatsApp",
     ],
   },
   paths: {
@@ -103,8 +107,7 @@ export const enUS: Dictionary = {
       "Born in Fortaleza, Ceará, in Brazil's Northeast, Camila Maia holds a degree in Marketing Management and built part of her professional experience working at multinational companies and in customer service.",
       "In 2018, she left Brazil to take part in an exchange program in Ireland, starting an international journey that later led her to settle in Italy.",
       "Her entry into the beauty world represented a personal and professional transformation. Certified in Brazil and abroad, Camila specialized in facial beautification and wellness.",
-      "Passionate about learning, sharing experiences and connecting people, she now uses her journey to encourage and guide Brazilian professionals who want to grow through beauty, entrepreneurship and new opportunities.",
-      "Beyond her work as a consultant, speaker and beauty professional, Camila Maia is also the CEO of Universe Beauty, a brand based in Veneto, Italy, focused on beauty, care and self-esteem.",
+      "Passionate about learning and connecting people, Camila also created Beleza Sem Fronteiras and leads Universe Beauty as CEO, a brand dedicated to care, beauty and self-esteem.",
     ],
     quote:
       "I believe in the potential of Brazilian professionals to transform their lives and the world through beauty.",
@@ -257,37 +260,33 @@ export const enUS: Dictionary = {
     title: "Stories that cross borders",
   },
   beauty: {
-    eyebrow: "Main business • In-person appointments",
+    eyebrow: "Camila Maia Beauty • Personalized service",
     title: "Camila Maia Beauty",
     subtitle: "Beauty, care and a personalized experience.",
     intro:
-      "Camila Maia Beauty is Camila Maia's main business, dedicated to beauty services provided individually, carefully and in a personalized way in Italy.",
+      "Services provided individually and carefully, with attention to the style, preferences and needs of each client.",
     logoAlt: "Camila Maia Beauty logo",
-    servicesTitle: "Main services",
+    servicesTitle: "Services",
+    serviceCta: "Request information",
+    durationLabel: "Duration",
+    priceLabel: "Price",
     differentialsTitle: "Differentials",
     differentials: [
-      "Individual, personalized service for each client.",
-      "Certified professional in Brazil and abroad in facial beautification and wellness.",
-      "Direct booking and follow-up via WhatsApp.",
+      "Individual, personalized service.",
+      "Training and experience built in Brazil and in Europe.",
+      "Direct contact and follow-up via WhatsApp.",
     ],
-    scheduleCta: "Book an appointment",
+    scheduleCta: "Talk to Camila on WhatsApp",
     scheduleMessage:
-      "Hi, Camila! I found Camila Maia Beauty through your website and I'd like to receive information about services and available times.",
-    categories: [
-      { title: "Eyes and lashes", description: "Services dedicated to enhancing your eyes." },
-      { title: "Eyebrows", description: "Care and design tailored to each face." },
-      {
-        title: "Personalized beauty service",
-        description: "Services defined according to each client's needs.",
-      },
-    ],
+      "Hello, Camila! I discovered Camila Maia Beauty through the website and would like more information about the services.",
     hoursTitle: "Business hours",
     locationTitle: "Location",
+    locationNote: "New location in Spain coming soon. Information and availability via WhatsApp.",
     days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     closed: "Closed",
-    cta: "Book via WhatsApp",
+    cta: "Message on WhatsApp",
     message:
-      "Hi, Camila! I found Camila Maia Beauty through the website and I'd like to check available times for an appointment.",
+      "Hello, Camila! I discovered Camila Maia Beauty through the website and would like to talk about the services.",
     instagramText: "Follow results, news and professional content from Camila Maia Beauty.",
     instagramCta: "Follow on Instagram",
   },
@@ -372,8 +371,8 @@ export const enUS: Dictionary = {
   },
   contact: {
     eyebrow: "Contact",
-    title: "What's the next step in your journey?",
-    subtitle: "Select the subject to start a more direct conversation with Camila.",
+    title: "How can we help you?",
+    subtitle: "Choose a topic and start a direct conversation with Camila on WhatsApp.",
     fields: {
       name: "Full name",
       email: "Email",
@@ -429,10 +428,10 @@ export const enUS: Dictionary = {
     socialAria: "Open {brand}'s Instagram in a new tab",
   },
   finalCta: {
-    headline: "Your next step can start with a new connection.",
-    text: "Talk with Camila and find out which path makes the most sense for the moment your career, business or event is in.",
-    primary: "Talk with Camila",
-    secondary: "Discover Beleza Sem Fronteiras",
+    headline: "Your next beauty moment starts with a conversation.",
+    text: "Explore Camila Maia Beauty's services and talk directly with Camila to get information and check availability.",
+    primary: "Talk to Camila",
+    secondary: "Explore the services",
   },
   footer: {
     tagline: "Camila Maia — Consulting, talks, connections and beauty without borders.",
@@ -455,7 +454,6 @@ export const enUS: Dictionary = {
       body: [
         "This page describes how data submitted through this website is used.",
         "Information filled in on the contact form is used exclusively to respond to the request sent. The website does not store data on its own servers: the information is forwarded directly to Camila Maia's WhatsApp.",
-        "[Placeholder for the data controller's details, legal basis, retention period and channel for exercising rights, to be provided.]",
       ],
     },
     terms: {
@@ -463,7 +461,6 @@ export const enUS: Dictionary = {
       body: [
         "Use of this website implies agreement with the terms described on this page.",
         "The content presented is for informational purposes. Formats, availability, prices and terms for consulting, mentoring, talks and appointments are presented individually, according to each request.",
-        "[Placeholder for contractual terms, cancellation policy and tax information, to be provided.]",
       ],
     },
     notice: {
@@ -471,7 +468,6 @@ export const enUS: Dictionary = {
       body: [
         "All textual and visual content on this website belongs to Camila Maia, unless otherwise stated.",
         "The information published does not constitute a guarantee of results. Each professional journey depends on individual factors.",
-        "[Placeholder for legal identification, registered office and tax information, to be provided.]",
       ],
     },
   },

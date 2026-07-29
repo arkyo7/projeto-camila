@@ -1,7 +1,7 @@
-import { Compass, Globe2, Mic2, Sparkles, Users } from "lucide-react";
+import { Eye, Globe2, HeartHandshake, MessageCircle, Sparkles, WandSparkles } from "lucide-react";
 import { useI18n } from "@/i18n";
 
-const icons = [Compass, Mic2, Globe2, Sparkles, Users];
+const icons = [HeartHandshake, Eye, WandSparkles, Globe2, MessageCircle];
 
 export function PositioningStrip() {
   const { t } = useI18n();
@@ -16,15 +16,8 @@ export function PositioningStrip() {
               key={item}
               className="flex min-w-0 items-center gap-3 py-3 md:flex-col md:items-start md:gap-3"
             >
-              <Icon
-                size={20}
-                strokeWidth={1.4}
-                aria-hidden="true"
-                className="shrink-0 text-gold"
-              />
-              <span className="min-w-0 text-sm leading-snug text-navy">
-                {item}
-              </span>
+              <Icon size={20} strokeWidth={1.4} aria-hidden="true" className="shrink-0 text-gold" />
+              <span className="min-w-0 text-sm leading-snug text-navy">{item}</span>
             </li>
           );
         })}

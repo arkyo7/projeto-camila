@@ -13,10 +13,7 @@ export function TestimonialsSection() {
   return (
     <section id="depoimentos" className="bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.testimonials.eyebrow}
-          title={t.testimonials.title}
-        />
+        <SectionHeading eyebrow={t.testimonials.eyebrow} title={t.testimonials.title} />
         <ul className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((item, i) => (
             <Reveal as="li" key={item.id} delay={i * 80}>
@@ -24,9 +21,7 @@ export function TestimonialsSection() {
                 <blockquote className="flex-1 text-base leading-relaxed text-navy">
                   “{item.quote}”
                 </blockquote>
-                {item.result ? (
-                  <p className="mt-5 text-sm text-gold">{item.result}</p>
-                ) : null}
+                {item.result ? <p className="mt-5 text-sm text-gold">{item.result}</p> : null}
                 <figcaption className="mt-6 flex items-center gap-4 border-t border-border pt-5">
                   <BrandImage
                     src={item.photo}

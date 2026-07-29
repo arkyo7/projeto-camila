@@ -78,11 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Camila Maia | Consultoria, Palestras e Beleza Sem Fronteiras" },
+      { title: "Camila Maia Beauty | Cílios, Sobrancelhas e Beleza Personalizada" },
       {
         name: "description",
         content:
-          "Consultoria, palestras, eventos e conexões para mulheres brasileiras empreendedoras da beleza e da estética.",
+          "Atendimentos de cílios e sobrancelhas da Camila Maia Beauty e a trajetória internacional de Camila Maia no mercado da beleza.",
       },
       { name: "author", content: "Camila Maia" },
       { property: "og:site_name", content: "Camila Maia" },

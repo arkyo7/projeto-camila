@@ -58,6 +58,8 @@ export const siteConfig = {
     city: "",
   },
   /** Horários da Camila Maia Beauty (0 = domingo). */
+  /** Enquanto os horários não forem confirmados, mantenha em false. */
+  showBeautyHours: false,
   beautyHours: [
     { day: 1, from: "09:00", to: "18:00" },
     { day: 2, from: "09:00", to: "18:00" },
@@ -87,8 +89,11 @@ export const siteConfig = {
    * Enquanto vazios, os botões correspondentes ficam ocultos.
    */
   media: {
-    podcast: { url: "", image: "" },
-    magazine: { url: "", image: "/images/camila/revista-eurritmia.png" },
+    podcast: { url: "https://www.youtube.com/watch?v=RPm1bQXO7aU", image: "" },
+    magazine: {
+      url: "https://heyzine.com/flip-book/818ff816f3.html#page/32",
+      image: "/images/camila/revista-eurritmia.png",
+    },
   },
   languages: ["pt", "it", "es", "en"] as const,
   defaultLanguage: "pt" as const,

@@ -50,7 +50,11 @@ export function SponsorsSection() {
                     </p>
                   </div>
                   {sponsor.url ? (
-                    <ArrowUpRight size={16} aria-hidden="true" className="mt-0.5 shrink-0 text-gold" />
+                    <ArrowUpRight
+                      size={16}
+                      aria-hidden="true"
+                      className="mt-0.5 shrink-0 text-gold"
+                    />
                   ) : null}
                 </div>
               </>

@@ -47,6 +47,17 @@ export interface GalleryImage {
   alt: string;
 }
 
+export interface BeautyService {
+  id: string;
+  name: LocalizedText;
+  description: LocalizedText;
+  image: string;
+  imageAlt: LocalizedText;
+  whatsappMessage: LocalizedText;
+  price?: string;
+  duration?: LocalizedText;
+}
+
 export interface FAQ {
   question: string;
   answer: string;

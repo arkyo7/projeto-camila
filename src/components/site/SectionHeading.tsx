@@ -16,12 +16,7 @@ export function SectionHeading({
   id?: string;
 }) {
   return (
-    <div
-      className={cn(
-        "max-w-3xl",
-        align === "center" && "mx-auto text-center",
-      )}
-    >
+    <div className={cn("max-w-3xl", align === "center" && "mx-auto text-center")}>
       {eyebrow ? (
         <p
           className={cn(
@@ -41,10 +36,7 @@ export function SectionHeading({
       >
         {title}
       </h2>
-      <div
-        aria-hidden="true"
-        className={cn("gold-rule mt-5", align === "center" && "mx-auto")}
-      />
+      <div aria-hidden="true" className={cn("gold-rule mt-5", align === "center" && "mx-auto")} />
       {subtitle ? (
         <p
           className={cn(

@@ -12,7 +12,9 @@ export function BeautyHours({ tone = "light" }: { tone?: "light" | "dark" }) {
           key={entry.day}
           className={cn(
             "flex items-baseline justify-between gap-4 border-b pb-2",
-            tone === "dark" ? "border-cream/10 text-cream/70" : "border-border text-muted-foreground",
+            tone === "dark"
+              ? "border-cream/10 text-cream/70"
+              : "border-border text-muted-foreground",
           )}
         >
           <span className="min-w-0 truncate">{t.beauty.days[entry.day]}</span>

@@ -54,6 +54,9 @@ export function LanguageSwitcher({
         )}
       >
         <Globe size={17} aria-hidden="true" />
+        <span className="text-xs font-medium tracking-[0.12em]">
+          {current.code.slice(0, 2).toUpperCase()}
+        </span>
         <ChevronDown
           size={12}
           aria-hidden="true"
