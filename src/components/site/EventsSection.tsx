@@ -14,8 +14,9 @@ export function EventsSection() {
   const getText = (value: LocalizedText) => value[lang] ?? value.pt;
 
   return (
-    <section id="eventos" className="bg-cream py-20 lg:py-28">
+    <section id="eventos" className="border-t border-gold/20 bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div aria-hidden="true" className="mx-auto mb-12 h-px w-16 bg-gold/50" />
         <SectionHeading eyebrow={t.events.eyebrow} title={t.events.title} />
 
         <h3 className="mt-14 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
