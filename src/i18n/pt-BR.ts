@@ -206,6 +206,8 @@ export const ptBR = {
     title: "Universe Beauty",
     text: "À frente da Universe Beauty como CEO, Camila Maia amplia sua atuação no mercado da beleza e desenvolve uma nova frente dedicada ao cuidado, à autoestima e à experiência de se sentir bem.",
     roleLabel: "CEO",
+    role: "CEO",
+    location: "Vêneto, Itália",
     locationLabel: "Localização",
     primaryCta: "Conhecer a Universe Beauty",
     secondaryCta: "Falar sobre parcerias",
