@@ -406,7 +406,7 @@ export const enUS: Dictionary = {
     },
     submit: "Open conversation on WhatsApp",
     preparing: "Preparing your message…",
-    ready: "Your message has been prepared. We're opening WhatsApp for you to send it to Camila.",
+    ready: "Your message is ready. If WhatsApp did not open, use the button below.",
     fallback:
       "If WhatsApp doesn't open automatically, copy the message below and send it manually.",
     copy: "Copy message",

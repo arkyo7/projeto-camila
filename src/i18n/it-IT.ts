@@ -416,7 +416,7 @@ export const itIT: Dictionary = {
     },
     submit: "Apri la chat su WhatsApp",
     preparing: "Stiamo preparando il tuo messaggio…",
-    ready: "Il tuo messaggio è pronto. Stiamo aprendo WhatsApp per inviarlo a Camila.",
+    ready: "Il messaggio è pronto. Se WhatsApp non si è aperto, usa il pulsante qui sotto.",
     fallback:
       "Se WhatsApp non si apre automaticamente, copia il messaggio qui sotto e invialo manualmente.",
     copy: "Copia il messaggio",

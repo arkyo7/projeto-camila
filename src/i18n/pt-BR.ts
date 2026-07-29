@@ -412,7 +412,7 @@ export const ptBR = {
     },
     submit: "Abrir conversa no WhatsApp",
     preparing: "Preparando sua mensagem…",
-    ready: "Sua mensagem foi preparada. Estamos abrindo o WhatsApp para você enviá-la a Camila.",
+    ready: "A mensagem foi preparada. Caso o WhatsApp não tenha aberto, use o botão abaixo.",
     fallback:
       "Se o WhatsApp não abrir automaticamente, copie a mensagem abaixo e envie manualmente.",
     copy: "Copiar mensagem",

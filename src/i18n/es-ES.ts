@@ -415,7 +415,7 @@ export const esES: Dictionary = {
     },
     submit: "Abrir conversación en WhatsApp",
     preparing: "Preparando tu mensaje…",
-    ready: "Tu mensaje ha sido preparado. Estamos abriendo WhatsApp para que lo envíes a Camila.",
+    ready: "El mensaje ha sido preparado. Si WhatsApp no se abrió, usa el botón de abajo.",
     fallback:
       "Si WhatsApp no se abre automáticamente, copia el mensaje a continuación y envíalo manualmente.",
     copy: "Copiar mensaje",
