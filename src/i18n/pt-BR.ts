@@ -10,24 +10,25 @@ export const ptBR = {
     solutions: "Soluções",
     bsf: "Beleza Sem Fronteiras",
     events: "Eventos",
-    beauty: "Beauty",
+    beauty: "Camila Maia Beauty",
+    universe: "Universe Beauty",
+    highlights: "Destaques",
     contact: "Contato",
-    cta: "Fale com Camila",
+    cta: "Agendar atendimento",
     openMenu: "Abrir menu",
     closeMenu: "Fechar menu",
     language: "Idioma",
+    languageOpen: "Selecionar idioma",
   },
   hero: {
-    eyebrow: "CAMILA MAIA • CONSULTORA • PALESTRANTE • IDEALIZADORA",
-    headline:
-      "Estratégia, posicionamento e conexões para profissionais da beleza crescerem sem fronteiras.",
+    eyebrow: "CAMILA MAIA • BELEZA • EMPREENDEDORISMO • ATUAÇÃO INTERNACIONAL",
+    headline: "Beleza, liderança e propósito construídos além das fronteiras.",
     subheadline:
-      "Camila Maia orienta mulheres brasileiras empreendedoras da beleza e da estética por meio de consultorias, mentorias, palestras e experiências profissionais no Brasil e no exterior.",
-    ctaPrimary: "Conhecer as consultorias",
-    ctaSecondary: "Convidar para um evento",
-    ctaTertiary: "Agendar atendimento de beleza na Itália",
+      "Camila Maia é uma empreendedora brasileira que conecta beleza, negócios, experiências e oportunidades entre o Brasil e a Europa.",
+    ctaPrimary: "Conhecer a Camila Maia Beauty",
+    ctaSecondary: "Conhecer sua trajetória",
     badgeName: "Camila Maia",
-    badgeRole: "Consultora de mulheres brasileiras empreendedoras da beleza e da estética.",
+    badgeRole: "Empreendedora do setor da beleza com atuação entre o Brasil e a Europa.",
     photoAlt: "Camila Maia, consultora e idealizadora do Beleza Sem Fronteiras",
   },
   pillars: {
@@ -96,7 +97,7 @@ export const ptBR = {
   },
   about: {
     eyebrow: "CONHEÇA CAMILA MAIA",
-    title: "Uma trajetória entre marketing, beleza e experiências internacionais",
+    title: "Uma trajetória construída entre coragem, beleza e propósito",
     paragraphs: [
       "Nordestina de Fortaleza, Ceará, Camila Maia é graduada em Gestão de Marketing e construiu parte de sua experiência profissional atuando em empresas multinacionais e no atendimento ao público.",
       "Em 2018, deixou o Brasil para realizar um intercâmbio na Irlanda, dando início a uma trajetória internacional que posteriormente a levou a estabelecer-se na Itália.",
@@ -205,6 +206,8 @@ export const ptBR = {
     title: "Universe Beauty",
     text: "À frente da Universe Beauty como CEO, Camila Maia amplia sua atuação no mercado da beleza e desenvolve uma nova frente dedicada ao cuidado, à autoestima e à experiência de se sentir bem.",
     roleLabel: "CEO",
+    role: "CEO",
+    location: "Vêneto, Itália",
     locationLabel: "Localização",
     primaryCta: "Conhecer a Universe Beauty",
     secondaryCta: "Falar sobre parcerias",
@@ -237,6 +240,11 @@ export const ptBR = {
     eyebrow: "Agenda",
     title: "Eventos, encontros e experiências",
     upcomingTitle: "Próximos eventos",
+    nextDestination: "Próximo destino",
+    interestLabel: "Lista de interesse",
+    interestCta: "Entrar na lista de interesse",
+    interestMessage:
+      "Olá, Camila! Tenho interesse no {event} e gostaria de receber mais informações sobre a lista de interesse.",
     emptyTitle: "Novas experiências serão anunciadas em breve.",
     emptyCta: "Entrar na lista de interesse",
     emptyMessage:
@@ -254,9 +262,22 @@ export const ptBR = {
     title: "Histórias que atravessam fronteiras",
   },
   beauty: {
-    eyebrow: "Atendimento presencial",
+    eyebrow: "Empresa principal • Atendimento presencial",
     title: "Camila Maia Beauty",
-    subtitle: "Beleza, cuidado e atendimento personalizado na Itália.",
+    subtitle: "Beleza, cuidado e experiência personalizada.",
+    intro:
+      "A Camila Maia Beauty é a empresa principal de Camila Maia, dedicada a atendimentos de beleza realizados de forma individual, cuidadosa e personalizada na Itália.",
+    logoAlt: "Logotipo da Camila Maia Beauty",
+    servicesTitle: "Serviços principais",
+    differentialsTitle: "Diferenciais",
+    differentials: [
+      "Atendimento individual e personalizado para cada cliente.",
+      "Profissional certificada no Brasil e no exterior em embelezamento facial e bem-estar.",
+      "Agendamento direto e acompanhamento pelo WhatsApp.",
+    ],
+    scheduleCta: "Agendar atendimento",
+    scheduleMessage:
+      "Olá, Camila! Conheci a Camila Maia Beauty pelo seu site e gostaria de receber informações sobre os serviços e horários disponíveis.",
     categories: [
       { title: "Olhar e cílios", description: "Atendimentos dedicados à valorização do olhar." },
       { title: "Sobrancelhas", description: "Cuidado e design pensados para cada rosto." },
@@ -283,6 +304,48 @@ export const ptBR = {
     instagramText:
       "Acompanhe resultados, novidades e conteúdos profissionais da Camila Maia Beauty.",
     instagramCta: "Seguir no Instagram",
+  },
+  sponsors: {
+    eyebrow: "Beleza Sem Fronteiras",
+    title: "Patrocinadores e parceiros",
+    subtitle: "Marcas e profissionais que fizeram parte dessa trajetória.",
+    types: {
+      sponsor: "Patrocinador",
+      partner: "Parceiro",
+    },
+    linkAria: "Abrir o perfil de {brand} em uma nova aba",
+  },
+  highlights: {
+    eyebrow: "Trajetória",
+    title: "Destaques da trajetória",
+    subtitle:
+      "Projetos, entrevistas e publicações que fazem parte da história profissional de Camila Maia.",
+    podcast: {
+      category: "Podcast",
+      title: "Camila Maia no podcast A vida lá fora",
+      description:
+        "Em uma conversa sobre imigração, recomeços e empreendedorismo, Camila compartilha sua trajetória desde a aviação civil no Brasil até sua atuação no mercado da beleza na Europa.",
+      cta: "Assistir ao episódio",
+      imageAlt: "Camila Maia em participação no podcast A vida lá fora",
+    },
+    magazine: {
+      category: "Na mídia",
+      title: "Camila Maia na Eurritmia Magazine",
+      description:
+        "Na matéria “Leading with Passion and Purpose”, Camila Maia é apresentada como uma empreendedora brasileira que construiu sua trajetória no mercado europeu por meio da beleza, da liderança e da criação de conexões.",
+      publication: "Eurritmia Magazine",
+      article: "Leading with Passion and Purpose",
+      cta: "Ver publicação",
+      imageAlt: "Publicação sobre Camila Maia na Eurritmia Magazine",
+    },
+    voice: {
+      category: "Projeto de comunicação",
+      title: "Voz Sem Fronteiras",
+      description:
+        "Projeto desenvolvido por Camila Maia para apoiar mulheres na construção de uma comunicação mais clara, confiante e autêntica, especialmente na preparação para apresentações e palcos.",
+      badge: "Projeto realizado",
+      imageAlt: "Logotipo do projeto Voz Sem Fronteiras",
+    },
   },
   faq: {
     eyebrow: "Dúvidas",

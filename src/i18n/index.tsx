@@ -10,16 +10,30 @@ import {
 import { siteConfig, type Language } from "@/config/siteConfig";
 import { ptBR, type Dictionary } from "./pt-BR";
 import { itIT } from "./it-IT";
+import { esES } from "./es-ES";
+import { enUS } from "./en-US";
 
 const dictionaries: Record<Language, Dictionary> = {
   pt: ptBR,
   it: itIT,
+  es: esES,
+  en: enUS,
 };
 
 export const htmlLang: Record<Language, string> = {
   pt: "pt-BR",
   it: "it-IT",
+  es: "es-ES",
+  en: "en-US",
 };
+
+/** Opções exibidas no seletor de idioma do cabeçalho. */
+export const languageOptions: { code: Language; code2: string; label: string }[] = [
+  { code: "pt", code2: "PT", label: "Português" },
+  { code: "it", code2: "IT", label: "Italiano" },
+  { code: "es", code2: "ES", label: "Español" },
+  { code: "en", code2: "EN", label: "English" },
+];
 
 const STORAGE_KEY = "cm-lang";
 
@@ -36,7 +50,9 @@ export function I18nProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (stored === "pt" || stored === "it") setLangState(stored);
+    if (stored && (siteConfig.languages as readonly string[]).includes(stored)) {
+      setLangState(stored as Language);
+    }
   }, []);
 
   useEffect(() => {

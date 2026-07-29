@@ -11,7 +11,7 @@ export function EventsSection() {
   const { t, lang } = useI18n();
   const featured = upcomingEvents.length === 1;
 
-  const getText = (value: LocalizedText) => value[lang];
+  const getText = (value: LocalizedText) => value[lang] ?? value.pt;
 
   return (
     <section id="eventos" className="bg-cream py-20 lg:py-28">
@@ -44,21 +44,12 @@ export function EventsSection() {
 
               const statusLabel =
                 featured && event.status === "waitlist"
-                  ? lang === "it"
-                    ? "Lista d’interesse"
-                    : "Lista de interesse"
+                  ? t.events.interestLabel
                   : t.events.status[event.status];
 
-              const buttonText = featured
-                ? lang === "it"
-                  ? "Entra nella lista d’interesse"
-                  : "Entrar na lista de interesse"
-                : t.events.eventCta;
+              const buttonText = featured ? t.events.interestCta : t.events.eventCta;
 
-              const whatsappMessage =
-                lang === "it"
-                  ? `Ciao Camila! Sono interessata a ${name} e vorrei ricevere maggiori informazioni sulla lista d’interesse.`
-                  : `Olá, Camila! Tenho interesse no ${name} e gostaria de receber mais informações sobre a lista de interesse.`;
+              const whatsappMessage = t.events.interestMessage.replace("{event}", name);
 
               return (
                 <Reveal
@@ -93,9 +84,7 @@ export function EventsSection() {
                     >
                       {featured ? (
                         <p className="text-[0.65rem] font-medium uppercase tracking-[0.24em] text-gold">
-                          {lang === "it"
-                            ? "Prossima destinazione"
-                            : "Próximo destino"}
+                          {t.events.nextDestination}
                         </p>
                       ) : null}
 

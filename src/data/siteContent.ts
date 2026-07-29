@@ -100,6 +100,25 @@ export const partners: {
 }[] = [];
 
 /**
+ * Patrocinadores e parceiros do Beleza Sem Fronteiras.
+ * Cadastrar apenas marcas confirmadas e autorizadas.
+ * Enquanto a lista estiver vazia, a seção não é exibida.
+ */
+export interface Sponsor {
+  id: string;
+  name: string;
+  /** Caminho do logo oficial (ex.: "/images/patrocinadores/marca.png"). */
+  logo?: string;
+  /** Categoria opcional (ex.: "Cosméticos"). */
+  category?: string;
+  /** Link para o site ou Instagram oficial. */
+  url?: string;
+  type: "sponsor" | "partner";
+}
+
+export const sponsors: Sponsor[] = [];
+
+/**
  * Texto opcional sobre parcerias/patrocínios da Universe Beauty.
  * Enquanto vazio, nenhuma informação de patrocínio é exibida no site.
  */

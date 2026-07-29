@@ -1,7 +1,7 @@
-export type LocalizedText = {
-  pt: string;
-  it: string;
-};
+import type { Language } from "@/config/siteConfig";
+
+/** Texto localizado. PT é obrigatório e serve de fallback. */
+export type LocalizedText = { pt: string } & Partial<Record<Language, string>>;
 
 export interface Service {
   id: string;

@@ -72,7 +72,25 @@ export const siteConfig = {
     terms: "/termos",
     notice: "/aviso-legal",
   },
-  languages: ["pt", "it"] as const,
+  /**
+   * Logotipos oficiais das marcas. Preencher assim que os arquivos forem
+   * fornecidos; enquanto vazios, o site exibe blocos tipográficos neutros.
+   */
+  logos: {
+    beauty: "",
+    bsf: "",
+    universeBeauty: "/images/camila/universe-beauty-logo.webp",
+    voice: "",
+  },
+  /**
+   * Destaques da trajetória. Links e imagens oficiais.
+   * Enquanto vazios, os botões correspondentes ficam ocultos.
+   */
+  media: {
+    podcast: { url: "", image: "" },
+    magazine: { url: "", image: "" },
+  },
+  languages: ["pt", "it", "es", "en"] as const,
   defaultLanguage: "pt" as const,
 } as const;
 

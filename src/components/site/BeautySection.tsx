@@ -1,4 +1,4 @@
-import { Clock, Instagram, MapPin } from "lucide-react";
+import { CalendarCheck, Clock, Instagram, MapPin } from "lucide-react";
 import { BeautyHours } from "./BeautyHours";
 import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
@@ -15,17 +15,41 @@ export function BeautySection() {
     .join(", ");
 
   return (
-    <section id="beauty" className="bg-blush/40 py-20 lg:py-28">
+    <section id="beauty" className="border-y border-gold/25 bg-blush/40 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.beauty.eyebrow}
-          title={t.beauty.title}
-          subtitle={t.beauty.subtitle}
-        />
+        <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:gap-10">
+          <div className="flex h-28 w-28 shrink-0 items-center justify-center border border-gold/30 bg-background">
+            {siteConfig.logos.beauty ? (
+              <img
+                src={siteConfig.logos.beauty}
+                alt={t.beauty.logoAlt}
+                loading="lazy"
+                decoding="async"
+                className="max-h-[70%] max-w-[70%] object-contain"
+              />
+            ) : (
+              <span aria-hidden="true" className="font-serif text-3xl tracking-[0.1em] text-gold">
+                CM
+              </span>
+            )}
+          </div>
+          <SectionHeading
+            eyebrow={t.beauty.eyebrow}
+            title={t.beauty.title}
+            subtitle={t.beauty.subtitle}
+          />
+        </div>
+
+        <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
+          {t.beauty.intro}
+        </p>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
           <div className="min-w-0">
-            <ul className="grid gap-4 sm:grid-cols-3">
+            <h3 className="text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
+              {t.beauty.servicesTitle}
+            </h3>
+            <ul className="mt-5 grid gap-4 sm:grid-cols-3">
               {t.beauty.categories.map((category, i) => (
                 <Reveal as="li" key={category.title} delay={i * 70}>
                   <article className="h-full border border-nude/50 bg-background p-6">
@@ -36,6 +60,18 @@ export function BeautySection() {
                     </p>
                   </article>
                 </Reveal>
+              ))}
+            </ul>
+
+            <h3 className="mt-10 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
+              {t.beauty.differentialsTitle}
+            </h3>
+            <ul className="mt-5 grid gap-3">
+              {t.beauty.differentials.map((item) => (
+                <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
+                  <span aria-hidden="true" className="mt-2 h-px w-5 shrink-0 bg-gold" />
+                  {item}
+                </li>
               ))}
             </ul>
 
@@ -72,10 +108,20 @@ export function BeautySection() {
               <p className="mt-2 text-sm text-muted-foreground">{location}</p>
 
               <a
+                href={whatsappLink(t.beauty.scheduleMessage)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex w-full items-center justify-center gap-2 bg-gold px-6 py-3.5 text-sm font-medium text-navy transition-colors hover:bg-gold-light"
+              >
+                <CalendarCheck size={16} aria-hidden="true" />
+                {t.beauty.scheduleCta}
+              </a>
+
+              <a
                 href={whatsappLink(t.beauty.message)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full items-center justify-center bg-navy px-6 py-3.5 text-sm font-medium text-cream transition-colors hover:bg-navy-soft"
+                className="mt-3 inline-flex w-full items-center justify-center border border-navy/20 px-6 py-3.5 text-sm font-medium text-navy transition-colors hover:border-navy"
               >
                 {t.beauty.cta}
               </a>

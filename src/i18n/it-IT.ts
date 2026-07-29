@@ -12,24 +12,25 @@ export const itIT: Dictionary = {
     solutions: "Soluzioni",
     bsf: "Beleza Sem Fronteiras",
     events: "Eventi",
-    beauty: "Beauty",
+    beauty: "Camila Maia Beauty",
+    universe: "Universe Beauty",
+    highlights: "Momenti salienti",
     contact: "Contatti",
-    cta: "Parla con Camila",
+    cta: "Prenota un appuntamento",
     openMenu: "Apri il menu",
     closeMenu: "Chiudi il menu",
     language: "Lingua",
+    languageOpen: "Seleziona la lingua",
   },
   hero: {
-    eyebrow: "CAMILA MAIA • CONSULENTE • RELATRICE • IDEATRICE",
-    headline:
-      "Strategia, posizionamento e connessioni per far crescere le professioniste della bellezza senza confini.",
+    eyebrow: "CAMILA MAIA • BELLEZZA • IMPRENDITORIALITÀ • RESPIRO INTERNAZIONALE",
+    headline: "Bellezza, leadership e scopo costruiti oltre i confini.",
     subheadline:
-      "Camila Maia accompagna le donne brasiliane imprenditrici della bellezza e dell'estetica attraverso consulenze, percorsi di mentoring, conferenze ed esperienze professionali in Brasile e all'estero.",
-    ctaPrimary: "Scopri le consulenze",
-    ctaSecondary: "Invita a un evento",
-    ctaTertiary: "Prenota un trattamento beauty in Italia",
+      "Camila Maia è un'imprenditrice brasiliana che collega bellezza, business, esperienze e opportunità tra il Brasile e l'Europa.",
+    ctaPrimary: "Scopri Camila Maia Beauty",
+    ctaSecondary: "Scopri il suo percorso",
     badgeName: "Camila Maia",
-    badgeRole: "Consulente di donne brasiliane imprenditrici della bellezza e dell'estetica.",
+    badgeRole: "Imprenditrice del settore beauty attiva tra il Brasile e l'Europa.",
     photoAlt: "Camila Maia, consulente e ideatrice di Beleza Sem Fronteiras",
   },
   pillars: {
@@ -207,6 +208,8 @@ export const itIT: Dictionary = {
     title: "Universe Beauty",
     text: "Come CEO di Universe Beauty, Camila Maia amplia la sua presenza nel settore della bellezza e sviluppa una nuova realtà dedicata alla cura, all'autostima e all'esperienza di sentirsi bene.",
     roleLabel: "CEO",
+    role: "CEO",
+    location: "Veneto, Italia",
     locationLabel: "Dove",
     primaryCta: "Scopri Universe Beauty",
     secondaryCta: "Parla di collaborazioni",
@@ -241,6 +244,11 @@ export const itIT: Dictionary = {
     eyebrow: "Agenda",
     title: "Eventi, incontri ed esperienze",
     upcomingTitle: "Prossimi eventi",
+    nextDestination: "Prossima destinazione",
+    interestLabel: "Lista d'interesse",
+    interestCta: "Entra nella lista d'interesse",
+    interestMessage:
+      "Ciao Camila! Sono interessata a {event} e vorrei ricevere maggiori informazioni sulla lista d'interesse.",
     emptyTitle: "Nuove esperienze saranno annunciate presto.",
     emptyCta: "Entra nella lista di interesse",
     emptyMessage:
@@ -258,9 +266,22 @@ export const itIT: Dictionary = {
     title: "Storie che attraversano i confini",
   },
   beauty: {
-    eyebrow: "Servizio in presenza",
+    eyebrow: "Attività principale • Servizio in presenza",
     title: "Camila Maia Beauty",
-    subtitle: "Bellezza, cura e trattamenti personalizzati in Italia.",
+    subtitle: "Bellezza, cura ed esperienza personalizzata.",
+    intro:
+      "Camila Maia Beauty è l'attività principale di Camila Maia, dedicata a trattamenti di bellezza svolti in modo individuale, attento e personalizzato in Italia.",
+    logoAlt: "Logo di Camila Maia Beauty",
+    servicesTitle: "Servizi principali",
+    differentialsTitle: "Punti di forza",
+    differentials: [
+      "Trattamento individuale e personalizzato per ogni cliente.",
+      "Professionista certificata in Brasile e all'estero in bellezza del viso e benessere.",
+      "Prenotazione diretta e assistenza su WhatsApp.",
+    ],
+    scheduleCta: "Prenota un appuntamento",
+    scheduleMessage:
+      "Ciao Camila! Ho conosciuto Camila Maia Beauty dal tuo sito e vorrei ricevere informazioni sui servizi e sugli orari disponibili.",
     categories: [
       { title: "Sguardo e ciglia", description: "Trattamenti dedicati a valorizzare lo sguardo." },
       { title: "Sopracciglia", description: "Cura e design pensati per ogni viso." },
@@ -278,6 +299,48 @@ export const itIT: Dictionary = {
       "Ciao Camila! Ho conosciuto Camila Maia Beauty dal sito e vorrei verificare gli orari disponibili per un appuntamento.",
     instagramText: "Scopri risultati, novità e contenuti professionali di Camila Maia Beauty.",
     instagramCta: "Segui su Instagram",
+  },
+  sponsors: {
+    eyebrow: "Beleza Sem Fronteiras",
+    title: "Sponsor e partner",
+    subtitle: "Marchi e professionisti che hanno fatto parte di questo percorso.",
+    types: {
+      sponsor: "Sponsor",
+      partner: "Partner",
+    },
+    linkAria: "Apri il profilo di {brand} in una nuova scheda",
+  },
+  highlights: {
+    eyebrow: "Percorso",
+    title: "Momenti salienti del percorso",
+    subtitle:
+      "Progetti, interviste e pubblicazioni che fanno parte della storia professionale di Camila Maia.",
+    podcast: {
+      category: "Podcast",
+      title: "Camila Maia nel podcast A vida lá fora",
+      description:
+        "In una conversazione su immigrazione, nuovi inizi e imprenditorialità, Camila racconta il suo percorso dall'aviazione civile in Brasile fino al settore della bellezza in Europa.",
+      cta: "Guarda l'episodio",
+      imageAlt: "Camila Maia ospite del podcast A vida lá fora",
+    },
+    magazine: {
+      category: "Sui media",
+      title: "Camila Maia su Eurritmia Magazine",
+      description:
+        "Nell'articolo “Leading with Passion and Purpose”, Camila Maia viene presentata come un'imprenditrice brasiliana che ha costruito il suo percorso nel mercato europeo attraverso la bellezza, la leadership e la creazione di connessioni.",
+      publication: "Eurritmia Magazine",
+      article: "Leading with Passion and Purpose",
+      cta: "Vedi la pubblicazione",
+      imageAlt: "Pubblicazione su Camila Maia in Eurritmia Magazine",
+    },
+    voice: {
+      category: "Progetto di comunicazione",
+      title: "Voz Sem Fronteiras",
+      description:
+        "Progetto sviluppato da Camila Maia per sostenere le donne nella costruzione di una comunicazione più chiara, sicura e autentica, soprattutto nella preparazione a presentazioni e palchi.",
+      badge: "Progetto realizzato",
+      imageAlt: "Logo del progetto Voz Sem Fronteiras",
+    },
   },
   faq: {
     eyebrow: "Domande",
