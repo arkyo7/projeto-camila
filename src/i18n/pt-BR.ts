@@ -240,6 +240,11 @@ export const ptBR = {
     eyebrow: "Agenda",
     title: "Eventos, encontros e experiências",
     upcomingTitle: "Próximos eventos",
+    nextDestination: "Próximo destino",
+    interestLabel: "Lista de interesse",
+    interestCta: "Entrar na lista de interesse",
+    interestMessage:
+      "Olá, Camila! Tenho interesse no {event} e gostaria de receber mais informações sobre a lista de interesse.",
     emptyTitle: "Novas experiências serão anunciadas em breve.",
     emptyCta: "Entrar na lista de interesse",
     emptyMessage:
@@ -257,9 +262,22 @@ export const ptBR = {
     title: "Histórias que atravessam fronteiras",
   },
   beauty: {
-    eyebrow: "Atendimento presencial",
+    eyebrow: "Empresa principal • Atendimento presencial",
     title: "Camila Maia Beauty",
-    subtitle: "Beleza, cuidado e atendimento personalizado na Itália.",
+    subtitle: "Beleza, cuidado e experiência personalizada.",
+    intro:
+      "A Camila Maia Beauty é a empresa principal de Camila Maia, dedicada a atendimentos de beleza realizados de forma individual, cuidadosa e personalizada na Itália.",
+    logoAlt: "Logotipo da Camila Maia Beauty",
+    servicesTitle: "Serviços principais",
+    differentialsTitle: "Diferenciais",
+    differentials: [
+      "Atendimento individual e personalizado para cada cliente.",
+      "Profissional certificada no Brasil e no exterior em embelezamento facial e bem-estar.",
+      "Agendamento direto e acompanhamento pelo WhatsApp.",
+    ],
+    scheduleCta: "Agendar atendimento",
+    scheduleMessage:
+      "Olá, Camila! Conheci a Camila Maia Beauty pelo seu site e gostaria de receber informações sobre os serviços e horários disponíveis.",
     categories: [
       { title: "Olhar e cílios", description: "Atendimentos dedicados à valorização do olhar." },
       { title: "Sobrancelhas", description: "Cuidado e design pensados para cada rosto." },
