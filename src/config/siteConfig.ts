@@ -90,7 +90,7 @@ export const siteConfig = {
     podcast: { url: "", image: "" },
     magazine: { url: "", image: "" },
   },
-  languages: ["pt", "it"] as const,
+  languages: ["pt", "it", "es", "en"] as const,
   defaultLanguage: "pt" as const,
 } as const;
 
