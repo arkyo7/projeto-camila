@@ -36,6 +36,7 @@ export function ContactSection() {
   const [country, setCountry] = useState("");
   const [dialCountry, setDialCountry] = useState("");
   const [phone, setPhone] = useState("");
+  const [consent, setConsent] = useState(false);
 
   function handleCountryChange(code: string) {
     setCountry(code);
@@ -67,7 +68,7 @@ export function ContactSection() {
       country,
       interest: String(data.get("interest") ?? ""),
       message: String(data.get("message") ?? ""),
-      consent: data.get("consent") === "on",
+      consent,
     });
 
     const dial = findCountry(dialCountry);
@@ -109,7 +110,18 @@ export function ContactSection() {
     setPreparedMessage(body);
     setCopied(false);
     setStatus("ready");
-    window.open(whatsappLink(body), "_blank", "noopener,noreferrer");
+
+    const whatsappUrl = whatsappLink(body);
+    try {
+      const openedWindow = window.open(whatsappUrl, "_blank");
+      if (openedWindow) {
+        openedWindow.opener = null;
+      } else {
+        window.location.href = whatsappUrl;
+      }
+    } catch {
+      // mantém o usuário na página com o bloco de fallback visível
+    }
   }
 
   async function copyMessage() {
@@ -290,6 +302,8 @@ export function ContactSection() {
               <Checkbox
                 id="consent"
                 name="consent"
+                checked={consent}
+                onCheckedChange={(value) => setConsent(value === true)}
                 aria-describedby={errors.consent ? "consent-error" : undefined}
                 className="mt-0.5"
               />
