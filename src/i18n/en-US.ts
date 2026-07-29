@@ -44,8 +44,7 @@ export const enUS: Dictionary = {
   },
   paths: {
     title: "How can Camila help you?",
-    subtitle:
-      "Choose the path that best fits the moment your career, business or event is in.",
+    subtitle: "Choose the path that best fits the moment your career, business or event is in.",
     cards: [
       {
         eyebrow: "Consulting and mentoring",
@@ -135,8 +134,7 @@ export const enUS: Dictionary = {
         {
           marker: "Italy",
           title: "A new stage",
-          description:
-            "Later settled in Italy, where she continued her international journey.",
+          description: "Later settled in Italy, where she continued her international journey.",
         },
         {
           marker: "Beauty market",
@@ -169,11 +167,7 @@ export const enUS: Dictionary = {
         title: "Individual consulting",
         description:
           "A focused session to analyze challenges, organize priorities and define the next professional or business steps.",
-        themes: [
-          "Professional positioning",
-          "Building authority",
-          "Beauty and aesthetics market",
-        ],
+        themes: ["Professional positioning", "Building authority", "Beauty and aesthetics market"],
         button: "Talk about consulting",
         message:
           "Hi, Camila! I found your work through the website and I'd like to talk about individual consulting.",
@@ -216,8 +210,7 @@ export const enUS: Dictionary = {
     shopCta: "Visit the store",
     catalogCta: "View the catalog",
     logoAlt: "Universe Beauty logo",
-    message:
-      "Hi, Camila! I'd like to talk about a possible partnership with Universe Beauty.",
+    message: "Hi, Camila! I'd like to talk about a possible partnership with Universe Beauty.",
   },
   bsf: {
     eyebrow: "Project created by Camila Maia",
@@ -290,21 +283,12 @@ export const enUS: Dictionary = {
     ],
     hoursTitle: "Business hours",
     locationTitle: "Location",
-    days: [
-      "Sunday",
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-    ],
+    days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     closed: "Closed",
     cta: "Book via WhatsApp",
     message:
       "Hi, Camila! I found Camila Maia Beauty through the website and I'd like to check available times for an appointment.",
-    instagramText:
-      "Follow results, news and professional content from Camila Maia Beauty.",
+    instagramText: "Follow results, news and professional content from Camila Maia Beauty.",
     instagramCta: "Follow on Instagram",
   },
   sponsors: {

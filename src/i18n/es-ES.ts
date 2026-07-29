@@ -216,8 +216,7 @@ export const esES: Dictionary = {
     shopCta: "Ver la tienda",
     catalogCta: "Ver el catálogo",
     logoAlt: "Logotipo de Universe Beauty",
-    message:
-      "¡Hola, Camila! Me gustaría conversar sobre una posible alianza con Universe Beauty.",
+    message: "¡Hola, Camila! Me gustaría conversar sobre una posible alianza con Universe Beauty.",
   },
   bsf: {
     eyebrow: "Proyecto ideado por Camila Maia",
@@ -229,7 +228,10 @@ export const esES: Dictionary = {
         title: "Conexión",
         description: "Encuentros que acercan a profesionales más allá de las fronteras.",
       },
-      { title: "Conocimiento", description: "Contenidos e intercambios que amplían la visión de mercado." },
+      {
+        title: "Conocimiento",
+        description: "Contenidos e intercambios que amplían la visión de mercado.",
+      },
       { title: "Experiencia", description: "Vivencias profesionales dentro y fuera de Brasil." },
       { title: "Oportunidad", description: "Nuevos caminos para carreras y negocios." },
     ],
@@ -290,21 +292,12 @@ export const esES: Dictionary = {
     ],
     hoursTitle: "Horarios de atención",
     locationTitle: "Ubicación",
-    days: [
-      "Domingo",
-      "Lunes",
-      "Martes",
-      "Miércoles",
-      "Jueves",
-      "Viernes",
-      "Sábado",
-    ],
+    days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
     closed: "Cerrado",
     cta: "Agendar por WhatsApp",
     message:
       "¡Hola, Camila! Conocí Camila Maia Beauty por el sitio web y me gustaría verificar los horarios disponibles para una cita.",
-    instagramText:
-      "Sigue resultados, novedades y contenidos profesionales de Camila Maia Beauty.",
+    instagramText: "Sigue resultados, novedades y contenidos profesionales de Camila Maia Beauty.",
     instagramCta: "Seguir en Instagram",
   },
   sponsors: {
