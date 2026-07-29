@@ -13,8 +13,9 @@ export function UniverseBeautySection() {
   const role = t.universe.role;
 
   return (
-    <section id="universe-beauty" className="bg-cream py-20 lg:py-24">
+    <section id="universe-beauty" className="border-t border-gold/20 bg-cream py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <div aria-hidden="true" className="mx-auto mb-12 h-px w-16 bg-gold/50" />
         <div className="grid gap-10 border border-gold/25 bg-background p-8 sm:p-12 lg:grid-cols-[0.45fr_0.55fr] lg:items-center lg:gap-16">
           <Reveal className="min-w-0">
             <div className="flex aspect-[4/3] w-full items-center justify-center border border-gold/20 bg-navy">
