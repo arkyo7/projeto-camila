@@ -98,20 +98,11 @@ export function HighlightsSection() {
                     href={magazine.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-7 inline-flex items-center justify-center gap-2 border border-gold px-6 py-3 text-sm font-medium text-navy transition-colors hover:bg-gold"
+                    className="mt-7 inline-flex items-center justify-center gap-2 bg-navy px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-navy-soft"
                   >
                     {t.highlights.magazine.cta}
                     <ArrowUpRight size={15} aria-hidden="true" />
                   </a>
-                ) : null}
-                {magazine.image ? (
-                  <button
-                    type="button"
-                    onClick={() => setMagazineOpen(true)}
-                    className="mt-3 inline-flex items-center justify-center gap-2 border border-navy/20 px-6 py-3 text-sm font-medium text-navy transition-colors hover:border-navy"
-                  >
-                    {t.highlights.magazine.expandCta}
-                  </button>
                 ) : null}
               </div>
             </article>
@@ -155,16 +146,6 @@ export function HighlightsSection() {
           </Reveal>
         </ul>
 
-        <Dialog open={magazineOpen} onOpenChange={setMagazineOpen}>
-          <DialogContent className="max-w-3xl bg-cream p-4 sm:p-6">
-            <DialogTitle className="sr-only">{t.highlights.magazine.title}</DialogTitle>
-            <img
-              src={magazine.image || undefined}
-              alt={t.highlights.magazine.imageAlt}
-              className="mx-auto max-h-[80vh] w-auto max-w-full object-contain"
-            />
-          </DialogContent>
-        </Dialog>
       </div>
     </section>
   );
