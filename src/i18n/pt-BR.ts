@@ -305,6 +305,48 @@ export const ptBR = {
       "Acompanhe resultados, novidades e conteúdos profissionais da Camila Maia Beauty.",
     instagramCta: "Seguir no Instagram",
   },
+  sponsors: {
+    eyebrow: "Beleza Sem Fronteiras",
+    title: "Patrocinadores e parceiros",
+    subtitle: "Marcas e profissionais que fizeram parte dessa trajetória.",
+    types: {
+      sponsor: "Patrocinador",
+      partner: "Parceiro",
+    },
+    linkAria: "Abrir o perfil de {brand} em uma nova aba",
+  },
+  highlights: {
+    eyebrow: "Trajetória",
+    title: "Destaques da trajetória",
+    subtitle:
+      "Projetos, entrevistas e publicações que fazem parte da história profissional de Camila Maia.",
+    podcast: {
+      category: "Podcast",
+      title: "Camila Maia no podcast A vida lá fora",
+      description:
+        "Em uma conversa sobre imigração, recomeços e empreendedorismo, Camila compartilha sua trajetória desde a aviação civil no Brasil até sua atuação no mercado da beleza na Europa.",
+      cta: "Assistir ao episódio",
+      imageAlt: "Camila Maia em participação no podcast A vida lá fora",
+    },
+    magazine: {
+      category: "Na mídia",
+      title: "Camila Maia na Eurritmia Magazine",
+      description:
+        "Na matéria “Leading with Passion and Purpose”, Camila Maia é apresentada como uma empreendedora brasileira que construiu sua trajetória no mercado europeu por meio da beleza, da liderança e da criação de conexões.",
+      publication: "Eurritmia Magazine",
+      article: "Leading with Passion and Purpose",
+      cta: "Ver publicação",
+      imageAlt: "Publicação sobre Camila Maia na Eurritmia Magazine",
+    },
+    voice: {
+      category: "Projeto de comunicação",
+      title: "Voz Sem Fronteiras",
+      description:
+        "Projeto desenvolvido por Camila Maia para apoiar mulheres na construção de uma comunicação mais clara, confiante e autêntica, especialmente na preparação para apresentações e palcos.",
+      badge: "Projeto realizado",
+      imageAlt: "Logotipo do projeto Voz Sem Fronteiras",
+    },
+  },
   faq: {
     eyebrow: "Dúvidas",
     title: "Perguntas frequentes",
