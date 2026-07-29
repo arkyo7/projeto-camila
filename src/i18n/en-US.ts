@@ -388,6 +388,7 @@ export const enUS: Dictionary = {
       country: "Country",
       countryPlaceholder: "Select your country",
       countrySearch: "Search country",
+      dialSearch: "Search country or code",
       countryEmpty: "No country found.",
       interest: "Area of interest",
       interestPlaceholder: "Select the subject",

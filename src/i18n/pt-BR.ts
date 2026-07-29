@@ -394,6 +394,7 @@ export const ptBR = {
       country: "País",
       countryPlaceholder: "Selecione o país",
       countrySearch: "Pesquisar país",
+      dialSearch: "Pesquisar país ou código",
       countryEmpty: "Nenhum país encontrado.",
       interest: "Área de interesse",
       interestPlaceholder: "Selecione o assunto",

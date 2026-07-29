@@ -398,6 +398,7 @@ export const itIT: Dictionary = {
       country: "Paese",
       countryPlaceholder: "Seleziona il paese",
       countrySearch: "Cerca un paese",
+      dialSearch: "Cerca paese o prefisso",
       countryEmpty: "Nessun paese trovato.",
       interest: "Area di interesse",
       interestPlaceholder: "Seleziona l'argomento",
