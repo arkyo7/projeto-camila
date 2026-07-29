@@ -7,10 +7,10 @@ import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export function UniverseBeautySection() {
-  const { t, lang } = useI18n();
+  const { t } = useI18n();
   const ub = siteConfig.universeBeauty;
-  const location = lang === "it" ? ub.locationIt : ub.locationPt;
-  const role = lang === "it" ? ub.roleIt : ub.rolePt;
+  const location = t.universe.location;
+  const role = t.universe.role;
 
   return (
     <section id="universe-beauty" className="bg-cream py-20 lg:py-24">
