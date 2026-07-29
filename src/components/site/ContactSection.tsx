@@ -365,7 +365,9 @@ export function ContactSection() {
               ) : null}
             </div>
           </form>
+          </Reveal>
 
+          <Reveal delay={180} className="min-w-0">
           <aside className="min-w-0 border border-border bg-background p-7">
             <h3 className="text-lg text-navy">{t.contact.directTitle}</h3>
             <div aria-hidden="true" className="gold-rule mt-3" />
