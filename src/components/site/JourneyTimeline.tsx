@@ -25,7 +25,13 @@ export function JourneyTimeline({
       )}
     >
       {items.map((item, index) => (
-        <Reveal as="li" key={item.title} delay={index * 80} className="relative min-w-0">
+        <Reveal
+          as="li"
+          key={item.title}
+          delay={Math.min(index * 90, 540)}
+          className="relative min-w-0"
+        >
+          <div className="timeline-item">
           <div className="flex items-center gap-3">
             <span
               aria-hidden="true"
@@ -41,6 +47,7 @@ export function JourneyTimeline({
           </p>
           <h3 className="mt-2 text-xl leading-snug text-navy">{item.title}</h3>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+          </div>
         </Reveal>
       ))}
     </ol>
