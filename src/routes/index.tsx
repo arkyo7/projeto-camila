@@ -8,7 +8,6 @@ import { FaqSection } from "@/components/site/FaqSection";
 import { FinalCta } from "@/components/site/FinalCta";
 import { HighlightsSection } from "@/components/site/HighlightsSection";
 import { Hero } from "@/components/site/Hero";
-import { PositioningStrip } from "@/components/site/PositioningStrip";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { SponsorsSection } from "@/components/site/SponsorsSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
@@ -73,7 +72,6 @@ function Index() {
   return (
     <SiteLayout>
       <Hero />
-      <PositioningStrip />
       <BeautySection />
       <AboutSection />
       <TestimonialsSection />
