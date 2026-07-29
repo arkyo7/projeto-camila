@@ -48,21 +48,18 @@ export function Header() {
           aria-label="Camila Maia"
         >
           <Monogram className="h-9 w-9 shrink-0 text-gold" />
-          <span className="min-w-0 leading-tight">
-            <span className="block truncate font-serif text-lg tracking-wide">Camila Maia</span>
-            <span className="block text-[0.6rem] uppercase tracking-[0.26em] text-cream/55">
-              Beleza Sem Fronteiras
-            </span>
+          <span className="min-w-0 truncate font-serif text-lg leading-tight tracking-wide">
+            Camila Maia
           </span>
         </Link>
 
-        <nav aria-label={t.nav.home} className="hidden justify-center lg:flex lg:gap-7">
+        <nav aria-label={t.nav.home} className="hidden justify-center lg:flex lg:gap-8">
           {navItems.map((item) => (
             <Link
               key={item.id}
               to="/"
               hash={item.id}
-              className="text-sm text-cream/75 transition-colors hover:text-gold"
+              className="whitespace-nowrap text-sm text-cream/75 transition-colors hover:text-gold"
             >
               {t.nav[item.key]}
             </Link>
