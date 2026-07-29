@@ -69,7 +69,10 @@ export function BeautySection() {
             <ul className="mt-5 grid gap-3">
               {t.beauty.differentials.map((item) => (
                 <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                  <span aria-hidden="true" className="mt-2 h-px w-5 shrink-0 bg-gold" />
+                  <span
+                    aria-hidden="true"
+                    className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-gold"
+                  />
                   {item}
                 </li>
               ))}
