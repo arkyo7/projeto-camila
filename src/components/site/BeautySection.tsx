@@ -66,9 +66,9 @@ export function BeautySection() {
                       href={whatsappLink(getText(service.whatsappMessage))}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-7 inline-flex items-center justify-center gap-2 border border-navy/20 px-6 py-3.5 text-sm font-medium text-navy transition-colors hover:border-navy"
+                      className="mt-7 inline-flex items-center justify-center gap-2 bg-gold px-6 py-4 text-sm font-medium uppercase tracking-[0.14em] text-navy shadow-[0_1px_0_0_rgba(11,24,48,0.08)] transition-colors hover:bg-gold-light"
                     >
-                      <MessageCircle size={15} aria-hidden="true" className="text-gold" />
+                      <MessageCircle size={15} aria-hidden="true" className="text-navy" />
                       {t.beauty.serviceCta}
                     </a>
                   </div>
@@ -78,24 +78,23 @@ export function BeautySection() {
           })}
         </ul>
 
-        <div className="mt-14 border border-nude/50 bg-background p-7 sm:p-9">
-          <h3 className="text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
+        <div className="mt-16 border border-gold/30 bg-background p-8 sm:p-12">
+          <h3 className="max-w-2xl text-2xl leading-snug text-navy sm:text-3xl">
             {t.beauty.differentialsTitle}
           </h3>
-          <ul className="mt-5 grid gap-3 md:grid-cols-3">
+          <div aria-hidden="true" className="gold-rule mt-5" />
+
+          <ul className="mt-10 grid gap-8 md:grid-cols-3">
             {t.beauty.differentials.map((item) => (
-              <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                <span
-                  aria-hidden="true"
-                  className="mt-[0.45rem] h-1.5 w-1.5 shrink-0 rounded-full bg-gold"
-                />
-                {item}
+              <li key={item.title} className="border-t border-gold/30 pt-5">
+                <h4 className="text-base text-navy">{item.title}</h4>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
               </li>
             ))}
           </ul>
 
-          <div className="mt-8 flex flex-col gap-4 border-t border-nude/50 pt-7 sm:flex-row sm:items-center sm:justify-between">
-            <p className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground">
+          <div className="mt-10 flex flex-col gap-5 border-t border-nude/50 pt-8 sm:flex-row sm:items-center sm:justify-between">
+            <p className="flex max-w-xl items-start gap-2 text-sm leading-relaxed text-muted-foreground">
               <MapPin size={16} aria-hidden="true" className="mt-0.5 shrink-0 text-gold" />
               {hasAddress ? location : t.beauty.locationNote}
             </p>
@@ -103,8 +102,9 @@ export function BeautySection() {
               href={whatsappLink(t.beauty.scheduleMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-2 bg-gold px-6 py-3.5 text-sm font-medium text-navy transition-colors hover:bg-gold-light"
+              className="inline-flex shrink-0 items-center justify-center gap-2 bg-gold px-8 py-4 text-sm font-medium uppercase tracking-[0.14em] text-navy transition-colors hover:bg-gold-light"
             >
+              <MessageCircle size={15} aria-hidden="true" className="text-navy" />
               {t.beauty.scheduleCta}
             </a>
           </div>
