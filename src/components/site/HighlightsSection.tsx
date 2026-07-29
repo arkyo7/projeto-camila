@@ -1,9 +1,11 @@
 import { ArrowUpRight, BookOpen, Mic, Sparkles } from "lucide-react";
+import { useState } from "react";
 import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { siteConfig } from "@/config/siteConfig";
 import { useI18n } from "@/i18n";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 /**
  * Destaques da trajetória: podcast, publicação na revista e o projeto
@@ -13,6 +15,7 @@ import { useI18n } from "@/i18n";
 export function HighlightsSection() {
   const { t } = useI18n();
   const { podcast, magazine } = siteConfig.media;
+  const [magazineOpen, setMagazineOpen] = useState(false);
 
   return (
     <section id="destaques" className="bg-cream py-20 lg:py-28">
@@ -70,7 +73,7 @@ export function HighlightsSection() {
                 height={405}
                 tone="cream"
                 className="border-b border-border"
-                imgClassName="object-contain bg-cream"
+                imgClassName="object-contain bg-cream p-2"
               />
               <div className="flex flex-1 flex-col p-7">
                 <p className="flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.24em] text-gold">
@@ -101,20 +104,29 @@ export function HighlightsSection() {
                     <ArrowUpRight size={15} aria-hidden="true" />
                   </a>
                 ) : null}
+                {magazine.image ? (
+                  <button
+                    type="button"
+                    onClick={() => setMagazineOpen(true)}
+                    className="mt-3 inline-flex items-center justify-center gap-2 border border-navy/20 px-6 py-3 text-sm font-medium text-navy transition-colors hover:border-navy"
+                  >
+                    {t.highlights.magazine.expandCta}
+                  </button>
+                ) : null}
               </div>
             </article>
           </Reveal>
 
           <Reveal as="li" delay={160} className="flex">
             <article className="flex w-full flex-col border border-border bg-background">
-              <div className="flex h-[203px] items-center justify-center border-b border-border bg-navy">
+              <div className="flex h-[203px] items-center justify-center border-b border-border bg-navy p-6">
                 {siteConfig.logos.voice ? (
                   <img
                     src={siteConfig.logos.voice}
                     alt={t.highlights.voice.imageAlt}
                     loading="lazy"
                     decoding="async"
-                    className="max-h-[60%] max-w-[70%] object-contain"
+                    className="max-h-full max-w-full object-contain"
                   />
                 ) : (
                   <p
@@ -142,6 +154,17 @@ export function HighlightsSection() {
             </article>
           </Reveal>
         </ul>
+
+        <Dialog open={magazineOpen} onOpenChange={setMagazineOpen}>
+          <DialogContent className="max-w-3xl bg-cream p-4 sm:p-6">
+            <DialogTitle className="sr-only">{t.highlights.magazine.title}</DialogTitle>
+            <img
+              src={magazine.image || undefined}
+              alt={t.highlights.magazine.imageAlt}
+              className="mx-auto max-h-[80vh] w-auto max-w-full object-contain"
+            />
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
