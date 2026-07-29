@@ -107,7 +107,6 @@ export function BeautySection() {
               {t.beauty.scheduleCta}
             </a>
           </div>
-
         </div>
       </div>
     </section>

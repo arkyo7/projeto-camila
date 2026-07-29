@@ -74,9 +74,7 @@ export function ContactSection() {
     const e164 = dial
       ? parsePhoneNumberFromString(`+${dial.dial}${phone.replace(/\D/g, "")}`)?.number
       : undefined;
-    const phoneValid = Boolean(
-      dial && phone.trim() && e164 && isValidPhoneNumber(e164 as string),
-    );
+    const phoneValid = Boolean(dial && phone.trim() && e164 && isValidPhoneNumber(e164 as string));
 
     if (!parsed.success || !phoneValid) {
       const next: Partial<Record<FieldName, string>> = {};
