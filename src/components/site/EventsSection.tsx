@@ -4,6 +4,7 @@ import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { pastEvents, upcomingEvents } from "@/data/siteContent";
 import type { LocalizedText } from "@/data/types";
+import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -17,11 +18,17 @@ export function EventsSection() {
     <section id="eventos" className="border-t border-gold/20 bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div aria-hidden="true" className="mx-auto mb-12 h-px w-16 bg-gold/50" />
-        <SectionHeading eyebrow={t.events.eyebrow} title={t.events.title} />
+        <Reveal>
+          <SectionHeading eyebrow={t.events.eyebrow} title={t.events.title} />
+        </Reveal>
 
-        <h3 className="mt-14 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
-          {t.events.upcomingTitle}
-        </h3>
+        <Reveal
+          as="div"
+          delay={90}
+          className="mt-14 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground"
+        >
+          <h3>{t.events.upcomingTitle}</h3>
+        </Reveal>
 
         {upcomingEvents.length > 0 ? (
           <ul className={featured ? "mt-6" : "mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3"}>
@@ -56,8 +63,9 @@ export function EventsSection() {
                       alt={imageAlt}
                       width={featured ? 1200 : 720}
                       height={featured ? 1500 : 480}
+                      sizes={imageSizes.twoCols}
                       tone="cream"
-                      className={featured ? "border-0" : undefined}
+                      className={featured ? "card-media border-0" : "card-media"}
                       imgClassName="object-cover"
                     />
 
@@ -142,19 +150,24 @@ export function EventsSection() {
 
         {pastEvents.length > 0 ? (
           <>
-            <h3 className="mt-20 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground">
-              {t.events.pastTitle}
-            </h3>
+            <Reveal
+              as="div"
+              className="mt-20 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground"
+            >
+              <h3>{t.events.pastTitle}</h3>
+            </Reveal>
 
             <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {pastEvents.map((event, i) => (
-                <Reveal as="li" key={event.id} delay={i * 90}>
+                <Reveal as="li" key={event.id} delay={Math.min(i * 90, 540)}>
                   <article className="interactive-card border border-border bg-card">
                     <BrandImage
                       src={event.image}
                       alt={event.name}
                       width={720}
                       height={520}
+                      sizes={imageSizes.gallery}
+                      className="card-media"
                       tone="cream"
                     />
 
