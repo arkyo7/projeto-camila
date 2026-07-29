@@ -61,14 +61,14 @@ export function SponsorsSection() {
             );
 
             return (
-              <Reveal as="li" key={sponsor.id} delay={i * 60}>
+              <Reveal as="li" key={sponsor.id} delay={i * 90}>
                 {sponsor.url ? (
                   <a
                     href={sponsor.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={t.sponsors.linkAria.replace("{brand}", sponsor.name)}
-                    className="block h-full border border-border transition-colors hover:border-gold"
+                    className="interactive-card block h-full border border-border"
                   >
                     {content}
                   </a>

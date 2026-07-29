@@ -25,14 +25,14 @@ export function HighlightsSection() {
 
         <ul className="mt-14 grid gap-6 lg:grid-cols-3">
           <Reveal as="li" className="flex">
-            <article className="flex w-full flex-col border border-border bg-background">
+            <article className="interactive-card flex w-full flex-col border border-border bg-background">
               <BrandImage
                 src={podcast.image || undefined}
                 alt={t.highlights.podcast.imageAlt}
                 width={720}
                 height={405}
                 tone="navy"
-                className="border-b border-border"
+                className="card-media border-b border-border"
               />
               <div className="flex flex-1 flex-col p-7">
                 <p className="flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.24em] text-gold">
@@ -51,25 +51,25 @@ export function HighlightsSection() {
                     href={podcast.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-7 inline-flex items-center justify-center gap-2 bg-navy px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-navy-soft"
+                    className="btn-motion mt-7 inline-flex items-center justify-center gap-2 bg-navy px-6 py-3 text-sm font-medium text-cream hover:bg-navy-soft"
                   >
                     {t.highlights.podcast.cta}
-                    <ArrowUpRight size={15} aria-hidden="true" />
+                    <ArrowUpRight size={15} aria-hidden="true" className="btn-arrow" />
                   </a>
                 ) : null}
               </div>
             </article>
           </Reveal>
 
-          <Reveal as="li" delay={80} className="flex">
-            <article className="flex w-full flex-col border border-border bg-background">
+          <Reveal as="li" delay={90} className="flex">
+            <article className="interactive-card flex w-full flex-col border border-border bg-background">
               <BrandImage
                 src={magazine.image || undefined}
                 alt={t.highlights.magazine.imageAlt}
                 width={720}
                 height={405}
                 tone="cream"
-                className="border-b border-border"
+                className="card-media border-b border-border"
                 imgClassName="object-contain bg-cream p-2"
               />
               <div className="flex flex-1 flex-col p-7">
@@ -95,18 +95,18 @@ export function HighlightsSection() {
                     href={magazine.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-7 inline-flex items-center justify-center gap-2 bg-navy px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-navy-soft"
+                    className="btn-motion mt-7 inline-flex items-center justify-center gap-2 bg-navy px-6 py-3 text-sm font-medium text-cream hover:bg-navy-soft"
                   >
                     {t.highlights.magazine.cta}
-                    <ArrowUpRight size={15} aria-hidden="true" />
+                    <ArrowUpRight size={15} aria-hidden="true" className="btn-arrow" />
                   </a>
                 ) : null}
               </div>
             </article>
           </Reveal>
 
-          <Reveal as="li" delay={160} className="flex">
-            <article className="flex w-full flex-col border border-border bg-background">
+          <Reveal as="li" delay={180} className="flex">
+            <article className="interactive-card flex w-full flex-col border border-border bg-background">
               <div className="flex h-[203px] items-center justify-center border-b border-border bg-navy p-6">
                 {siteConfig.logos.voice ? (
                   <img

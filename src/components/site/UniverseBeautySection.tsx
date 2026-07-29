@@ -70,7 +70,7 @@ export function UniverseBeautySection() {
                 href={ub.instagramUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-navy px-6 py-3.5 text-sm font-medium text-cream transition-colors hover:bg-navy-soft"
+                className="btn-motion inline-flex items-center gap-2 bg-navy px-6 py-3.5 text-sm font-medium text-cream hover:bg-navy-soft"
               >
                 <Instagram size={16} aria-hidden="true" />
                 {t.universe.primaryCta}
@@ -79,10 +79,10 @@ export function UniverseBeautySection() {
                 href={whatsappLink(t.universe.message)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-gold px-6 py-3.5 text-sm font-medium text-navy transition-colors hover:bg-gold hover:text-navy"
+                className="btn-motion inline-flex items-center gap-2 border border-gold px-6 py-3.5 text-sm font-medium text-navy hover:bg-gold hover:text-navy"
               >
                 {t.universe.secondaryCta}
-                <ArrowUpRight size={15} aria-hidden="true" />
+                <ArrowUpRight size={15} aria-hidden="true" className="btn-arrow" />
               </a>
               {ub.shopUrl ? (
                 <a

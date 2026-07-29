@@ -33,15 +33,15 @@ export function BeautySection() {
           {beautyServices.map((service, i) => {
             const duration = service.duration ? getText(service.duration) : "";
             return (
-              <Reveal as="li" key={service.id} delay={i * 80} className="flex">
-                <article className="flex w-full flex-col border border-nude/50 bg-background transition-colors hover:border-gold/60">
+              <Reveal as="li" key={service.id} delay={i * 90} className="flex">
+                <article className="interactive-card flex w-full flex-col border border-nude/50 bg-background">
                   <BrandImage
                     src={service.image}
                     alt={getText(service.imageAlt)}
                     width={800}
                     height={1000}
                     tone="blush"
-                    className="border-b border-nude/40"
+                    className="card-media border-b border-nude/40"
                   />
                   <div className="flex flex-1 flex-col p-7">
                     <h3 className="text-xl leading-snug text-navy">{getText(service.name)}</h3>
@@ -65,7 +65,7 @@ export function BeautySection() {
                       href={whatsappLink(getText(service.whatsappMessage))}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-7 inline-flex items-center justify-center gap-2 bg-gold px-6 py-4 text-sm font-medium uppercase tracking-[0.14em] text-navy shadow-[0_1px_0_0_rgba(11,24,48,0.08)] transition-colors hover:bg-gold-light"
+                      className="btn-motion mt-7 inline-flex items-center justify-center gap-2 bg-gold px-6 py-4 text-sm font-medium uppercase tracking-[0.14em] text-navy hover:bg-gold-light"
                     >
                       <MessageCircle size={15} aria-hidden="true" className="text-navy" />
                       {t.beauty.serviceCta}
@@ -84,11 +84,11 @@ export function BeautySection() {
           <div aria-hidden="true" className="gold-rule mt-5" />
 
           <ul className="mt-10 grid gap-8 md:grid-cols-3">
-            {t.beauty.differentials.map((item) => (
-              <li key={item.title} className="border-t border-gold/30 pt-5">
+            {t.beauty.differentials.map((item, i) => (
+              <Reveal as="li" key={item.title} delay={i * 90} className="border-t border-gold/30 pt-5">
                 <h4 className="text-base text-navy">{item.title}</h4>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
-              </li>
+              </Reveal>
             ))}
           </ul>
 
@@ -101,7 +101,7 @@ export function BeautySection() {
               href={whatsappLink(t.beauty.scheduleMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-fit shrink-0 items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium uppercase tracking-[0.14em] text-navy transition-colors hover:bg-gold-light"
+              className="btn-motion inline-flex w-fit shrink-0 items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium uppercase tracking-[0.14em] text-navy hover:bg-gold-light"
             >
               <MessageCircle size={15} aria-hidden="true" className="text-navy" />
               {t.beauty.scheduleCta}

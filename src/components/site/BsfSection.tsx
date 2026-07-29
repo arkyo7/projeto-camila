@@ -99,7 +99,7 @@ export function BsfSection() {
             };
 
             return (
-              <Reveal key={image.id} delay={i * 60} className="mb-4 break-inside-avoid">
+              <Reveal key={image.id} delay={i * 90} className="mb-4 break-inside-avoid">
                 <BrandImage
                   src={image.src}
                   alt={image.alt}
@@ -118,10 +118,10 @@ export function BsfSection() {
           href={whatsappLink(t.bsf.message)}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-12 inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy transition-colors hover:bg-gold-light"
+          className="btn-motion mt-12 inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy hover:bg-gold-light"
         >
           {t.bsf.cta}
-          <ArrowRight size={16} aria-hidden="true" />
+          <ArrowRight size={16} aria-hidden="true" className="btn-arrow" />
         </a>
       </div>
     </section>

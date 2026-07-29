@@ -43,12 +43,12 @@ export function EventsSection() {
               const whatsappMessage = t.events.interestMessage.replace("{event}", name);
 
               return (
-                <Reveal as="li" key={event.id} delay={i * 80} className="flex">
+                <Reveal as="li" key={event.id} delay={i * 90} className="flex">
                   <article
                     className={
                       featured
-                        ? "grid w-full overflow-hidden border border-gold/30 bg-card lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch"
-                        : "flex w-full flex-col border border-border bg-card"
+                        ? "interactive-card grid w-full overflow-hidden border border-gold/30 bg-card lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch"
+                        : "interactive-card flex w-full flex-col border border-border bg-card"
                     }
                   >
                     <BrandImage
@@ -113,7 +113,7 @@ export function EventsSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${buttonText}: ${name}`}
-                        className="mt-8 inline-flex w-full items-center justify-center bg-navy px-6 py-3.5 text-sm font-medium text-cream transition-colors hover:bg-navy-soft sm:w-auto sm:self-start"
+                        className="btn-motion mt-8 inline-flex w-full items-center justify-center bg-navy px-6 py-3.5 text-sm font-medium text-cream hover:bg-navy-soft sm:w-auto sm:self-start"
                       >
                         {buttonText}
                       </a>
@@ -133,7 +133,7 @@ export function EventsSection() {
               href={whatsappLink(t.events.emptyMessage)}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center justify-center bg-navy px-7 py-3.5 text-sm font-medium text-cream transition-colors hover:bg-navy-soft"
+              className="btn-motion mt-8 inline-flex items-center justify-center bg-navy px-7 py-3.5 text-sm font-medium text-cream hover:bg-navy-soft"
             >
               {t.events.emptyCta}
             </a>
@@ -148,8 +148,8 @@ export function EventsSection() {
 
             <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {pastEvents.map((event, i) => (
-                <Reveal as="li" key={event.id} delay={i * 70}>
-                  <article className="border border-border bg-card">
+                <Reveal as="li" key={event.id} delay={i * 90}>
+                  <article className="interactive-card border border-border bg-card">
                     <BrandImage
                       src={event.image}
                       alt={event.name}
