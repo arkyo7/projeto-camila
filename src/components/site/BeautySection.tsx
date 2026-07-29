@@ -5,6 +5,7 @@ import { SectionHeading } from "./SectionHeading";
 import { siteConfig } from "@/config/siteConfig";
 import { beautyServices } from "@/data/siteContent";
 import type { LocalizedText } from "@/data/types";
+import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -19,15 +20,17 @@ export function BeautySection() {
   return (
     <section id="beauty" className="border-y border-gold/25 bg-blush/40 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.beauty.eyebrow}
-          title={t.beauty.title}
-          subtitle={t.beauty.subtitle}
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow={t.beauty.eyebrow}
+            title={t.beauty.title}
+            subtitle={t.beauty.subtitle}
+          />
+        </Reveal>
 
-        <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground">
-          {t.beauty.intro}
-        </p>
+        <Reveal delay={90} className="mt-8 max-w-3xl">
+          <p className="text-base leading-relaxed text-muted-foreground">{t.beauty.intro}</p>
+        </Reveal>
 
         <ul className="mt-12 grid gap-8 sm:grid-cols-2">
           {beautyServices.map((service, i) => {
@@ -40,6 +43,7 @@ export function BeautySection() {
                     alt={getText(service.imageAlt)}
                     width={800}
                     height={1000}
+                    sizes={imageSizes.twoCols}
                     tone="blush"
                     className="card-media border-b border-nude/40"
                   />
@@ -78,10 +82,12 @@ export function BeautySection() {
         </ul>
 
         <div className="mt-16 border border-gold/30 bg-background p-8 sm:p-12">
-          <h3 className="max-w-2xl text-2xl leading-snug text-navy sm:text-3xl">
-            {t.beauty.differentialsTitle}
-          </h3>
-          <div aria-hidden="true" className="gold-rule mt-5" />
+          <Reveal>
+            <h3 className="max-w-2xl text-2xl leading-snug text-navy sm:text-3xl">
+              {t.beauty.differentialsTitle}
+            </h3>
+            <div aria-hidden="true" className="gold-rule mt-5" />
+          </Reveal>
 
           <ul className="mt-10 grid gap-8 md:grid-cols-3">
             {t.beauty.differentials.map((item, i) => (
