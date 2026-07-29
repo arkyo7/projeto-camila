@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle } from "lucide-react";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Monogram } from "./Monogram";
 import { navItems } from "./navigation";
 import { siteConfig } from "@/config/siteConfig";
@@ -21,7 +20,6 @@ export function Footer() {
               <span className="font-serif text-lg">Camila Maia</span>
             </div>
             <p className="mt-5 text-sm leading-relaxed">{t.footer.tagline}</p>
-            <LanguageSwitcher tone="light" className="mt-6" />
           </div>
 
           <nav aria-label={t.footer.navTitle} className="min-w-0">
