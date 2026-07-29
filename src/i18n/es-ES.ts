@@ -423,11 +423,8 @@ export const esES: Dictionary = {
     errors: {
       name: "Indica tu nombre completo.",
       email: "Indica un correo electrónico válido.",
-      phone: "Teléfono",
-      phoneCode: "Código de país",
-      phoneNumber: "Número de teléfono",
+      phone: "Indica un número de teléfono válido.",
       country: "Selecciona un país de la lista.",
-      phoneInvalid: "Indica un número de teléfono válido.",
       interest: "Selecciona un área de interés.",
       message: "Escribe un mensaje.",
       consent: "Es necesario autorizar el uso de los datos.",

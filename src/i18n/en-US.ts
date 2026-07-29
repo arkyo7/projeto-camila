@@ -414,11 +414,8 @@ export const enUS: Dictionary = {
     errors: {
       name: "Please provide your full name.",
       email: "Please provide a valid email.",
-      phone: "Phone",
-      phoneCode: "Country code",
-      phoneNumber: "Phone number",
+      phone: "Please provide a valid phone number.",
       country: "Please select a country from the list.",
-      phoneInvalid: "Please provide a valid phone number.",
       interest: "Please select an area of interest.",
       message: "Please write a message.",
       consent: "You must authorize the use of your data.",
