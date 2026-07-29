@@ -16,11 +16,13 @@ export function SponsorsSection() {
   return (
     <section id="patrocinadores" className="bg-background py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.sponsors.eyebrow}
-          title={t.sponsors.title}
-          subtitle={t.sponsors.subtitle}
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow={t.sponsors.eyebrow}
+            title={t.sponsors.title}
+            subtitle={t.sponsors.subtitle}
+          />
+        </Reveal>
 
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {sponsors.map((sponsor, i) => {
@@ -61,7 +63,7 @@ export function SponsorsSection() {
             );
 
             return (
-              <Reveal as="li" key={sponsor.id} delay={i * 90}>
+              <Reveal as="li" key={sponsor.id} delay={Math.min(i * 90, 540)}>
                 {sponsor.url ? (
                   <a
                     href={sponsor.url}

@@ -79,7 +79,7 @@ export function UniverseBeautySection() {
                 href={whatsappLink(t.universe.message)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-motion inline-flex items-center gap-2 border border-gold px-6 py-3.5 text-sm font-medium text-navy hover:bg-gold hover:text-navy"
+                className="btn-motion btn-fill-gold inline-flex items-center gap-2 border border-gold bg-transparent px-6 py-3.5 text-sm font-medium text-navy"
               >
                 {t.universe.secondaryCta}
                 <ArrowUpRight size={15} aria-hidden="true" className="btn-arrow" />

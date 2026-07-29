@@ -3,6 +3,7 @@ import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { siteConfig } from "@/config/siteConfig";
+import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 
 /**
@@ -17,11 +18,13 @@ export function HighlightsSection() {
   return (
     <section id="destaques" className="bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.highlights.eyebrow}
-          title={t.highlights.title}
-          subtitle={t.highlights.subtitle}
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow={t.highlights.eyebrow}
+            title={t.highlights.title}
+            subtitle={t.highlights.subtitle}
+          />
+        </Reveal>
 
         <ul className="mt-14 grid gap-6 lg:grid-cols-3">
           <Reveal as="li" className="flex">
@@ -31,6 +34,7 @@ export function HighlightsSection() {
                 alt={t.highlights.podcast.imageAlt}
                 width={720}
                 height={405}
+                sizes={imageSizes.gallery}
                 tone="navy"
                 className="card-media border-b border-border"
               />
@@ -68,6 +72,7 @@ export function HighlightsSection() {
                 alt={t.highlights.magazine.imageAlt}
                 width={720}
                 height={405}
+                sizes={imageSizes.gallery}
                 tone="cream"
                 className="card-media border-b border-border"
                 imgClassName="object-contain bg-cream p-2"
@@ -107,7 +112,7 @@ export function HighlightsSection() {
 
           <Reveal as="li" delay={180} className="flex">
             <article className="interactive-card flex w-full flex-col border border-border bg-background">
-              <div className="flex h-[203px] items-center justify-center border-b border-border bg-navy p-6">
+              <div className="card-media flex h-[203px] items-center justify-center border-b border-border bg-navy p-6">
                 {siteConfig.logos.voice ? (
                   <img
                     src={siteConfig.logos.voice}

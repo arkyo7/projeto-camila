@@ -1,9 +1,12 @@
 import type { CSSProperties } from "react";
 import { Monogram } from "./Monogram";
+import { imageSrcSet } from "@/lib/images";
 import { cn } from "@/lib/utils";
 
 interface BrandImageProps {
   src?: string;
+  srcSet?: string;
+  sizes?: string;
   alt: string;
   width: number;
   height: number;
@@ -11,6 +14,9 @@ interface BrandImageProps {
   imgClassName?: string;
   objectPosition?: string;
   priority?: boolean;
+  loading?: "eager" | "lazy";
+  fetchPriority?: "high" | "low" | "auto";
+  decoding?: "sync" | "async" | "auto";
   tone?: "navy" | "cream" | "blush";
   style?: CSSProperties;
 }
@@ -27,6 +33,8 @@ const tones = {
  */
 export function BrandImage({
   src,
+  srcSet,
+  sizes,
   alt,
   width,
   height,
@@ -34,9 +42,14 @@ export function BrandImage({
   imgClassName,
   objectPosition = "center",
   priority = false,
+  loading,
+  fetchPriority,
+  decoding = "async",
   tone = "navy",
   style,
 }: BrandImageProps) {
+  const resolvedSrcSet = srcSet ?? imageSrcSet(src);
+
   return (
     <div
       className={cn("relative overflow-hidden", className)}
@@ -45,12 +58,14 @@ export function BrandImage({
       {src ? (
         <img
           src={src}
+          srcSet={resolvedSrcSet}
+          sizes={resolvedSrcSet ? sizes : undefined}
           alt={alt}
           width={width}
           height={height}
-          loading={priority ? "eager" : "lazy"}
-          decoding="async"
-          fetchPriority={priority ? "high" : undefined}
+          loading={loading ?? (priority ? "eager" : "lazy")}
+          decoding={decoding}
+          fetchPriority={fetchPriority ?? (priority ? "high" : undefined)}
           style={{ objectPosition }}
           className={cn("h-full w-full object-cover", imgClassName)}
         />

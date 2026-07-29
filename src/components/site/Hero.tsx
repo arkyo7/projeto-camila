@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { BrandImage } from "./BrandImage";
+import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 
 export function Hero() {
@@ -67,13 +68,14 @@ export function Hero() {
             width={860}
             height={1080}
             priority
+            sizes={imageSizes.hero}
             tone="navy"
             className="hero-in-media relative"
             imgClassName="!object-[center_20%] md:!object-[center_25%]"
-            style={{ animationDelay: "220ms" }}
+            style={{ animationDelay: "500ms" }}
           />
           <div
-            style={{ animationDelay: "520ms" }}
+            style={{ animationDelay: "600ms" }}
             className="hero-in relative mt-[-1px] border border-gold/25 bg-navy-soft px-6 py-5"
           >
             <p className="font-serif text-xl text-cream">{t.hero.badgeName}</p>

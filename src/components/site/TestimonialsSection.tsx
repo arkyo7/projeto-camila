@@ -13,10 +13,12 @@ export function TestimonialsSection() {
   return (
     <section id="depoimentos" className="bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading eyebrow={t.testimonials.eyebrow} title={t.testimonials.title} />
+        <Reveal>
+          <SectionHeading eyebrow={t.testimonials.eyebrow} title={t.testimonials.title} />
+        </Reveal>
         <ul className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((item, i) => (
-            <Reveal as="li" key={item.id} delay={i * 90}>
+            <Reveal as="li" key={item.id} delay={Math.min(i * 90, 540)}>
               <figure className="interactive-card flex h-full flex-col border border-border bg-card p-7">
                 <blockquote className="flex-1 text-base leading-relaxed text-navy">
                   “{item.quote}”

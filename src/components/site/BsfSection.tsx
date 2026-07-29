@@ -3,6 +3,7 @@ import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { bsfGallery } from "@/data/siteContent";
+import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -61,20 +62,26 @@ export function BsfSection() {
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading eyebrow={t.bsf.eyebrow} title={t.bsf.title} tone="light" />
+        <Reveal>
+          <SectionHeading eyebrow={t.bsf.eyebrow} title={t.bsf.title} tone="light" />
+        </Reveal>
 
-        <p className="mt-8 max-w-3xl font-serif text-2xl leading-snug text-gold-light sm:text-3xl">
-          {t.bsf.headline}
-        </p>
+        <Reveal delay={90} className="mt-8 max-w-3xl">
+          <p className="font-serif text-2xl leading-snug text-gold-light sm:text-3xl">
+            {t.bsf.headline}
+          </p>
+        </Reveal>
 
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream/70">{t.bsf.text}</p>
+        <Reveal delay={180} className="mt-6 max-w-2xl">
+          <p className="text-base leading-relaxed text-cream/70">{t.bsf.text}</p>
+        </Reveal>
 
         <ul className="mt-12 grid gap-px border border-cream/10 sm:grid-cols-2 lg:grid-cols-4">
           {t.bsf.pillars.map((pillar, i) => (
             <Reveal
               as="li"
               key={pillar.title}
-              delay={i * 70}
+              delay={Math.min(i * 90, 540)}
               className="border-b border-cream/10 p-7 last:border-b-0 sm:border-r sm:[&:nth-child(2n)]:border-r-0 lg:border-b-0 lg:border-r lg:[&:nth-child(2n)]:border-r lg:last:border-r-0"
             >
               <h3 className="text-xl text-cream">{pillar.title}</h3>
@@ -99,12 +106,17 @@ export function BsfSection() {
             };
 
             return (
-              <Reveal key={image.id} delay={i * 90} className="mb-4 break-inside-avoid">
+              <Reveal
+                key={image.id}
+                delay={Math.min(i * 90, 540)}
+                className="mb-4 break-inside-avoid"
+              >
                 <BrandImage
                   src={image.src}
                   alt={image.alt}
                   width={layout.width}
                   height={layout.height}
+                  sizes={imageSizes.gallery}
                   objectPosition={layout.objectPosition}
                   tone="navy"
                   className="border border-cream/10"

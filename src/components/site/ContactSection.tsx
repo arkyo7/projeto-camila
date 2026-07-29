@@ -3,6 +3,7 @@ import { Check, Copy, Instagram, MessageCircle } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { z } from "zod";
 import { CountrySelect } from "./CountrySelect";
+import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -144,263 +145,269 @@ export function ContactSection() {
   return (
     <section id="contato" className="bg-cream py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <SectionHeading
-          eyebrow={t.contact.eyebrow}
-          title={t.contact.title}
-          subtitle={t.contact.subtitle}
-        />
+        <Reveal>
+          <SectionHeading
+            eyebrow={t.contact.eyebrow}
+            title={t.contact.title}
+            subtitle={t.contact.subtitle}
+          />
+        </Reveal>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-          <form
-            noValidate
-            onSubmit={handleSubmit}
-            className="min-w-0 border border-border bg-background p-6 sm:p-9"
-          >
-            <div className="grid gap-5 sm:grid-cols-2">
-              <div className="min-w-0">
-                <Label htmlFor="name">{t.contact.fields.name}</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  autoComplete="name"
-                  maxLength={120}
-                  aria-invalid={Boolean(errors.name)}
-                  aria-describedby={errors.name ? "name-error" : undefined}
-                  className={fieldClass}
-                />
-                {errors.name ? (
-                  <p id="name-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.name}
-                  </p>
-                ) : null}
-              </div>
+          <Reveal delay={90} className="min-w-0">
+            <form
+              noValidate
+              onSubmit={handleSubmit}
+              className="min-w-0 border border-border bg-background p-6 sm:p-9"
+            >
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div className="min-w-0">
+                  <Label htmlFor="name">{t.contact.fields.name}</Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    autoComplete="name"
+                    maxLength={120}
+                    aria-invalid={Boolean(errors.name)}
+                    aria-describedby={errors.name ? "name-error" : undefined}
+                    className={fieldClass}
+                  />
+                  {errors.name ? (
+                    <p id="name-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                      {errors.name}
+                    </p>
+                  ) : null}
+                </div>
 
-              <div className="min-w-0">
-                <Label htmlFor="email">{t.contact.fields.email}</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  maxLength={200}
-                  aria-invalid={Boolean(errors.email)}
-                  aria-describedby={errors.email ? "email-error" : undefined}
-                  className={fieldClass}
-                />
-                {errors.email ? (
-                  <p id="email-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.email}
-                  </p>
-                ) : null}
-              </div>
+                <div className="min-w-0">
+                  <Label htmlFor="email">{t.contact.fields.email}</Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autoComplete="email"
+                    maxLength={200}
+                    aria-invalid={Boolean(errors.email)}
+                    aria-describedby={errors.email ? "email-error" : undefined}
+                    className={fieldClass}
+                  />
+                  {errors.email ? (
+                    <p id="email-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                      {errors.email}
+                    </p>
+                  ) : null}
+                </div>
 
-              <div className="min-w-0">
-                <Label htmlFor="phone">{t.contact.fields.phone}</Label>
-                <div
-                  className={`mt-2 flex h-11 min-w-0 items-stretch border border-input bg-background transition-colors focus-within:border-gold ${
-                    errors.phone ? "border-destructive" : ""
-                  }`}
-                >
-                  <div className="w-[5.5rem] shrink-0 border-r border-input">
-                    <CountrySelect
-                      id="phone-code"
-                      variant="dial"
-                      unstyled
-                      value={dialCountry}
-                      onChange={setDialCountry}
-                      ariaLabel={t.contact.fields.phoneCode}
-                      placeholder="+00"
-                      invalid={Boolean(errors.phone)}
-                      describedBy={errors.phone ? "phone-error" : undefined}
+                <div className="min-w-0">
+                  <Label htmlFor="phone">{t.contact.fields.phone}</Label>
+                  <div
+                    className={`mt-2 flex h-11 min-w-0 items-stretch border border-input bg-background transition-colors focus-within:border-gold ${
+                      errors.phone ? "border-destructive" : ""
+                    }`}
+                  >
+                    <div className="w-[5.5rem] shrink-0 border-r border-input">
+                      <CountrySelect
+                        id="phone-code"
+                        variant="dial"
+                        unstyled
+                        value={dialCountry}
+                        onChange={setDialCountry}
+                        ariaLabel={t.contact.fields.phoneCode}
+                        placeholder="+00"
+                        invalid={Boolean(errors.phone)}
+                        describedBy={errors.phone ? "phone-error" : undefined}
+                      />
+                    </div>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      inputMode="tel"
+                      autoComplete="tel-national"
+                      maxLength={24}
+                      value={phone}
+                      onChange={(event) => handlePhoneChange(event.target.value)}
+                      placeholder={t.contact.fields.phoneNumber}
+                      aria-label={t.contact.fields.phoneNumber}
+                      aria-invalid={Boolean(errors.phone)}
+                      aria-describedby={errors.phone ? "phone-error" : undefined}
+                      className="h-full min-w-0 flex-1 rounded-none border-0 bg-transparent shadow-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-gold/60"
                     />
                   </div>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    inputMode="tel"
-                    autoComplete="tel-national"
-                    maxLength={24}
-                    value={phone}
-                    onChange={(event) => handlePhoneChange(event.target.value)}
-                    placeholder={t.contact.fields.phoneNumber}
-                    aria-label={t.contact.fields.phoneNumber}
-                    aria-invalid={Boolean(errors.phone)}
-                    aria-describedby={errors.phone ? "phone-error" : undefined}
-                    className="h-full min-w-0 flex-1 rounded-none border-0 bg-transparent shadow-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-gold/60"
+                  {errors.phone ? (
+                    <p id="phone-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                      {errors.phone}
+                    </p>
+                  ) : null}
+                </div>
+
+                <div className="min-w-0">
+                  <Label htmlFor="country">{t.contact.fields.country}</Label>
+                  <CountrySelect
+                    id="country"
+                    value={country}
+                    onChange={handleCountryChange}
+                    invalid={Boolean(errors.country)}
+                    describedBy={errors.country ? "country-error" : undefined}
                   />
+                  {errors.country ? (
+                    <p id="country-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                      {errors.country}
+                    </p>
+                  ) : null}
                 </div>
-                {errors.phone ? (
-                  <p id="phone-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.phone}
-                  </p>
-                ) : null}
-              </div>
 
-              <div className="min-w-0">
-                <Label htmlFor="country">{t.contact.fields.country}</Label>
-                <CountrySelect
-                  id="country"
-                  value={country}
-                  onChange={handleCountryChange}
-                  invalid={Boolean(errors.country)}
-                  describedBy={errors.country ? "country-error" : undefined}
-                />
-                {errors.country ? (
-                  <p id="country-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.country}
-                  </p>
-                ) : null}
-              </div>
-
-              <div className="min-w-0 sm:col-span-2">
-                <Label htmlFor="interest">{t.contact.fields.interest}</Label>
-                <select
-                  id="interest"
-                  name="interest"
-                  defaultValue=""
-                  aria-invalid={Boolean(errors.interest)}
-                  aria-describedby={errors.interest ? "interest-error" : undefined}
-                  className="mt-2 h-10 w-full border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-none"
-                >
-                  <option value="" disabled>
-                    {t.contact.fields.interestPlaceholder}
-                  </option>
-                  {interestKeys.map((key) => (
-                    <option key={key} value={key}>
-                      {t.contact.interests[key]}
+                <div className="min-w-0 sm:col-span-2">
+                  <Label htmlFor="interest">{t.contact.fields.interest}</Label>
+                  <select
+                    id="interest"
+                    name="interest"
+                    defaultValue=""
+                    aria-invalid={Boolean(errors.interest)}
+                    aria-describedby={errors.interest ? "interest-error" : undefined}
+                    className="mt-2 h-10 w-full border border-input bg-background px-3 text-sm text-foreground focus-visible:outline-none"
+                  >
+                    <option value="" disabled>
+                      {t.contact.fields.interestPlaceholder}
                     </option>
-                  ))}
-                </select>
-                {errors.interest ? (
-                  <p id="interest-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.interest}
-                  </p>
-                ) : null}
-              </div>
-
-              <div className="min-w-0 sm:col-span-2">
-                <Label htmlFor="message">{t.contact.fields.message}</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  maxLength={1200}
-                  aria-invalid={Boolean(errors.message)}
-                  aria-describedby={errors.message ? "message-error" : undefined}
-                  className={fieldClass}
-                />
-                {errors.message ? (
-                  <p id="message-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.message}
-                  </p>
-                ) : null}
-              </div>
-            </div>
-
-            <div className="mt-6 flex items-start gap-3">
-              <Checkbox
-                id="consent"
-                name="consent"
-                checked={consent}
-                onCheckedChange={(value) => setConsent(value === true)}
-                aria-describedby={errors.consent ? "consent-error" : undefined}
-                className="mt-0.5"
-              />
-              <div className="min-w-0">
-                <Label htmlFor="consent" className="text-sm font-normal leading-relaxed">
-                  {t.contact.fields.consent}
-                </Label>
-                {errors.consent ? (
-                  <p id="consent-error" role="alert" className="mt-1.5 text-xs text-destructive">
-                    {errors.consent}
-                  </p>
-                ) : null}
-              </div>
-            </div>
-
-            <Button
-              type="submit"
-              disabled={status === "sending"}
-              className="btn-motion mt-8 w-full rounded-none bg-navy px-7 py-6 text-sm font-medium text-cream hover:bg-navy-soft sm:w-auto"
-            >
-              {status === "sending" ? t.contact.preparing : t.contact.submit}
-            </Button>
-
-            <div aria-live="polite" className="mt-5">
-              {status === "ready" ? (
-                <div className="border border-gold/40 bg-cream p-5 text-sm">
-                  <p className="text-navy">{t.contact.ready}</p>
-                  <p className="mt-2 text-muted-foreground">{t.contact.fallback}</p>
-                  <pre className="mt-4 max-h-40 overflow-auto whitespace-pre-wrap break-words border border-border bg-background p-3 text-xs text-muted-foreground">
-                    {preparedMessage}
-                  </pre>
-                  <div className="mt-4 flex flex-wrap gap-3">
-                    <button
-                      type="button"
-                      onClick={copyMessage}
-                      className="inline-flex items-center gap-2 border border-navy px-4 py-2 text-xs font-medium text-navy transition-colors hover:bg-navy hover:text-cream"
-                    >
-                      {copied ? (
-                        <Check size={14} aria-hidden="true" />
-                      ) : (
-                        <Copy size={14} aria-hidden="true" />
-                      )}
-                      {copied ? t.contact.copied : t.contact.copy}
-                    </button>
-                    <a
-                      href={whatsappLink(preparedMessage)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 border border-gold bg-gold px-4 py-2 text-xs font-medium text-navy transition-colors hover:bg-gold-light"
-                    >
-                      {t.contact.openManually}
-                    </a>
-                  </div>
+                    {interestKeys.map((key) => (
+                      <option key={key} value={key}>
+                        {t.contact.interests[key]}
+                      </option>
+                    ))}
+                  </select>
+                  {errors.interest ? (
+                    <p id="interest-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                      {errors.interest}
+                    </p>
+                  ) : null}
                 </div>
-              ) : null}
-            </div>
-          </form>
 
-          <aside className="min-w-0 border border-border bg-background p-7">
-            <h3 className="text-lg text-navy">{t.contact.directTitle}</h3>
-            <div aria-hidden="true" className="gold-rule mt-3" />
-            <ul className="mt-6 space-y-4 text-sm">
-              <li>
-                <a
-                  href={whatsappLink(t.float.message)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
-                >
-                  <MessageCircle size={17} aria-hidden="true" className="text-gold" />
-                  {siteConfig.whatsapp.display}
-                </a>
-              </li>
-            </ul>
+                <div className="min-w-0 sm:col-span-2">
+                  <Label htmlFor="message">{t.contact.fields.message}</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    maxLength={1200}
+                    aria-invalid={Boolean(errors.message)}
+                    aria-describedby={errors.message ? "message-error" : undefined}
+                    className={fieldClass}
+                  />
+                  {errors.message ? (
+                    <p id="message-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                      {errors.message}
+                    </p>
+                  ) : null}
+                </div>
+              </div>
 
-            <h3 className="mt-8 text-lg text-navy">{t.contact.socialsTitle}</h3>
-            <div aria-hidden="true" className="gold-rule mt-3" />
-            <ul className="mt-6 space-y-5 text-sm">
-              {socialEntries.map((entry) => (
-                <li key={entry.url} className="min-w-0">
-                  <p className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
-                    {entry.label}
-                  </p>
+              <div className="mt-6 flex items-start gap-3">
+                <Checkbox
+                  id="consent"
+                  name="consent"
+                  checked={consent}
+                  onCheckedChange={(value) => setConsent(value === true)}
+                  aria-describedby={errors.consent ? "consent-error" : undefined}
+                  className="mt-0.5"
+                />
+                <div className="min-w-0">
+                  <Label htmlFor="consent" className="text-sm font-normal leading-relaxed">
+                    {t.contact.fields.consent}
+                  </Label>
+                  {errors.consent ? (
+                    <p id="consent-error" role="alert" className="mt-1.5 text-xs text-destructive">
+                      {errors.consent}
+                    </p>
+                  ) : null}
+                </div>
+              </div>
+
+              <Button
+                type="submit"
+                disabled={status === "sending"}
+                className="btn-motion mt-8 w-full rounded-none bg-navy px-7 py-6 text-sm font-medium text-cream hover:bg-navy-soft sm:w-auto"
+              >
+                {status === "sending" ? t.contact.preparing : t.contact.submit}
+              </Button>
+
+              <div aria-live="polite" className="mt-5">
+                {status === "ready" ? (
+                  <div className="border border-gold/40 bg-cream p-5 text-sm">
+                    <p className="text-navy">{t.contact.ready}</p>
+                    <p className="mt-2 text-muted-foreground">{t.contact.fallback}</p>
+                    <pre className="mt-4 max-h-40 overflow-auto whitespace-pre-wrap break-words border border-border bg-background p-3 text-xs text-muted-foreground">
+                      {preparedMessage}
+                    </pre>
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      <button
+                        type="button"
+                        onClick={copyMessage}
+                        className="inline-flex items-center gap-2 border border-navy px-4 py-2 text-xs font-medium text-navy transition-colors hover:bg-navy hover:text-cream"
+                      >
+                        {copied ? (
+                          <Check size={14} aria-hidden="true" />
+                        ) : (
+                          <Copy size={14} aria-hidden="true" />
+                        )}
+                        {copied ? t.contact.copied : t.contact.copy}
+                      </button>
+                      <a
+                        href={whatsappLink(preparedMessage)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 border border-gold bg-gold px-4 py-2 text-xs font-medium text-navy transition-colors hover:bg-gold-light"
+                      >
+                        {t.contact.openManually}
+                      </a>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            </form>
+          </Reveal>
+
+          <Reveal delay={180} className="min-w-0">
+            <aside className="min-w-0 border border-border bg-background p-7">
+              <h3 className="text-lg text-navy">{t.contact.directTitle}</h3>
+              <div aria-hidden="true" className="gold-rule mt-3" />
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
                   <a
-                    href={entry.url}
+                    href={whatsappLink(t.float.message)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={t.contact.socialAria.replace("{brand}", entry.label)}
-                    className="mt-1.5 inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
+                    className="inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
                   >
-                    <Instagram size={17} aria-hidden="true" className="text-gold" />
-                    {entry.handle}
+                    <MessageCircle size={17} aria-hidden="true" className="text-gold" />
+                    {siteConfig.whatsapp.display}
                   </a>
                 </li>
-              ))}
-            </ul>
-          </aside>
+              </ul>
+
+              <h3 className="mt-8 text-lg text-navy">{t.contact.socialsTitle}</h3>
+              <div aria-hidden="true" className="gold-rule mt-3" />
+              <ul className="mt-6 space-y-5 text-sm">
+                {socialEntries.map((entry) => (
+                  <li key={entry.url} className="min-w-0">
+                    <p className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
+                      {entry.label}
+                    </p>
+                    <a
+                      href={entry.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={t.contact.socialAria.replace("{brand}", entry.label)}
+                      className="mt-1.5 inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
+                    >
+                      <Instagram size={17} aria-hidden="true" className="text-gold" />
+                      {entry.handle}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </Reveal>
         </div>
       </div>
     </section>
