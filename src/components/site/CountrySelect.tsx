@@ -24,6 +24,8 @@ interface CountrySelectProps {
   describedBy?: string;
   className?: string;
   ariaLabel?: string;
+  /** Remove o estilo padrão do gatilho (para uso dentro de um campo composto). */
+  unstyled?: boolean;
 }
 
 export function CountrySelect({
@@ -36,6 +38,7 @@ export function CountrySelect({
   describedBy,
   className,
   ariaLabel,
+  unstyled,
 }: CountrySelectProps) {
   const { t, lang } = useI18n();
   const [open, setOpen] = useState(false);
@@ -48,6 +51,7 @@ export function CountrySelect({
   );
 
   const label = (code: string) => findCountry(code)?.names[lang] ?? code;
+  const isDial = variant === "dial";
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -61,16 +65,18 @@ export function CountrySelect({
           aria-invalid={invalid || undefined}
           aria-describedby={describedBy}
           className={cn(
-            "mt-2 flex h-11 w-full min-w-0 items-center justify-between gap-2 border border-input bg-background px-3 text-left text-sm text-foreground transition-colors hover:border-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60",
-            invalid && "border-destructive",
+            unstyled
+              ? "flex h-full w-full min-w-0 items-center justify-between gap-1.5 bg-transparent px-3 text-left text-sm text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-gold/60"
+              : "mt-2 flex h-11 w-full min-w-0 items-center justify-between gap-2 border border-input bg-background px-3 text-left text-sm text-foreground transition-colors hover:border-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/60",
+            !unstyled && invalid && "border-destructive",
             className,
           )}
         >
           <span className={cn("truncate", !selected && "text-muted-foreground")}>
             {selected
-              ? variant === "dial"
+              ? isDial
                 ? `+${selected.dial}`
-                : `${selected.names[lang]} — +${selected.dial}`
+                : selected.names[lang]
               : (placeholder ?? t.contact.fields.countryPlaceholder)}
           </span>
           <ChevronsUpDown size={14} aria-hidden="true" className="shrink-0 opacity-50" />
@@ -84,7 +90,7 @@ export function CountrySelect({
           <CommandInput
             value={query}
             onValueChange={setQuery}
-            placeholder={t.contact.fields.countrySearch}
+            placeholder={isDial ? t.contact.fields.dialSearch : t.contact.fields.countrySearch}
           />
           <CommandList className="max-h-64">
             <CommandEmpty>{t.contact.fields.countryEmpty}</CommandEmpty>
@@ -100,11 +106,14 @@ export function CountrySelect({
                   }}
                   className="rounded-none text-sm"
                 >
-                  <span className="truncate">
-                    {label(country.code)} — +{country.dial}
-                  </span>
+                  <span className="truncate">{label(country.code)}</span>
+                  {isDial ? (
+                    <span className="ml-auto pl-3 text-xs tabular-nums text-muted-foreground">
+                      +{country.dial}
+                    </span>
+                  ) : null}
                   {country.code === value ? (
-                    <Check size={14} aria-hidden="true" className="ml-auto text-gold" />
+                    <Check size={14} aria-hidden="true" className={cn("text-gold", !isDial && "ml-auto")} />
                   ) : null}
                 </CommandItem>
               ))}

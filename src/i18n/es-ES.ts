@@ -397,6 +397,7 @@ export const esES: Dictionary = {
       country: "País",
       countryPlaceholder: "Selecciona el país",
       countrySearch: "Buscar país",
+      dialSearch: "Buscar país o código",
       countryEmpty: "No se encontró ningún país.",
       interest: "Área de interés",
       interestPlaceholder: "Selecciona el tema",

@@ -200,11 +200,16 @@ export function ContactSection() {
 
               <div className="min-w-0">
                 <Label htmlFor="phone">{t.contact.fields.phone}</Label>
-                <div className="flex min-w-0 items-start gap-2">
-                  <div className="w-[7.5rem] shrink-0">
+                <div
+                  className={`mt-2 flex h-11 min-w-0 items-stretch border border-input bg-background transition-colors focus-within:border-gold ${
+                    errors.phone ? "border-destructive" : ""
+                  }`}
+                >
+                  <div className="w-[5.5rem] shrink-0 border-r border-input">
                     <CountrySelect
                       id="phone-code"
                       variant="dial"
+                      unstyled
                       value={dialCountry}
                       onChange={setDialCountry}
                       ariaLabel={t.contact.fields.phoneCode}
@@ -226,7 +231,7 @@ export function ContactSection() {
                     aria-label={t.contact.fields.phoneNumber}
                     aria-invalid={Boolean(errors.phone)}
                     aria-describedby={errors.phone ? "phone-error" : undefined}
-                    className="mt-2 h-11"
+                    className="h-full min-w-0 flex-1 rounded-none border-0 bg-transparent shadow-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-gold/60"
                   />
                 </div>
                 {errors.phone ? (
