@@ -424,7 +424,7 @@ export const itIT: Dictionary = {
     errors: {
       name: "Inserisci nome e cognome.",
       email: "Inserisci un indirizzo e-mail valido.",
-      phone: "Inserisci un numero di telefono valido.",
+      phoneInvalid: "Inserisci un numero di telefono valido.",
       country: "Seleziona un paese dall'elenco.",
       interest: "Seleziona un'area di interesse.",
       message: "Scrivi un messaggio.",

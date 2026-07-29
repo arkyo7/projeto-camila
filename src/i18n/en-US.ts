@@ -414,7 +414,7 @@ export const enUS: Dictionary = {
     errors: {
       name: "Please provide your full name.",
       email: "Please provide a valid email.",
-      phone: "Please provide a valid phone number.",
+      phoneInvalid: "Please provide a valid phone number.",
       country: "Please select a country from the list.",
       interest: "Please select an area of interest.",
       message: "Please write a message.",

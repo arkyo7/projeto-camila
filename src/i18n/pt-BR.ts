@@ -420,7 +420,6 @@ export const ptBR = {
     errors: {
       name: "Informe seu nome completo.",
       email: "Informe um e-mail válido.",
-      phone: "Informe um telefone com código do país.",
       country: "Selecione um país da lista.",
       phoneInvalid: "Informe um número de telefone válido.",
       interest: "Selecione uma área de interesse.",
