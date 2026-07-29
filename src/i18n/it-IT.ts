@@ -282,9 +282,18 @@ export const itIT: Dictionary = {
     priceLabel: "Prezzo",
     differentialsTitle: "Perché prenotare con Camila?",
     differentials: [
-      { title: "Trattamento personalizzato", text: "Ogni cliente viene seguita in modo unico, nel rispetto di stile, lineamenti e obiettivo." },
-      { title: "Bellezza con tecnica e cura", text: "Trattamenti pensati per valorizzare la bellezza in modo armonioso, elegante e sicuro." },
-      { title: "Contatto diretto e assistenza", text: "Prenotazione semplice e supporto diretto su WhatsApp." },
+      {
+        title: "Trattamento personalizzato",
+        text: "Ogni cliente viene seguita in modo unico, nel rispetto di stile, lineamenti e obiettivo.",
+      },
+      {
+        title: "Bellezza con tecnica e cura",
+        text: "Trattamenti pensati per valorizzare la bellezza in modo armonioso, elegante e sicuro.",
+      },
+      {
+        title: "Contatto diretto e assistenza",
+        text: "Prenotazione semplice e supporto diretto su WhatsApp.",
+      },
     ],
     scheduleCta: "Consultare gli orari",
     scheduleMessage:

@@ -277,9 +277,18 @@ export const ptBR = {
     priceLabel: "Valor",
     differentialsTitle: "Por que agendar com Camila?",
     differentials: [
-      { title: "Atendimento personalizado", text: "Cada cliente é atendida de forma única, respeitando estilo, traços e objetivo." },
-      { title: "Beleza com técnica e cuidado", text: "Procedimentos pensados para valorizar a beleza de forma harmoniosa, elegante e segura." },
-      { title: "Contato direto e acompanhamento", text: "Agendamento fácil e suporte direto pelo WhatsApp." },
+      {
+        title: "Atendimento personalizado",
+        text: "Cada cliente é atendida de forma única, respeitando estilo, traços e objetivo.",
+      },
+      {
+        title: "Beleza com técnica e cuidado",
+        text: "Procedimentos pensados para valorizar a beleza de forma harmoniosa, elegante e segura.",
+      },
+      {
+        title: "Contato direto e acompanhamento",
+        text: "Agendamento fácil e suporte direto pelo WhatsApp.",
+      },
     ],
     scheduleCta: "Consultar horários",
     scheduleMessage:

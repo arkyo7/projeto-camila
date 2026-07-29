@@ -142,7 +142,6 @@ export function HighlightsSection() {
             </article>
           </Reveal>
         </ul>
-
       </div>
     </section>
   );

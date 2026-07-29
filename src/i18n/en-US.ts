@@ -272,9 +272,18 @@ export const enUS: Dictionary = {
     priceLabel: "Price",
     differentialsTitle: "Why book with Camila?",
     differentials: [
-      { title: "Personalized service", text: "Every client is treated uniquely, respecting her style, features and goal." },
-      { title: "Beauty with technique and care", text: "Treatments designed to enhance beauty in a harmonious, elegant and safe way." },
-      { title: "Direct contact and follow-up", text: "Easy booking and direct support via WhatsApp." },
+      {
+        title: "Personalized service",
+        text: "Every client is treated uniquely, respecting her style, features and goal.",
+      },
+      {
+        title: "Beauty with technique and care",
+        text: "Treatments designed to enhance beauty in a harmonious, elegant and safe way.",
+      },
+      {
+        title: "Direct contact and follow-up",
+        text: "Easy booking and direct support via WhatsApp.",
+      },
     ],
     scheduleCta: "Check availability",
     scheduleMessage:
