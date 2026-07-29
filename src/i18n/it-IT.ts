@@ -41,7 +41,7 @@ export const itIT: Dictionary = {
   pillars: {
     items: [
       "Trattamenti personalizzati",
-      "Sguardo e ciglia",
+      "Ciglia",
       "Sopracciglia",
       "Percorso internazionale",
       "Contatto diretto su WhatsApp",
@@ -286,12 +286,12 @@ export const itIT: Dictionary = {
       { title: "Bellezza con tecnica e cura", text: "Trattamenti pensati per valorizzare la bellezza in modo armonioso, elegante e sicuro." },
       { title: "Contatto diretto e assistenza", text: "Prenotazione semplice e supporto diretto su WhatsApp." },
     ],
-    scheduleCta: "Prenota il tuo appuntamento su WhatsApp",
+    scheduleCta: "Consultare gli orari",
     scheduleMessage:
       "Ciao Camila! Ho conosciuto Camila Maia Beauty attraverso il sito e vorrei ricevere informazioni sui servizi.",
     hoursTitle: "Orari di apertura",
     locationTitle: "Dove",
-    locationNote: "Nuova fase in Spagna prossimamente. Informazioni, disponibilità e prenotazioni direttamente su WhatsApp.",
+    locationNote: "Informazioni su disponibilità e trattamenti direttamente su WhatsApp.",
     days: ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
     closed: "Chiuso",
     cta: "Scrivi su WhatsApp",
