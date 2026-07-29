@@ -6,18 +6,20 @@ import { ContactSection } from "@/components/site/ContactSection";
 import { EventsSection } from "@/components/site/EventsSection";
 import { FaqSection } from "@/components/site/FaqSection";
 import { FinalCta } from "@/components/site/FinalCta";
+import { HighlightsSection } from "@/components/site/HighlightsSection";
 import { Hero } from "@/components/site/Hero";
 import { PathsSection } from "@/components/site/PathsSection";
 import { PositioningStrip } from "@/components/site/PositioningStrip";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { SolutionsSection } from "@/components/site/SolutionsSection";
+import { SponsorsSection } from "@/components/site/SponsorsSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { UniverseBeautySection } from "@/components/site/UniverseBeautySection";
 import { siteConfig } from "@/config/siteConfig";
 
-const title = "Camila Maia | Consultoria, Palestras e Beleza Sem Fronteiras";
+const title = "Camila Maia | Camila Maia Beauty e Beleza Sem Fronteiras";
 const description =
-  "Consultoria, palestras, eventos e conexões para mulheres brasileiras empreendedoras da beleza e da estética. Conheça Camila Maia e o projeto Beleza Sem Fronteiras.";
+  "Empreendedora brasileira do setor da beleza na Europa. Conheça a Camila Maia Beauty, o projeto Beleza Sem Fronteiras, a Universe Beauty e a trajetória de Camila Maia.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -81,14 +83,16 @@ function Index() {
     <SiteLayout>
       <Hero />
       <PositioningStrip />
-      <PathsSection />
       <AboutSection />
-      <SolutionsSection />
-      <UniverseBeautySection />
-      <BsfSection />
-      <EventsSection />
-      <TestimonialsSection />
       <BeautySection />
+      <BsfSection />
+      <SponsorsSection />
+      <EventsSection />
+      <UniverseBeautySection />
+      <HighlightsSection />
+      <PathsSection />
+      <SolutionsSection />
+      <TestimonialsSection />
       <FaqSection />
       <ContactSection />
       <FinalCta />
