@@ -29,7 +29,7 @@ export function Reveal({
           observer.disconnect();
         }
       },
-      { threshold: 0.05, rootMargin: "80px 0px" },
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
     );
     observer.observe(node);
     return () => observer.disconnect();
@@ -39,7 +39,7 @@ export function Reveal({
     <Tag
       ref={ref as never}
       data-visible={visible}
-      style={delay ? { transitionDelay: `${Math.min(delay, 120)}ms` } : undefined}
+      style={delay ? { transitionDelay: `${Math.min(delay, 500)}ms` } : undefined}
       className={cn("reveal", className)}
     >
       {children}
