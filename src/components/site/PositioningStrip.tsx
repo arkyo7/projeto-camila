@@ -1,7 +1,7 @@
-import { Compass, Globe2, Mic2, Sparkles, Users } from "lucide-react";
+import { Eye, Globe2, HeartHandshake, MessageCircle, Sparkles, WandSparkles } from "lucide-react";
 import { useI18n } from "@/i18n";
 
-const icons = [Compass, Mic2, Globe2, Sparkles, Users];
+const icons = [HeartHandshake, Eye, WandSparkles, Globe2, MessageCircle];
 
 export function PositioningStrip() {
   const { t } = useI18n();
