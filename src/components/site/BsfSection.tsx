@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, ChevronDown, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -29,10 +29,7 @@ const editions: BsfEdition[] = [
     title: "BSF Holanda",
     location: "Amsterdã · Países Baixos",
     cover: "/images/camila/bsf-holanda.jpg",
-    images: Array.from({ length: 6 }, (_, index) => ({
-      src: `/images/camila/bsf-holanda-${String(index + 1).padStart(2, "0")}.jpg`,
-      alt: `Registro do Beleza Sem Fronteiras Holanda ${index + 1}`,
-    })),
+    images: [],
   },
   {
     id: "fortaleza",
@@ -131,7 +128,7 @@ function EditionGallery({ edition, copy }: { edition: BsfEdition; copy: (typeof 
       </div>
 
       <div className="relative">
-        <div className="flex h-[28rem] gap-2 overflow-hidden sm:h-[34rem] sm:gap-3">
+        <div className="flex h-[30rem] max-h-[72svh] gap-2 overflow-hidden sm:h-[36rem] sm:max-h-[42rem] sm:gap-3">
           {edition.images.map((image, index) => {
             const isActive = activeImage === index;
             return (
@@ -143,8 +140,8 @@ function EditionGallery({ edition, copy }: { edition: BsfEdition; copy: (typeof 
                 aria-pressed={isActive}
                 className={`relative min-w-0 overflow-hidden border transition-[flex-basis,opacity,border-color] duration-700 ease-out focus-visible:z-10 ${
                   isActive
-                    ? "basis-[72%] border-gold opacity-100 sm:basis-[62%]"
-                    : "basis-[10%] border-cream/10 opacity-55 hover:opacity-80 sm:basis-[8%]"
+                    ? "basis-[82%] border-gold bg-navy opacity-100 sm:basis-[64%]"
+                    : "basis-[6%] border-cream/10 opacity-55 hover:opacity-80 sm:basis-[8%]"
                 }`}
               >
                 <img
@@ -152,7 +149,7 @@ function EditionGallery({ edition, copy }: { edition: BsfEdition; copy: (typeof 
                   alt={isActive ? image.alt : ""}
                   loading="lazy"
                   decoding="async"
-                  className="h-full w-full object-cover"
+                  className={`h-full w-full ${isActive ? "object-contain" : "object-cover"}`}
                 />
                 {!isActive ? <span className="absolute inset-0 bg-navy/20" aria-hidden="true" /> : null}
               </button>
@@ -185,7 +182,18 @@ export function BsfSection() {
   const { t, lang } = useI18n();
   const copy = galleryCopy[lang];
   const [openEdition, setOpenEdition] = useState<BsfEdition["id"] | null>(null);
+  const galleryRef = useRef<HTMLDivElement>(null);
   const selectedEdition = editions.find((edition) => edition.id === openEdition) ?? null;
+
+  useEffect(() => {
+    if (!openEdition || !window.matchMedia("(max-width: 767px)").matches) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      galleryRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [openEdition]);
 
   const toggleEdition = (id: BsfEdition["id"]) => {
     setOpenEdition((current) => (current === id ? null : id));
@@ -282,7 +290,7 @@ export function BsfSection() {
         </div>
 
         {selectedEdition ? (
-          <div className="mt-6" key={selectedEdition.id}>
+          <div ref={galleryRef} className="mt-6 scroll-mt-5 sm:scroll-mt-8" key={selectedEdition.id}>
             <EditionGallery edition={selectedEdition} copy={copy} />
           </div>
         ) : null}
