@@ -4,7 +4,6 @@ import { BeautySection } from "@/components/site/BeautySection";
 import { BsfSection } from "@/components/site/BsfSection";
 import { ContactSection } from "@/components/site/ContactSection";
 import { EventsSection } from "@/components/site/EventsSection";
-import { FaqSection } from "@/components/site/FaqSection";
 import { FinalCta } from "@/components/site/FinalCta";
 import { HighlightsSection } from "@/components/site/HighlightsSection";
 import { Hero } from "@/components/site/Hero";
@@ -80,7 +79,6 @@ function Index() {
       <EventsSection />
       <UniverseBeautySection />
       <HighlightsSection />
-      <FaqSection />
       <ContactSection />
       <FinalCta />
     </SiteLayout>
