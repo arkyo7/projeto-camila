@@ -19,20 +19,22 @@ export function BeautySection() {
         {/* Bloco institucional */}
         <div className="grid items-center gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal className="mx-auto w-full max-w-sm lg:mx-0">
-            <BrandImage
-              src="/images/camila/camila-beauty-institucional.webp"
-              alt={t.beauty.portraitAlt}
-              width={1023}
-              height={1278}
-              sizes={imageSizes.twoCols}
-              objectPosition="50% 30%"
-              tone="blush"
-              className="border border-nude/50"
-            />
+            <div className="interactive-card border border-nude/50">
+              <BrandImage
+                src="/images/camila/camila-beauty-institucional.webp"
+                alt={t.beauty.portraitAlt}
+                width={1023}
+                height={1278}
+                sizes={imageSizes.twoCols}
+                objectPosition="50% 30%"
+                tone="blush"
+                className="card-media border-0"
+              />
+            </div>
           </Reveal>
 
           <Reveal delay={90} className="min-w-0">
-            <div className="mb-8 w-[180px] sm:w-[210px] lg:w-[240px]">
+            <div className="interactive-card mb-8 w-[180px] rounded-full border border-nude/50 sm:w-[210px] lg:w-[240px]">
               <BrandImage
                 src={siteConfig.logos.beauty || undefined}
                 alt={t.beauty.logoAlt}
@@ -40,7 +42,7 @@ export function BeautySection() {
                 height={640}
                 sizes="(min-width: 1024px) 240px, (min-width: 640px) 210px, 180px"
                 tone="cream"
-                className="rounded-full border border-nude/50"
+                className="card-media rounded-full border-0"
               />
             </div>
             <SectionHeading
@@ -107,15 +109,17 @@ export function BeautySection() {
         <ul className="mt-8 grid gap-6 sm:grid-cols-2">
           {beautyServices.map((service, i) => (
             <Reveal as="li" key={service.id} delay={i * 90}>
-              <BrandImage
-                src={service.image}
-                alt={getText(service.imageAlt)}
-                width={800}
-                height={640}
-                sizes={imageSizes.twoCols}
-                tone="blush"
-                className="border border-nude/50"
-              />
+              <article className="interactive-card border border-nude/50">
+                <BrandImage
+                  src={service.image}
+                  alt={getText(service.imageAlt)}
+                  width={800}
+                  height={640}
+                  sizes={imageSizes.twoCols}
+                  tone="blush"
+                  className="card-media border-0"
+                />
+              </article>
             </Reveal>
           ))}
         </ul>
