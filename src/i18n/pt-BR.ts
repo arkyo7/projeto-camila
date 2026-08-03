@@ -265,11 +265,20 @@ export const ptBR = {
     title: "Histórias que atravessam fronteiras",
   },
   beauty: {
-    eyebrow: "Camila Maia Beauty • Atendimento personalizado",
-    title: "Camila Maia Beauty",
-    subtitle: "Beleza, cuidado e experiência personalizada.",
+    eyebrow: "Camila Maia Beauty & Benessere • Atendimento personalizado",
+    title: "Camila Maia Beauty & Benessere",
+    subtitle: "Beleza, cuidado e bem-estar em uma experiência personalizada.",
     intro:
-      "Atendimentos realizados de forma individual e cuidadosa, com atenção ao estilo, às preferências e às necessidades de cada cliente.",
+      "Cada atendimento é realizado de forma individual, respeitando os traços, as preferências e os objetivos de cada cliente. Procedimentos de beleza, estética facial e bem-estar conduzidos com técnica, atenção e cuidado.",
+    portraitAlt: "Espaço reservado para a futura foto institucional da Camila Maia Beauty & Benessere",
+    proceduresTitle: "Procedimentos",
+    categoryCta: "Falar sobre esta categoria",
+    galleryTitle: "Resultados",
+    closingNote:
+      "Consulte disponibilidade, indicação e informações sobre cada procedimento diretamente com Camila.",
+    closingCta: "Agendar avaliação pelo WhatsApp",
+    closingMessage:
+      "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de agendar uma avaliação.",
     logoAlt: "Logotipo da Camila Maia Beauty",
     servicesTitle: "Serviços",
     serviceCta: "Agendar horário",
