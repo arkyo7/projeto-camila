@@ -25,10 +25,10 @@ export const enUS: Dictionary = {
     languageOpen: "Select language",
   },
   hero: {
-    eyebrow: "CAMILA MAIA BEAUTY • PERSONALIZED SERVICE",
+    eyebrow: "CAMILA MAIA BEAUTY & BENESSERE • PERSONALIZED SERVICE",
     headline: "Enhance your beauty with care, technique, and attention to detail.",
     subheadline:
-      "Personalized lash and brow services designed to enhance your expression and offer a beauty experience dedicated to you.",
+      "Personalized beauty, facial aesthetics and well-being procedures designed to enhance your expression and offer an experience dedicated to you.",
     ctaPrimary: "Explore the services",
     ctaSecondary: "Talk to Camila",
     badgeName: "Camila Maia",
@@ -260,11 +260,21 @@ export const enUS: Dictionary = {
     title: "Stories that cross borders",
   },
   beauty: {
-    eyebrow: "Camila Maia Beauty • Personalized service",
-    title: "Camila Maia Beauty",
-    subtitle: "Beauty, care and a personalized experience.",
+    eyebrow: "Camila Maia Beauty & Benessere • Personalized service",
+    title: "Camila Maia Beauty & Benessere",
+    subtitle: "Beauty, care and well-being in a personalized experience.",
     intro:
-      "Services provided individually and carefully, with attention to the style, preferences and needs of each client.",
+      "Every appointment is carried out individually, respecting the features, preferences and goals of each client. Beauty, facial aesthetics and well-being procedures performed with technique, attention and care.",
+    portraitAlt:
+      "Space reserved for the future institutional photo of Camila Maia Beauty & Benessere",
+    proceduresTitle: "Procedures",
+    categoryCta: "Ask about this category",
+    galleryTitle: "Results",
+    closingNote:
+      "Check availability, suitability and details about each procedure directly with Camila.",
+    closingCta: "Book an assessment on WhatsApp",
+    closingMessage:
+      "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like to book an assessment.",
     logoAlt: "Camila Maia Beauty logo",
     servicesTitle: "Services",
     serviceCta: "Book an appointment",

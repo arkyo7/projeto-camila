@@ -25,10 +25,10 @@ export const itIT: Dictionary = {
     languageOpen: "Seleziona la lingua",
   },
   hero: {
-    eyebrow: "CAMILA MAIA BEAUTY • TRATTAMENTI PERSONALIZZATI",
+    eyebrow: "CAMILA MAIA BEAUTY & BENESSERE • TRATTAMENTI PERSONALIZZATI",
     headline: "Valorizza la tua bellezza con cura, tecnica e attenzione ai dettagli.",
     subheadline:
-      "Trattamenti personalizzati per ciglia e sopracciglia, pensati per valorizzare la tua espressione e offrirti un'esperienza di bellezza dedicata a te.",
+      "Trattamenti personalizzati di bellezza, estetica viso e benessere, pensati per valorizzare la tua espressione e offrirti un'esperienza dedicata a te.",
     ctaPrimary: "Scopri i servizi",
     ctaSecondary: "Parla con Camila",
     badgeName: "Camila Maia",
@@ -270,11 +270,21 @@ export const itIT: Dictionary = {
     title: "Storie che attraversano i confini",
   },
   beauty: {
-    eyebrow: "Camila Maia Beauty • Trattamenti personalizzati",
-    title: "Camila Maia Beauty",
-    subtitle: "Bellezza, cura ed esperienza personalizzata.",
+    eyebrow: "Camila Maia Beauty & Benessere • Trattamenti personalizzati",
+    title: "Camila Maia Beauty & Benessere",
+    subtitle: "Bellezza, cura e benessere in un'esperienza personalizzata.",
     intro:
-      "Trattamenti svolti in modo individuale e attento, con cura per lo stile, le preferenze e le esigenze di ogni cliente.",
+      "Ogni trattamento è svolto in modo individuale, rispettando i lineamenti, le preferenze e gli obiettivi di ogni cliente. Trattamenti di bellezza, estetica viso e benessere realizzati con tecnica, attenzione e cura.",
+    portraitAlt:
+      "Spazio riservato alla futura foto istituzionale di Camila Maia Beauty & Benessere",
+    proceduresTitle: "Trattamenti",
+    categoryCta: "Parlare di questa categoria",
+    galleryTitle: "Risultati",
+    closingNote:
+      "Verifica disponibilità, indicazioni e informazioni su ogni trattamento direttamente con Camila.",
+    closingCta: "Prenota una valutazione su WhatsApp",
+    closingMessage:
+      "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei prenotare una valutazione.",
     logoAlt: "Logo di Camila Maia Beauty",
     servicesTitle: "Servizi",
     serviceCta: "Prenota il tuo appuntamento",
