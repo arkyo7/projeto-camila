@@ -58,6 +58,18 @@ export interface BeautyService {
   duration?: LocalizedText;
 }
 
+export interface BeautyProcedure {
+  id: string;
+  name: LocalizedText;
+}
+
+export interface BeautyCategory {
+  id: string;
+  name: LocalizedText;
+  procedures: BeautyProcedure[];
+  whatsappMessage: LocalizedText;
+}
+
 export interface FAQ {
   question: string;
   answer: string;
