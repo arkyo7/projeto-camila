@@ -216,7 +216,7 @@ export const ptBR = {
     secondaryCta: "Falar sobre parcerias",
     shopCta: "Ver a loja",
     catalogCta: "Ver o catálogo",
-    logoAlt: "Logotipo da Universe Beauty",
+    logoAlt: "Logotipo Camila Maia Beauty & Benessere",
     message:
       "Olá, Camila! Gostaria de conversar sobre uma possível parceria com a Universe Beauty.",
   },
@@ -271,7 +271,7 @@ export const ptBR = {
     intro:
       "Cada atendimento é realizado de forma individual, respeitando os traços, as preferências e os objetivos de cada cliente. Procedimentos de beleza, estética facial e bem-estar conduzidos com técnica, atenção e cuidado.",
     portraitAlt:
-      "Espaço reservado para a futura foto institucional da Camila Maia Beauty & Benessere",
+      "Camila Maia apresentando a identidade da Camila Maia Beauty & Benessere",
     proceduresTitle: "Procedimentos",
     categoryCta: "Falar sobre esta categoria",
     galleryTitle: "Resultados",

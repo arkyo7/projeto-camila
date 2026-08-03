@@ -219,7 +219,7 @@ export const itIT: Dictionary = {
     secondaryCta: "Parla di collaborazioni",
     shopCta: "Vai allo shop",
     catalogCta: "Vedi il catalogo",
-    logoAlt: "Logo di Universe Beauty",
+    logoAlt: "Logo Camila Maia Beauty & Benessere",
     message: "Ciao Camila! Vorrei parlare di una possibile collaborazione con Universe Beauty.",
   },
   bsf: {
@@ -276,7 +276,7 @@ export const itIT: Dictionary = {
     intro:
       "Ogni trattamento è svolto in modo individuale, rispettando i lineamenti, le preferenze e gli obiettivi di ogni cliente. Trattamenti di bellezza, estetica viso e benessere realizzati con tecnica, attenzione e cura.",
     portraitAlt:
-      "Spazio riservato alla futura foto istituzionale di Camila Maia Beauty & Benessere",
+      "Camila Maia che presenta l'identità di Camila Maia Beauty & Benessere",
     proceduresTitle: "Trattamenti",
     categoryCta: "Parlare di questa categoria",
     galleryTitle: "Risultati",

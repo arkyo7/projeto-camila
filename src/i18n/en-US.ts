@@ -212,7 +212,7 @@ export const enUS: Dictionary = {
     secondaryCta: "Talk about partnerships",
     shopCta: "Visit the store",
     catalogCta: "View the catalog",
-    logoAlt: "Universe Beauty logo",
+    logoAlt: "Camila Maia Beauty & Benessere logo",
     message: "Hi, Camila! I'd like to talk about a possible partnership with Universe Beauty.",
   },
   bsf: {
@@ -266,7 +266,7 @@ export const enUS: Dictionary = {
     intro:
       "Every appointment is carried out individually, respecting the features, preferences and goals of each client. Beauty, facial aesthetics and well-being procedures performed with technique, attention and care.",
     portraitAlt:
-      "Space reserved for the future institutional photo of Camila Maia Beauty & Benessere",
+      "Camila Maia presenting the Camila Maia Beauty & Benessere identity",
     proceduresTitle: "Procedures",
     categoryCta: "Ask about this category",
     galleryTitle: "Results",
