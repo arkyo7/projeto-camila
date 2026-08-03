@@ -13,9 +13,9 @@ import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { UniverseBeautySection } from "@/components/site/UniverseBeautySection";
 import { siteConfig } from "@/config/siteConfig";
 
-const title = "Camila Maia Beauty | Cílios, Sobrancelhas e Beleza Personalizada";
+const title = "Camila Maia Beauty & Benessere | Beleza, Estética Facial e Bem-Estar";
 const description =
-  "Conheça os atendimentos de cílios e sobrancelhas da Camila Maia Beauty, a trajetória internacional de Camila Maia e seus projetos no mercado da beleza.";
+  "Procedimentos personalizados de beleza, estética facial e bem-estar com Camila Maia: cílios, sobrancelhas, tratamentos faciais, micropigmentação e terapias integrativas.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
