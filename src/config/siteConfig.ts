@@ -67,7 +67,7 @@ export const siteConfig = {
    * fornecidos; enquanto vazios, o site exibe blocos tipográficos neutros.
    */
   logos: {
-    beauty: "",
+    beauty: "/images/camila/camila-beauty-logo.webp",
     bsf: "",
     universeBeauty: "/images/camila/universe-beauty-logo.webp",
     voice: "/images/camila/voz-sem-fronteiras.webp",

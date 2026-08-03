@@ -11,6 +11,10 @@ const SRC_SETS: Record<string, string> = {
     "/images/camila/bsf-barcelona-2027-480w.webp 480w, /images/camila/bsf-barcelona-2027-720w.webp 720w, /images/camila/bsf-barcelona-2027-960w.webp 960w, /images/camila/bsf-barcelona-2027.webp 1122w",
   "/images/camila/camila-hero.webp":
     "/images/camila/camila-hero-640w.webp 640w, /images/camila/camila-hero-960w.webp 960w, /images/camila/camila-hero.webp 1121w",
+  "/images/camila/camila-beauty-institucional.webp":
+    "/images/camila/camila-beauty-institucional-480w.webp 480w, /images/camila/camila-beauty-institucional-720w.webp 720w, /images/camila/camila-beauty-institucional-960w.webp 960w, /images/camila/camila-beauty-institucional.webp 1023w",
+  "/images/camila/camila-beauty-logo.webp":
+    "/images/camila/camila-beauty-logo-240w.webp 240w, /images/camila/camila-beauty-logo-480w.webp 480w, /images/camila/camila-beauty-logo.webp 640w",
   "/images/camila/camila-sobre.webp":
     "/images/camila/camila-sobre-640w.webp 640w, /images/camila/camila-sobre-960w.webp 960w, /images/camila/camila-sobre.webp 1000w",
   "/images/camila/evento-01.webp":
