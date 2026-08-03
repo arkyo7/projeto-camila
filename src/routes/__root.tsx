@@ -78,11 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Camila Maia Beauty | Cílios, Sobrancelhas e Beleza Personalizada" },
+      { title: "Camila Maia Beauty & Benessere | Beleza, Estética Facial e Bem-Estar" },
       {
         name: "description",
         content:
-          "Atendimentos de cílios e sobrancelhas da Camila Maia Beauty e a trajetória internacional de Camila Maia no mercado da beleza.",
+          "Procedimentos personalizados de beleza, estética facial e bem-estar com Camila Maia: cílios, sobrancelhas, tratamentos faciais, micropigmentação e terapias integrativas.",
       },
       { name: "author", content: "Camila Maia" },
       { property: "og:site_name", content: "Camila Maia" },
