@@ -3,6 +3,7 @@ import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { beautyCategories, beautyServices } from "@/data/siteContent";
+import { siteConfig } from "@/config/siteConfig";
 import type { LocalizedText } from "@/data/types";
 import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
