@@ -216,7 +216,7 @@ export const ptBR = {
     secondaryCta: "Falar sobre parcerias",
     shopCta: "Ver a loja",
     catalogCta: "Ver o catálogo",
-    logoAlt: "Logotipo Camila Maia Beauty & Benessere",
+    logoAlt: "Logotipo da Universe Beauty",
     message:
       "Olá, Camila! Gostaria de conversar sobre uma possível parceria com a Universe Beauty.",
   },

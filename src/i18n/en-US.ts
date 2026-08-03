@@ -212,7 +212,7 @@ export const enUS: Dictionary = {
     secondaryCta: "Talk about partnerships",
     shopCta: "Visit the store",
     catalogCta: "View the catalog",
-    logoAlt: "Camila Maia Beauty & Benessere logo",
+    logoAlt: "Universe Beauty logo",
     message: "Hi, Camila! I'd like to talk about a possible partnership with Universe Beauty.",
   },
   bsf: {

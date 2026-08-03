@@ -218,7 +218,7 @@ export const esES: Dictionary = {
     secondaryCta: "Hablar sobre alianzas",
     shopCta: "Ver la tienda",
     catalogCta: "Ver el catálogo",
-    logoAlt: "Logotipo Camila Maia Beauty & Benessere",
+    logoAlt: "Logotipo de Universe Beauty",
     message: "¡Hola, Camila! Me gustaría conversar sobre una posible alianza con Universe Beauty.",
   },
   bsf: {

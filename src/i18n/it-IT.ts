@@ -219,7 +219,7 @@ export const itIT: Dictionary = {
     secondaryCta: "Parla di collaborazioni",
     shopCta: "Vai allo shop",
     catalogCta: "Vedi il catalogo",
-    logoAlt: "Logo Camila Maia Beauty & Benessere",
+    logoAlt: "Logo di Universe Beauty",
     message: "Ciao Camila! Vorrei parlare di una possibile collaborazione con Universe Beauty.",
   },
   bsf: {
