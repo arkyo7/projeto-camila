@@ -269,11 +269,21 @@ export const esES: Dictionary = {
     title: "Historias que atraviesan fronteras",
   },
   beauty: {
-    eyebrow: "Camila Maia Beauty • Atención personalizada",
-    title: "Camila Maia Beauty",
-    subtitle: "Belleza, cuidado y experiencia personalizada.",
+    eyebrow: "Camila Maia Beauty & Benessere • Atención personalizada",
+    title: "Camila Maia Beauty & Benessere",
+    subtitle: "Belleza, cuidado y bienestar en una experiencia personalizada.",
     intro:
-      "Atenciones realizadas de forma individual y cuidadosa, con atención al estilo, las preferencias y las necesidades de cada clienta.",
+      "Cada atención se realiza de forma individual, respetando los rasgos, las preferencias y los objetivos de cada clienta. Procedimientos de belleza, estética facial y bienestar conducidos con técnica, atención y cuidado.",
+    portraitAlt:
+      "Espacio reservado para la futura foto institucional de Camila Maia Beauty & Benessere",
+    proceduresTitle: "Procedimientos",
+    categoryCta: "Hablar sobre esta categoría",
+    galleryTitle: "Resultados",
+    closingNote:
+      "Consulta disponibilidad, indicación e información sobre cada procedimiento directamente con Camila.",
+    closingCta: "Agendar evaluación por WhatsApp",
+    closingMessage:
+      "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría agendar una evaluación.",
     logoAlt: "Logotipo de Camila Maia Beauty",
     servicesTitle: "Servicios",
     serviceCta: "Agendar mi cita",
