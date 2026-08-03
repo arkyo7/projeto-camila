@@ -1,4 +1,11 @@
-import type { BeautyService, GalleryImage, PastEvent, SiteEvent, Testimonial } from "./types";
+import type {
+  BeautyCategory,
+  BeautyService,
+  GalleryImage,
+  PastEvent,
+  SiteEvent,
+  Testimonial,
+} from "./types";
 
 /**
  * Conteúdo estruturado do site.
@@ -112,6 +119,215 @@ export const beautyServices: BeautyService[] = [
 
 /** Eventos já realizados. Manter vazio até termos informações confirmadas. */
 export const pastEvents: PastEvent[] = [];
+
+/** Categorias de procedimentos da Camila Maia Beauty & Benessere. */
+export const beautyCategories: BeautyCategory[] = [
+  {
+    id: "lashes",
+    name: { pt: "Cílios", it: "Ciglia", es: "Pestañas", en: "Lashes" },
+    procedures: [
+      {
+        id: "lash-extension",
+        name: {
+          pt: "Extensão de cílios — diversas técnicas",
+          it: "Extension ciglia — diverse tecniche",
+          es: "Extensión de pestañas — diversas técnicas",
+          en: "Lash extensions — various techniques",
+        },
+      },
+      {
+        id: "lash-lifting",
+        name: {
+          pt: "Lash Lifting",
+          it: "Lash Lifting",
+          es: "Lash Lifting",
+          en: "Lash Lifting",
+        },
+      },
+    ],
+    whatsappMessage: {
+      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os procedimentos de cílios.",
+      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sui trattamenti per le ciglia.",
+      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los procedimientos de pestañas.",
+      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your lash procedures.",
+    },
+  },
+  {
+    id: "eyebrows",
+    name: { pt: "Sobrancelhas", it: "Sopracciglia", es: "Cejas", en: "Eyebrows" },
+    procedures: [
+      {
+        id: "brow-design",
+        name: {
+          pt: "Design de sobrancelhas personalizado",
+          it: "Design sopracciglia personalizzato",
+          es: "Diseño de cejas personalizado",
+          en: "Personalized eyebrow design",
+        },
+      },
+      {
+        id: "brow-henna",
+        name: {
+          pt: "Design de sobrancelhas com henna",
+          it: "Design sopracciglia con henné",
+          es: "Diseño de cejas con henna",
+          en: "Eyebrow design with henna",
+        },
+      },
+      {
+        id: "brow-reconstruction",
+        name: {
+          pt: "Reconstrução de sobrancelhas",
+          it: "Ricostruzione delle sopracciglia",
+          es: "Reconstrucción de cejas",
+          en: "Eyebrow reconstruction",
+        },
+      },
+      {
+        id: "brow-lamination",
+        name: {
+          pt: "Brow Lamination",
+          it: "Brow Lamination",
+          es: "Brow Lamination",
+          en: "Brow Lamination",
+        },
+      },
+    ],
+    whatsappMessage: {
+      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os procedimentos de sobrancelhas.",
+      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sui trattamenti per le sopracciglia.",
+      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los procedimientos de cejas.",
+      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your eyebrow procedures.",
+    },
+  },
+  {
+    id: "facial",
+    name: {
+      pt: "Tratamentos Faciais",
+      it: "Trattamenti Viso",
+      es: "Tratamientos Faciales",
+      en: "Facial Treatments",
+    },
+    procedures: [
+      {
+        id: "deep-cleansing",
+        name: {
+          pt: "Limpeza de pele",
+          it: "Pulizia del viso",
+          es: "Limpieza facial",
+          en: "Deep facial cleansing",
+        },
+      },
+      {
+        id: "pele-de-seda",
+        name: {
+          pt: "Método Pele de Seda",
+          it: "Metodo Pele de Seda",
+          es: "Método Pele de Seda",
+          en: "Pele de Seda method",
+        },
+      },
+      {
+        id: "bb-glow",
+        name: { pt: "BB Glow", it: "BB Glow", es: "BB Glow", en: "BB Glow" },
+      },
+    ],
+    whatsappMessage: {
+      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os tratamentos faciais.",
+      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sui trattamenti viso.",
+      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los tratamientos faciales.",
+      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your facial treatments.",
+    },
+  },
+  {
+    id: "micropigmentation",
+    name: {
+      pt: "Micropigmentação",
+      it: "Trucco Semipermanente",
+      es: "Micropigmentación",
+      en: "Micropigmentation",
+    },
+    procedures: [
+      {
+        id: "lip-micro",
+        name: {
+          pt: "Micropigmentação labial",
+          it: "Trucco semipermanente labbra",
+          es: "Micropigmentación labial",
+          en: "Lip micropigmentation",
+        },
+      },
+      {
+        id: "brow-micro",
+        name: {
+          pt: "Micropigmentação de sobrancelhas",
+          it: "Trucco semipermanente sopracciglia",
+          es: "Micropigmentación de cejas",
+          en: "Eyebrow micropigmentation",
+        },
+      },
+      {
+        id: "microblading",
+        name: {
+          pt: "Técnica Microblading",
+          it: "Tecnica Microblading",
+          es: "Técnica Microblading",
+          en: "Microblading technique",
+        },
+      },
+      {
+        id: "shadow",
+        name: {
+          pt: "Técnica Esfumada — Shadow",
+          it: "Tecnica Sfumata — Shadow",
+          es: "Técnica Difuminada — Shadow",
+          en: "Shadow technique",
+        },
+      },
+    ],
+    whatsappMessage: {
+      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os procedimentos de micropigmentação.",
+      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sul trucco semipermanente.",
+      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los procedimientos de micropigmentación.",
+      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your micropigmentation procedures.",
+    },
+  },
+  {
+    id: "integrative",
+    name: {
+      pt: "Terapias Integrativas",
+      it: "Terapie Integrative",
+      es: "Terapias Integrativas",
+      en: "Integrative Therapies",
+    },
+    procedures: [
+      {
+        id: "access-bars",
+        name: {
+          pt: "Barras de Access",
+          it: "Access Bars",
+          es: "Barras de Access",
+          en: "Access Bars",
+        },
+      },
+      {
+        id: "energetic-facelift",
+        name: {
+          pt: "Face Lift Energético — Access Consciousness",
+          it: "Face Lift Energetico — Access Consciousness",
+          es: "Face Lift Energético — Access Consciousness",
+          en: "Energetic Face Lift — Access Consciousness",
+        },
+      },
+    ],
+    whatsappMessage: {
+      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre as terapias integrativas.",
+      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sulle terapie integrative.",
+      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre las terapias integrativas.",
+      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your integrative therapies.",
+    },
+  },
+];
 
 /** Depoimentos reais. Enquanto vazio, a seção permanece oculta. */
 export const testimonials: Testimonial[] = [];
