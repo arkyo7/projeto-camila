@@ -90,7 +90,13 @@ const galleryCopy = {
   },
 } as const;
 
-function EditionGallery({ edition, copy }: { edition: BsfEdition; copy: (typeof galleryCopy)[keyof typeof galleryCopy] }) {
+function EditionGallery({
+  edition,
+  copy,
+}: {
+  edition: BsfEdition;
+  copy: (typeof galleryCopy)[keyof typeof galleryCopy];
+}) {
   const [activeImage, setActiveImage] = useState(0);
 
   useEffect(() => setActiveImage(0), [edition.id]);
@@ -151,7 +157,9 @@ function EditionGallery({ edition, copy }: { edition: BsfEdition; copy: (typeof 
                   decoding="async"
                   className={`h-full w-full ${isActive ? "object-contain" : "object-cover"}`}
                 />
-                {!isActive ? <span className="absolute inset-0 bg-navy/20" aria-hidden="true" /> : null}
+                {!isActive ? (
+                  <span className="absolute inset-0 bg-navy/20" aria-hidden="true" />
+                ) : null}
               </button>
             );
           })}
@@ -290,7 +298,11 @@ export function BsfSection() {
         </div>
 
         {selectedEdition ? (
-          <div ref={galleryRef} className="mt-6 scroll-mt-5 sm:scroll-mt-8" key={selectedEdition.id}>
+          <div
+            ref={galleryRef}
+            className="mt-6 scroll-mt-5 sm:scroll-mt-8"
+            key={selectedEdition.id}
+          >
             <EditionGallery edition={selectedEdition} copy={copy} />
           </div>
         ) : null}
