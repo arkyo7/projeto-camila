@@ -270,8 +270,7 @@ export const ptBR = {
     subtitle: "Beleza, cuidado e bem-estar em uma experiência personalizada.",
     intro:
       "Cada atendimento é realizado de forma individual, respeitando os traços, as preferências e os objetivos de cada cliente. Procedimentos de beleza, estética facial e bem-estar conduzidos com técnica, atenção e cuidado.",
-    portraitAlt:
-      "Camila Maia apresentando a identidade da Camila Maia Beauty & Benessere",
+    portraitAlt: "Camila Maia apresentando a identidade da Camila Maia Beauty & Benessere",
     proceduresTitle: "Procedimentos",
     categoryCta: "Falar sobre esta categoria",
     galleryTitle: "Resultados",
