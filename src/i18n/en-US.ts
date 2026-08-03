@@ -25,10 +25,10 @@ export const enUS: Dictionary = {
     languageOpen: "Select language",
   },
   hero: {
-    eyebrow: "CAMILA MAIA BEAUTY • PERSONALIZED SERVICE",
+    eyebrow: "CAMILA MAIA BEAUTY & BENESSERE • PERSONALIZED SERVICE",
     headline: "Enhance your beauty with care, technique, and attention to detail.",
     subheadline:
-      "Personalized lash and brow services designed to enhance your expression and offer a beauty experience dedicated to you.",
+      "Personalized beauty, facial aesthetics and well-being procedures designed to enhance your expression and offer an experience dedicated to you.",
     ctaPrimary: "Explore the services",
     ctaSecondary: "Talk to Camila",
     badgeName: "Camila Maia",

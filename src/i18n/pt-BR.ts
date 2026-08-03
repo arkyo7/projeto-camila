@@ -23,10 +23,10 @@ export const ptBR = {
     languageOpen: "Selecionar idioma",
   },
   hero: {
-    eyebrow: "CAMILA MAIA BEAUTY • ATENDIMENTO PERSONALIZADO",
+    eyebrow: "CAMILA MAIA BEAUTY & BENESSERE • ATENDIMENTO PERSONALIZADO",
     headline: "Realce sua beleza com cuidado, técnica e atenção aos detalhes.",
     subheadline:
-      "Atendimentos personalizados de cílios e sobrancelhas, pensados para valorizar sua expressão e proporcionar uma experiência de beleza dedicada a você.",
+      "Procedimentos personalizados de beleza, estética facial e bem-estar, pensados para valorizar sua expressão e proporcionar uma experiência dedicada a você.",
     ctaPrimary: "Conhecer os serviços",
     ctaSecondary: "Falar com Camila",
     badgeName: "Camila Maia",

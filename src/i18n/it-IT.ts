@@ -25,10 +25,10 @@ export const itIT: Dictionary = {
     languageOpen: "Seleziona la lingua",
   },
   hero: {
-    eyebrow: "CAMILA MAIA BEAUTY • TRATTAMENTI PERSONALIZZATI",
+    eyebrow: "CAMILA MAIA BEAUTY & BENESSERE • TRATTAMENTI PERSONALIZZATI",
     headline: "Valorizza la tua bellezza con cura, tecnica e attenzione ai dettagli.",
     subheadline:
-      "Trattamenti personalizzati per ciglia e sopracciglia, pensati per valorizzare la tua espressione e offrirti un'esperienza di bellezza dedicata a te.",
+      "Trattamenti personalizzati di bellezza, estetica viso e benessere, pensati per valorizzare la tua espressione e offrirti un'esperienza dedicata a te.",
     ctaPrimary: "Scopri i servizi",
     ctaSecondary: "Parla con Camila",
     badgeName: "Camila Maia",
