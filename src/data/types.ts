@@ -76,10 +76,4 @@ export interface FAQ {
 }
 
 export type ContactInterest =
-  | "consultoria"
-  | "palestra"
-  | "bsf"
-  | "beauty"
-  | "universe"
-  | "parcerias"
-  | "outro";
+  "consultoria" | "palestra" | "bsf" | "beauty" | "universe" | "parcerias" | "outro";

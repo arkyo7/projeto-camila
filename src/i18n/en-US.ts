@@ -265,8 +265,7 @@ export const enUS: Dictionary = {
     subtitle: "Beauty, care and well-being in a personalized experience.",
     intro:
       "Every appointment is carried out individually, respecting the features, preferences and goals of each client. Beauty, facial aesthetics and well-being procedures performed with technique, attention and care.",
-    portraitAlt:
-      "Space reserved for the future institutional photo of Camila Maia Beauty & Benessere",
+    portraitAlt: "Camila Maia presenting the Camila Maia Beauty & Benessere identity",
     proceduresTitle: "Procedures",
     categoryCta: "Ask about this category",
     galleryTitle: "Results",
