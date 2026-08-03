@@ -19,23 +19,27 @@ export function BeautySection() {
         <div className="grid items-center gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal className="mx-auto w-full max-w-sm lg:mx-0">
             <BrandImage
+              src="/images/camila/camila-beauty-institucional.webp"
               alt={t.beauty.portraitAlt}
-              width={800}
-              height={1000}
+              width={1023}
+              height={1278}
               sizes={imageSizes.twoCols}
+              objectPosition="50% 30%"
               tone="blush"
               className="border border-nude/50"
             />
           </Reveal>
 
           <Reveal delay={90} className="min-w-0">
-            <div className="mb-8 w-32">
+            <div className="mb-8 w-[180px] sm:w-[210px] lg:w-[240px]">
               <BrandImage
+                src={siteConfig.logos.beauty || undefined}
                 alt={t.beauty.logoAlt}
-                width={320}
-                height={200}
+                width={640}
+                height={640}
+                sizes="(min-width: 1024px) 240px, (min-width: 640px) 210px, 180px"
                 tone="cream"
-                className="border border-nude/50"
+                className="rounded-full border border-nude/50"
               />
             </div>
             <SectionHeading
