@@ -195,7 +195,7 @@ export const itIT: Dictionary = {
       message: "Messaggio",
     },
     intro: "Nuovo contatto dal sito Beleza Sem Fronteiras:",
-    submit: "Invia messaggio",
+    submit: "Parla con Camila",
     preparing: "Preparazione...",
     ready: "Messaggio preparato con successo.",
     fallback: "Se WhatsApp non si è aperto automaticamente, usa i pulsanti qui sotto.",

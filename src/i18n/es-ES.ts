@@ -195,7 +195,7 @@ export const esES: Dictionary = {
       message: "Mensaje",
     },
     intro: "Nuevo contacto por el sitio web Beleza Sem Fronteiras:",
-    submit: "Enviar mensaje",
+    submit: "Hablar con Camila",
     preparing: "Preparando...",
     ready: "Mensaje preparado con éxito.",
     fallback: "Si WhatsApp no se abrió automáticamente, usa los botones de abajo.",

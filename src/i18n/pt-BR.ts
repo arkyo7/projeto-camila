@@ -193,7 +193,7 @@ export const ptBR = {
       message: "Mensagem",
     },
     intro: "Novo contato pelo site Beleza Sem Fronteiras:",
-    submit: "Enviar mensagem",
+    submit: "Falar com a Camila",
     preparing: "Preparando...",
     ready: "Mensagem preparada com sucesso.",
     fallback: "Caso o WhatsApp não tenha aberto, use os botões abaixo.",
