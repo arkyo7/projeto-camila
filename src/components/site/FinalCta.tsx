@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { Monogram } from "./Monogram";
+
 import { Reveal } from "./Reveal";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -10,7 +10,7 @@ export function FinalCta() {
   return (
     <section className="relative overflow-hidden bg-navy py-20 lg:py-28">
       <div className="pointer-events-none absolute -right-10 top-1/2 -translate-y-1/2">
-        <Monogram className="h-72 w-72 text-gold/10" />
+        
       </div>
       <div className="relative mx-auto max-w-4xl px-5 text-center sm:px-8">
         <Reveal as="div">

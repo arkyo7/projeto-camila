@@ -1,5 +1,5 @@
 import type { CSSProperties } from "react";
-import { Monogram } from "./Monogram";
+
 import { imageSrcSet } from "@/lib/images";
 import { cn } from "@/lib/utils";
 
@@ -84,7 +84,7 @@ export function BrandImage({
             }}
           />
           <div aria-hidden="true" className="absolute inset-5 border border-current opacity-25" />
-          <Monogram className="relative h-14 w-14 opacity-70" />
+          
         </div>
       )}
     </div>

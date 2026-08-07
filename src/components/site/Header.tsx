@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Monogram } from "./Monogram";
+
 import { navItems } from "./navigation";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -45,11 +45,11 @@ export function Header() {
           to="/"
           hash="inicio"
           className="flex min-w-0 items-center gap-3 text-cream"
-          aria-label="Camila Maia"
+          aria-label="Beleza Sem Fronteiras"
         >
-          <Monogram className="h-9 w-9 shrink-0 text-gold" />
+          
           <span className="min-w-0 truncate font-serif text-lg leading-tight tracking-wide">
-            Camila Maia
+            Beleza Sem Fronteiras
           </span>
         </Link>
 

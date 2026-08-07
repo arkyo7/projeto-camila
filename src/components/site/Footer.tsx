@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle } from "lucide-react";
-import { Monogram } from "./Monogram";
+
 import { navItems } from "./navigation";
 import { siteConfig } from "@/config/siteConfig";
 import { useI18n } from "@/i18n";
@@ -16,8 +16,8 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-3">
           <div className="min-w-0">
             <div className="flex items-center gap-3 text-cream">
-              <Monogram className="h-9 w-9 shrink-0 text-gold" />
-              <span className="font-serif text-lg">Camila Maia</span>
+              
+              <span className="font-serif text-lg">Beleza Sem Fronteiras</span>
             </div>
             <p className="mt-5 text-sm leading-relaxed">{t.footer.tagline}</p>
           </div>
