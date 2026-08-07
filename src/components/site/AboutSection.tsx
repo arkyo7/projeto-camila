@@ -43,11 +43,7 @@ export function AboutSection() {
       </div>
 
       <div className="mx-auto mt-20 max-w-7xl px-5 sm:px-8 lg:mt-24">
-        <Reveal>
-          <SectionHeading eyebrow={t.about.timeline.eyebrow} title={t.about.timeline.title} />
-        </Reveal>
         <JourneyTimeline
-          className="mt-12"
           ariaLabel={t.about.timeline.title}
           items={t.about.timeline.items}
         />
