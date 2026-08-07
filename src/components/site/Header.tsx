@@ -69,13 +69,14 @@ export function Header() {
         <div className="flex shrink-0 items-center gap-3">
           <LanguageSwitcher tone="light" />
           <a
-            href={whatsappLink(t.float.message)}
+            href={whatsappLink(t.bsf.message)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-motion hidden border border-gold bg-gold px-5 py-2.5 text-sm font-medium text-navy hover:bg-gold-light sm:inline-flex"
           >
             {t.nav.cta}
           </a>
+
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -104,7 +105,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href={whatsappLink(t.float.message)}
+              href={whatsappLink(t.bsf.message)}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
@@ -112,6 +113,7 @@ export function Header() {
             >
               {t.nav.cta}
             </a>
+
           </nav>
         </div>
       ) : null}
