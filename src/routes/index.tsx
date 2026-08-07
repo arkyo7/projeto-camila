@@ -72,14 +72,11 @@ function Index() {
   return (
     <SiteLayout>
       <Hero />
+      <AboutSection />
       <BsfSection />
       <EventsSection />
-      <TestimonialsSection />
-      <AboutSection />
       <HighlightsSection />
-      <SponsorsSection />
       <ContactSection />
-      <FinalCta />
     </SiteLayout>
   );
 }

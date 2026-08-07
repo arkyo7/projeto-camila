@@ -50,12 +50,6 @@ export function Hero() {
               {t.hero.ctaPrimary}
               <ArrowRight size={16} aria-hidden="true" className="btn-arrow" />
             </a>
-            <a
-              href="#contato"
-              className="btn-motion inline-flex items-center justify-center gap-2 border border-gold/30 bg-transparent px-7 py-3.5 text-sm font-medium text-cream hover:bg-white/5"
-            >
-              {t.hero.ctaSecondary}
-            </a>
           </div>
 
         </div>

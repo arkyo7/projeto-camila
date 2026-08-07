@@ -26,7 +26,7 @@ export const esES: Dictionary = {
     subheadline:
       "Beleza Sem Fronteiras conecta a profesionales brasileñas de la belleza y la estética a través de encuentros, experiencias, conferencias, networking y oportunidades de desarrollo en Brasil y en el extranjero.",
     ctaPrimary: "Conocer el próximo evento",
-    ctaSecondary: "Formar parte de esta red",
+    
     badgeName: "Camila Maia",
     badgeRole: "Idealizadora de Beleza Sem Fronteiras.",
     message:
@@ -162,7 +162,7 @@ export const esES: Dictionary = {
   contact: {
     eyebrow: "Contacto",
     title: "¿Hablamos?",
-    subtitle: "Envía un mensaje para alianzas, eventos o consultoría.",
+    subtitle: "Póngase en contacto para saber más sobre los próximos encuentros, asociaciones y oportunidades de Beleza Sem Fronteiras.",
     fields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -182,8 +182,6 @@ export const esES: Dictionary = {
     interests: {
       bsf_participation: "Participar en un evento",
       bsf_events: "Próximos encuentros",
-      talks: "Conferencias",
-      consulting: "Consultoría",
       sponsorship: "Patrocinio",
       partnership: "Alianza institucional",
       press: "Prensa",

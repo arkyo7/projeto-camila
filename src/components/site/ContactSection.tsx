@@ -19,8 +19,6 @@ import { whatsappLink } from "@/lib/whatsapp";
 const interestKeys: ContactInterest[] = [
   "bsf_participation",
   "bsf_events",
-  "talks",
-  "consulting",
   "sponsorship",
   "partnership",
   "press",
@@ -142,7 +140,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contato" className="bg-cream py-20 lg:py-28">
+    <section id="contato" className="bg-cream py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <SectionHeading

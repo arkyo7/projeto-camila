@@ -9,7 +9,7 @@ export function AboutSection() {
   const { t } = useI18n();
 
   return (
-    <section id="idealizadora" className="bg-cream py-20 lg:py-28">
+    <section id="idealizadora" className="bg-cream py-16 lg:py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
         <Reveal className="relative">
           <div

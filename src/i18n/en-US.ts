@@ -11,10 +11,9 @@ export const enUS: Dictionary = {
     aboutProject: "About the project",
     nextEvent: "Next event",
     pastEditions: "Past editions",
-    founder: "Founder",
-    talks: "Talks and partnerships",
+    founder: "Camila Maia",
     contact: "Contact",
-    cta: "Talk to the project",
+    cta: "Talk to Camila",
     openMenu: "Open menu",
     closeMenu: "Close menu",
     language: "Language",
@@ -26,7 +25,7 @@ export const enUS: Dictionary = {
     subheadline:
       "Beleza Sem Fronteiras connects Brazilian beauty and aesthetics professionals through meetings, experiences, talks, networking and development opportunities in Brazil and abroad.",
     ctaPrimary: "Discover the next event",
-    ctaSecondary: "Join this network",
+    
     badgeName: "Camila Maia",
     badgeRole: "Founder of Beleza Sem Fronteiras.",
     message:
@@ -162,7 +161,7 @@ export const enUS: Dictionary = {
   contact: {
     eyebrow: "Contact",
     title: "Shall we talk?",
-    subtitle: "Send a message for partnerships, events or consulting.",
+    subtitle: "Get in touch to learn more about upcoming meetings, partnerships and opportunities for Beleza Sem Fronteiras.",
     fields: {
       name: "Full name",
       email: "Email address",
@@ -182,8 +181,6 @@ export const enUS: Dictionary = {
     interests: {
       bsf_participation: "Join an event",
       bsf_events: "Upcoming meetings",
-      talks: "Talks",
-      consulting: "Consulting",
       sponsorship: "Sponsorship",
       partnership: "Institutional partnership",
       press: "Press",

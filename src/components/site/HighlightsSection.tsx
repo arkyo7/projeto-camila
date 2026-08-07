@@ -14,7 +14,7 @@ export function HighlightsSection() {
   const { podcast, magazine } = siteConfig.media;
 
   return (
-    <section id="destaques" className="bg-cream py-20 lg:py-28">
+    <section id="destaques" className="bg-cream py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <SectionHeading

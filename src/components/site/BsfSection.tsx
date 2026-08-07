@@ -188,7 +188,7 @@ export function BsfSection() {
   };
 
   return (
-    <section id="sobre-o-projeto" className="relative overflow-hidden bg-navy py-20 lg:py-28">
+    <section id="sobre-o-projeto" className="relative overflow-hidden bg-navy py-16 lg:py-24">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-60"
