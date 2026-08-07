@@ -373,16 +373,17 @@ export function ContactSection() {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href={whatsappLink(t.float.message)}
+                    href={whatsappLink(t.bsf.message)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
                   >
                     <MessageCircle size={17} aria-hidden="true" className="text-gold" />
-                    {siteConfig.whatsapp.display}
+                    WhatsApp
                   </a>
                 </li>
               </ul>
+
 
               <h3 className="mt-8 text-lg text-navy">{t.contact.socialsTitle}</h3>
               <div aria-hidden="true" className="gold-rule mt-3" />
