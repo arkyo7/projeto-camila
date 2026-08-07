@@ -162,14 +162,43 @@ export function BsfSection() {
   const galleryRef = useRef<HTMLDivElement>(null);
 
   // Mapeia eventos passados para a estrutura esperada pela galeria
-  const editions: BsfEdition[] = pastEvents.map((event) => ({
-    ...event,
-    // Atribuímos imagens específicas para algumas edições conhecidas, 
-    // fallback para galeria geral filtrada se necessário.
-    images: event.id === "holanda" 
-      ? bsfGallery.filter(img => img.id.includes("holanda")) 
-      : []
-  }));
+  const editions: BsfEdition[] = pastEvents.map((event) => {
+    let images: { src: string; alt: string }[] = [];
+
+    if (event.id === "holanda") {
+      images = bsfGallery.filter((img) => img.id.includes("holanda"));
+    } else if (event.id === "milao") {
+      images = [
+        {
+          src: "/images/camila/evento-palestra-camila-maia-01.webp",
+          alt: "Camila Maia palestrando no Beleza Sem Fronteiras Milão",
+        },
+        {
+          src: "/images/camila/evento-grupo-camila-maia-02.webp",
+          alt: "Participantes reunidas no Beleza Sem Fronteiras Milão",
+        },
+        {
+          src: "/images/camila/evento-grupo-camila-maia-03.webp",
+          alt: "Grupo de participantes do Beleza Sem Fronteiras Milão",
+        },
+        {
+          src: "/images/camila/evento-apresentacao-camila-maia-04.webp",
+          alt: "Apresentação de Camila Maia no Beleza Sem Fronteiras Milão",
+        },
+        {
+          src: "/images/camila/evento-palestrante-camila-maia-05.webp",
+          alt: "Camila Maia como palestrante no Beleza Sem Fronteiras Milão",
+        },
+      ];
+    } else if (event.id === "sardenha") {
+      // Sardenha uses the general event images as requested to match its behavior
+      images = bsfGallery
+        .filter((img) => img.id.startsWith("evento-"))
+        .map((img) => ({ src: img.src, alt: img.alt }));
+    }
+
+    return { ...event, images };
+  });
 
   const selectedEdition = editions.find((edition) => edition.id === openEdition) ?? null;
 
