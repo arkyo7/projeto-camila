@@ -35,7 +35,7 @@ export const languageOptions: { code: Language; code2: string; label: string }[]
   { code: "en", code2: "EN", label: "English" },
 ];
 
-const STORAGE_KEY = "cm-lang";
+const STORAGE_KEY = "bsf-lang";
 
 interface I18nValue {
   lang: Language;
