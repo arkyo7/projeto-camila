@@ -44,7 +44,9 @@ export interface Sponsor {
   logo: string;
   url: string;
   type: "sponsor" | "partner";
+  category?: string;
 }
+
 
 export type ContactInterest =
   | "bsf_participation"
