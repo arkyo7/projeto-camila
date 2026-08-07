@@ -43,7 +43,7 @@ export const ptBR = {
     talkPhotoAlt: "Camila Maia compartilhando conhecimentos em uma palestra",
     timeline: {
       eyebrow: "Linha do tempo",
-      title: "Marcos do projeto",
+      title: "Trajetória da Camila Maia",
       items: [
         {
           marker: "Fortaleza, Brasil",

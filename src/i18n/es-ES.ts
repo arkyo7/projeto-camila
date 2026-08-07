@@ -45,7 +45,7 @@ export const esES: Dictionary = {
     talkPhotoAlt: "Camila Maia compartiendo conocimientos en una conferencia",
     timeline: {
       eyebrow: "Línea de tiempo",
-      title: "Hitos del proyecto",
+      title: "La trayectoria de Camila Maia",
       items: [
         {
           marker: "Fortaleza, Brasil",

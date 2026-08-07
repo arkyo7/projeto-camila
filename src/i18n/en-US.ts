@@ -45,7 +45,7 @@ export const enUS: Dictionary = {
     talkPhotoAlt: "Camila Maia sharing knowledge at a talk",
     timeline: {
       eyebrow: "Timeline",
-      title: "Project milestones",
+      title: "Camila Maia's journey",
       items: [
         {
           marker: "Fortaleza, Brazil",

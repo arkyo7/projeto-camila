@@ -45,7 +45,7 @@ export const itIT: Dictionary = {
     talkPhotoAlt: "Camila Maia durante una conferenza",
     timeline: {
       eyebrow: "Linea del tempo",
-      title: "Tappe del progetto",
+      title: "Il percorso di Camila Maia",
       items: [
         {
           marker: "Fortaleza, Brasile",
