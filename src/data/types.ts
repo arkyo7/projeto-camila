@@ -1,79 +1,42 @@
-import type { Language } from "@/config/siteConfig";
-
-/** Texto localizado. PT é obrigatório e serve de fallback. */
-export type LocalizedText = { pt: string } & Partial<Record<Language, string>>;
-
-export interface Service {
-  id: string;
-  icon: string;
-  waKey: string;
-}
-
 export interface SiteEvent {
   id: string;
-  name: LocalizedText;
-  date: LocalizedText;
-  city: LocalizedText;
-  country: LocalizedText;
-  description?: LocalizedText;
-  image?: string;
-  imageAlt?: LocalizedText;
+  name: Record<string, string>;
+  date: Record<string, string>;
+  city: Record<string, string>;
+  country: Record<string, string>;
+  description: Record<string, string>;
+  image: string;
+  imageAlt: Record<string, string>;
   status: "open" | "waitlist" | "closed";
-  link?: string;
 }
 
 export interface PastEvent {
   id: string;
-  name: string;
-  place: string;
-  year: string;
-  description?: string;
-  image?: string;
+  name: Record<string, string>;
+  date: Record<string, string>;
+  location: Record<string, string>;
+  image: string;
+}
+
+export interface GalleryImage {
+  id: string;
+  src: string;
+  alt: string;
 }
 
 export interface Testimonial {
   id: string;
   name: string;
-  role: string;
-  location: string;
-  quote: string;
-  result?: string;
-  photo?: string;
+  role: Record<string, string>;
+  content: Record<string, string>;
+  image?: string;
 }
 
-export interface GalleryImage {
+export interface Sponsor {
   id: string;
-  src?: string;
-  alt: string;
+  name: string;
+  logo?: string;
+  category?: string;
+  url?: string;
+  type: "sponsor" | "partner";
 }
-
-export interface BeautyService {
-  id: string;
-  name: LocalizedText;
-  description: LocalizedText;
-  image: string;
-  imageAlt: LocalizedText;
-  whatsappMessage: LocalizedText;
-  price?: string;
-  duration?: LocalizedText;
-}
-
-export interface BeautyProcedure {
-  id: string;
-  name: LocalizedText;
-}
-
-export interface BeautyCategory {
-  id: string;
-  name: LocalizedText;
-  procedures: BeautyProcedure[];
-  whatsappMessage: LocalizedText;
-}
-
-export interface FAQ {
-  question: string;
-  answer: string;
-}
-
-export type ContactInterest =
-  "consultoria" | "palestra" | "bsf" | "beauty" | "universe" | "parcerias" | "outro";
