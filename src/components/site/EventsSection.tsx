@@ -15,7 +15,7 @@ export function EventsSection() {
   const getText = (value: Record<Language, string>) => value[lang] ?? value.pt;
 
   return (
-    <section id="eventos" className="border-t border-gold/20 bg-cream py-20 lg:py-28">
+    <section id="eventos" className="border-t border-gold/20 bg-cream py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div aria-hidden="true" className="mx-auto mb-12 h-px w-16 bg-gold/50" />
         <Reveal>
@@ -148,49 +148,6 @@ export function EventsSection() {
           </Reveal>
         )}
 
-        {pastEvents.length > 0 ? (
-          <>
-            <Reveal
-              as="div"
-              className="mt-20 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground"
-            >
-              <h3>{t.events.pastTitle}</h3>
-            </Reveal>
-
-            <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {pastEvents.map((event, i) => (
-                <Reveal as="li" key={event.id} delay={Math.min(i * 90, 540)}>
-                  <article className="interactive-card border border-border bg-card">
-                    <BrandImage
-                      src={event.image}
-                      alt={getText(event.name)}
-                      width={720}
-                      height={520}
-                      sizes={imageSizes.gallery}
-                      className="card-media"
-                      tone="cream"
-                    />
-
-                    <div className="p-6">
-                      <h4 className="text-lg text-navy">{getText(event.name)}</h4>
-
-                      <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
-                        <MapPin size={14} className="shrink-0 text-gold" />
-                        {getText(event.location)}
-                      </div>
-                      
-                      <div className="mt-1 flex items-center gap-2 text-[0.68rem] uppercase tracking-wider text-muted-foreground">
-                        <CalendarDays size={14} className="shrink-0 text-gold" />
-                        {getText(event.date)}
-                      </div>
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </ul>
-
-          </>
-        ) : null}
       </div>
     </section>
   );

@@ -11,10 +11,9 @@ export const esES: Dictionary = {
     aboutProject: "Sobre el proyecto",
     nextEvent: "Próximo evento",
     pastEditions: "Ediciones realizadas",
-    founder: "Idealizadora",
-    talks: "Conferencias y alianzas",
+    founder: "Camila Maia",
     contact: "Contacto",
-    cta: "Hablar con el proyecto",
+    cta: "Hablar con Camila",
     openMenu: "Abrir menú",
     closeMenu: "Cerrar menú",
     language: "Idioma",
@@ -26,7 +25,7 @@ export const esES: Dictionary = {
     subheadline:
       "Beleza Sem Fronteiras conecta a profesionales brasileñas de la belleza y la estética a través de encuentros, experiencias, conferencias, networking y oportunidades de desarrollo en Brasil y en el extranjero.",
     ctaPrimary: "Conocer el próximo evento",
-    ctaSecondary: "Formar parte de esta red",
+    
     badgeName: "Camila Maia",
     badgeRole: "Idealizadora de Beleza Sem Fronteiras.",
     message:
@@ -46,7 +45,7 @@ export const esES: Dictionary = {
     talkPhotoAlt: "Camila Maia compartiendo conocimientos en una conferencia",
     timeline: {
       eyebrow: "Línea de tiempo",
-      title: "Hitos del proyecto",
+      title: "La trayectoria de Camila Maia",
       items: [
         {
           marker: "Fortaleza, Brasil",
@@ -162,7 +161,7 @@ export const esES: Dictionary = {
   contact: {
     eyebrow: "Contacto",
     title: "¿Hablamos?",
-    subtitle: "Envía un mensaje para alianzas, eventos o consultoría.",
+    subtitle: "Póngase en contacto para saber más sobre los próximos encuentros, asociaciones y oportunidades de Beleza Sem Fronteiras.",
     fields: {
       name: "Nombre completo",
       email: "Correo electrónico",
@@ -182,8 +181,6 @@ export const esES: Dictionary = {
     interests: {
       bsf_participation: "Participar en un evento",
       bsf_events: "Próximos encuentros",
-      talks: "Conferencias",
-      consulting: "Consultoría",
       sponsorship: "Patrocinio",
       partnership: "Alianza institucional",
       press: "Prensa",
@@ -198,7 +195,7 @@ export const esES: Dictionary = {
       message: "Mensaje",
     },
     intro: "Nuevo contacto por el sitio web Beleza Sem Fronteiras:",
-    submit: "Enviar mensaje",
+    submit: "Hablar con Camila",
     preparing: "Preparando...",
     ready: "Mensaje preparado con éxito.",
     fallback: "Si WhatsApp no se abrió automáticamente, usa los botones de abajo.",

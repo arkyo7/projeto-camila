@@ -9,7 +9,7 @@ export function AboutSection() {
   const { t } = useI18n();
 
   return (
-    <section id="idealizadora" className="bg-cream py-20 lg:py-28">
+    <section id="idealizadora" className="bg-cream py-16 lg:py-24">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
         <Reveal className="relative">
           <div
@@ -43,11 +43,7 @@ export function AboutSection() {
       </div>
 
       <div className="mx-auto mt-20 max-w-7xl px-5 sm:px-8 lg:mt-24">
-        <Reveal>
-          <SectionHeading eyebrow={t.about.timeline.eyebrow} title={t.about.timeline.title} />
-        </Reveal>
         <JourneyTimeline
-          className="mt-12"
           ariaLabel={t.about.timeline.title}
           items={t.about.timeline.items}
         />

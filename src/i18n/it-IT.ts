@@ -11,10 +11,9 @@ export const itIT: Dictionary = {
     aboutProject: "Sul progetto",
     nextEvent: "Prossimo evento",
     pastEditions: "Edizioni passate",
-    founder: "Ideatrice",
-    talks: "Conferenze e partnership",
+    founder: "Camila Maia",
     contact: "Contatti",
-    cta: "Contatta il progetto",
+    cta: "Parla con Camila",
     openMenu: "Apri il menu",
     closeMenu: "Chiudi il menu",
     language: "Lingua",
@@ -26,7 +25,7 @@ export const itIT: Dictionary = {
     subheadline:
       "Beleza Sem Fronteiras connette professioniste brasiliane della bellezza e dell'estetica attraverso incontri, esperienze, conferenze, networking e opportunità di crescita in Brasile e all'estero.",
     ctaPrimary: "Scopri il prossimo evento",
-    ctaSecondary: "Entra in questa rete",
+    
     badgeName: "Camila Maia",
     badgeRole: "Ideatrice di Beleza Sem Fronteiras.",
     message:
@@ -46,7 +45,7 @@ export const itIT: Dictionary = {
     talkPhotoAlt: "Camila Maia durante una conferenza",
     timeline: {
       eyebrow: "Linea del tempo",
-      title: "Tappe del progetto",
+      title: "Il percorso di Camila Maia",
       items: [
         {
           marker: "Fortaleza, Brasile",
@@ -162,7 +161,7 @@ export const itIT: Dictionary = {
   contact: {
     eyebrow: "Contatto",
     title: "Parliamo?",
-    subtitle: "Invia un messaggio per partnership, eventi o consulenze.",
+    subtitle: "Contattaci per saperne di più sui prossimi incontri, partnership e opportunità di Beleza Sem Fronteiras.",
     fields: {
       name: "Nome completo",
       email: "Email",
@@ -182,8 +181,6 @@ export const itIT: Dictionary = {
     interests: {
       bsf_participation: "Partecipare a un evento",
       bsf_events: "Prossimi incontri",
-      talks: "Conferenze",
-      consulting: "Consulenza",
       sponsorship: "Sponsorizzazione",
       partnership: "Partnership istituzionale",
       press: "Stampa",
@@ -198,7 +195,7 @@ export const itIT: Dictionary = {
       message: "Messaggio",
     },
     intro: "Nuovo contatto dal sito Beleza Sem Fronteiras:",
-    submit: "Invia messaggio",
+    submit: "Parla con Camila",
     preparing: "Preparazione...",
     ready: "Messaggio preparato con successo.",
     fallback: "Se WhatsApp non si è aperto automaticamente, usa i pulsanti qui sotto.",

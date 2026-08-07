@@ -9,10 +9,9 @@ export const ptBR = {
     aboutProject: "Sobre o projeto",
     nextEvent: "Próximo evento",
     pastEditions: "Edições realizadas",
-    founder: "Idealizadora",
-    talks: "Palestras e parcerias",
+    founder: "Camila Maia",
     contact: "Contato",
-    cta: "Falar com o projeto",
+    cta: "Falar com a Camila",
     openMenu: "Abrir menu",
     closeMenu: "Fechar menu",
     language: "Idioma",
@@ -24,7 +23,7 @@ export const ptBR = {
     subheadline:
       "O Beleza Sem Fronteiras conecta profissionais brasileiras da beleza e da estética por meio de encontros, experiências, palestras, networking e oportunidades de desenvolvimento no Brasil e no exterior.",
     ctaPrimary: "Conhecer o próximo evento",
-    ctaSecondary: "Fazer parte dessa rede",
+    
     badgeName: "Camila Maia",
     badgeRole: "Idealizadora do Beleza Sem Fronteiras.",
     message:
@@ -32,8 +31,8 @@ export const ptBR = {
     photoAlt: "Camila Maia, idealizadora do Beleza Sem Fronteiras",
   },
   about: {
-    eyebrow: "QUEM IDEALIZOU O PROJETOS",
-    title: "Uma trajetória de conexões internacionais",
+    eyebrow: "QUEM IDEALIZOU O PROJETO",
+    title: "Camila Maia, idealizadora do Beleza Sem Fronteiras",
     paragraphs: [
       "Camila Maia é idealizadora do Beleza Sem Fronteiras, consultora e palestrante. Nordestina de Fortaleza e graduada em Gestão de Marketing, construiu uma trajetória internacional entre Brasil, Irlanda e Itália.",
       "Sua experiência no mercado da beleza e sua paixão por conectar pessoas deram origem a um projeto dedicado ao desenvolvimento, à visibilidade e à criação de oportunidades para profissionais brasileiras da beleza.",
@@ -44,7 +43,7 @@ export const ptBR = {
     talkPhotoAlt: "Camila Maia compartilhando conhecimentos em uma palestra",
     timeline: {
       eyebrow: "Linha do tempo",
-      title: "Marcos do projeto",
+      title: "Trajetória da Camila Maia",
       items: [
         {
           marker: "Fortaleza, Brasil",
@@ -160,7 +159,7 @@ export const ptBR = {
   contact: {
     eyebrow: "Contato",
     title: "Vamos conversar?",
-    subtitle: "Envie uma mensagem para parcerias, eventos ou consultoria.",
+    subtitle: "Entre em contato para saber mais sobre os próximos encontros, parcerias e oportunidades do Beleza Sem Fronteiras.",
     fields: {
       name: "Nome completo",
       email: "E-mail",
@@ -180,8 +179,6 @@ export const ptBR = {
     interests: {
       bsf_participation: "Participar de um evento",
       bsf_events: "Próximos encontros",
-      talks: "Palestras",
-      consulting: "Consultoria",
       sponsorship: "Patrocínio",
       partnership: "Parceria institucional",
       press: "Imprensa",
@@ -196,7 +193,7 @@ export const ptBR = {
       message: "Mensagem",
     },
     intro: "Novo contato pelo site Beleza Sem Fronteiras:",
-    submit: "Enviar mensagem",
+    submit: "Falar com a Camila",
     preparing: "Preparando...",
     ready: "Mensagem preparada com sucesso.",
     fallback: "Caso o WhatsApp não tenha aberto, use os botões abaixo.",

@@ -72,7 +72,7 @@ export function Header() {
             href={whatsappLink(t.bsf.message)}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-motion hidden border border-gold bg-gold px-5 py-2.5 text-sm font-medium text-navy hover:bg-gold-light sm:inline-flex"
+            className="btn-motion hidden border border-gold bg-gold px-6 py-2.5 text-sm font-medium tracking-tight text-navy hover:bg-gold-light sm:inline-flex"
           >
             {t.nav.cta}
           </a>

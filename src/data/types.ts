@@ -51,8 +51,6 @@ export interface Sponsor {
 export type ContactInterest =
   | "bsf_participation"
   | "bsf_events"
-  | "talks"
-  | "consulting"
   | "sponsorship"
   | "partnership"
   | "press"

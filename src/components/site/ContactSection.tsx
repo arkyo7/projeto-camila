@@ -19,8 +19,6 @@ import { whatsappLink } from "@/lib/whatsapp";
 const interestKeys: ContactInterest[] = [
   "bsf_participation",
   "bsf_events",
-  "talks",
-  "consulting",
   "sponsorship",
   "partnership",
   "press",
@@ -142,7 +140,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contato" className="bg-cream py-20 lg:py-28">
+    <section id="contato" className="bg-cream py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <SectionHeading
@@ -325,7 +323,7 @@ export function ContactSection() {
               <Button
                 type="submit"
                 disabled={status === "sending"}
-                className="btn-motion mt-8 w-full rounded-none bg-navy px-7 py-6 text-sm font-medium text-cream hover:bg-navy-soft sm:w-auto"
+                className="btn-motion mt-8 w-full rounded-none bg-navy px-8 py-6 text-sm font-medium text-cream hover:bg-navy-soft sm:w-auto"
               >
                 {status === "sending" ? t.contact.preparing : t.contact.submit}
               </Button>
