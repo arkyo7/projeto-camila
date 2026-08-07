@@ -91,15 +91,18 @@ export function Header() {
       </div>
 
       {open ? (
-        <div id="mobile-menu" className="border-t border-cream/10 bg-navy lg:hidden">
-          <nav className="mx-auto flex max-w-7xl flex-col px-5 py-4 sm:px-8">
+        <div 
+          id="mobile-menu" 
+          className="fixed inset-0 z-[60] flex flex-col bg-navy pt-20 lg:hidden"
+        >
+          <nav className="flex flex-col px-5 py-4 sm:px-8">
             {navItems.map((item) => (
               <Link
                 key={item.id}
                 to="/"
                 hash={item.id}
                 onClick={() => setOpen(false)}
-                className="border-b border-cream/10 py-3.5 text-base text-cream/85 transition-colors hover:text-gold"
+                className="border-b border-cream/10 py-4 text-lg text-cream/85 transition-colors hover:text-gold"
               >
                 {t.nav[item.key]}
               </Link>
@@ -109,11 +112,10 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="mt-5 inline-flex items-center justify-center bg-gold px-5 py-3 text-sm font-medium text-navy"
+              className="mt-8 inline-flex items-center justify-center bg-gold px-5 py-4 text-base font-medium text-navy"
             >
               {t.nav.cta}
             </a>
-
           </nav>
         </div>
       ) : null}
