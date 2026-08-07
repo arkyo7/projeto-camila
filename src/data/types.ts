@@ -38,6 +38,14 @@ export interface GalleryImage {
   alt: string;
 }
 
+export interface Sponsor {
+  id: string;
+  name: string;
+  logo: string;
+  url: string;
+  type: "sponsor" | "partner";
+}
+
 export type ContactInterest =
   | "bsf_participation"
   | "bsf_events"
