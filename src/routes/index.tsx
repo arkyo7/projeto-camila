@@ -3,12 +3,9 @@ import { AboutSection } from "@/components/site/AboutSection";
 import { BsfSection } from "@/components/site/BsfSection";
 import { ContactSection } from "@/components/site/ContactSection";
 import { EventsSection } from "@/components/site/EventsSection";
-import { FinalCta } from "@/components/site/FinalCta";
 import { HighlightsSection } from "@/components/site/HighlightsSection";
 import { Hero } from "@/components/site/Hero";
 import { SiteLayout } from "@/components/site/SiteLayout";
-import { SponsorsSection } from "@/components/site/SponsorsSection";
-import { TestimonialsSection } from "@/components/site/TestimonialsSection";
 import { siteConfig } from "@/config/siteConfig";
 
 const title = "Beleza Sem Fronteiras | Eventos e conexões para profissionais da beleza";

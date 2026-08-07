@@ -228,11 +228,6 @@ export function BsfSection() {
           ))}
         </ul>
 
-        <Reveal delay={270} className="mt-16 max-w-2xl">
-          <p className="text-[0.68rem] uppercase tracking-[0.28em] text-gold">{copy.heading}</p>
-          <p className="mt-3 text-sm leading-relaxed text-cream/60">{copy.intro}</p>
-        </Reveal>
-
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {editions.map((edition, index) => {
             const isOpen = openEdition === edition.id;
