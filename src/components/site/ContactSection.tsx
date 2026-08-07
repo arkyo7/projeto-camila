@@ -17,13 +17,14 @@ import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
 const interestKeys: ContactInterest[] = [
-  "beauty",
-  "bsf",
-  "universe",
-  "consultoria",
-  "palestra",
-  "parcerias",
-  "outro",
+  "bsf_participation",
+  "bsf_events",
+  "talks",
+  "consulting",
+  "sponsorship",
+  "partnership",
+  "press",
+  "other",
 ];
 
 type FieldName = "name" | "email" | "phone" | "country" | "interest" | "message" | "consent";
@@ -138,8 +139,6 @@ export function ContactSection() {
 
   const socialEntries = [
     { label: t.contact.socials.main, ...siteConfig.socials.main },
-    { label: t.contact.socials.beauty, ...siteConfig.socials.beauty },
-    { label: t.contact.socials.universe, ...siteConfig.socials.universeBeauty },
   ];
 
   return (
@@ -374,16 +373,17 @@ export function ContactSection() {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href={whatsappLink(t.float.message)}
+                    href={whatsappLink(t.bsf.message)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 text-navy transition-colors hover:text-gold"
                   >
                     <MessageCircle size={17} aria-hidden="true" className="text-gold" />
-                    {siteConfig.whatsapp.display}
+                    WhatsApp
                   </a>
                 </li>
               </ul>
+
 
               <h3 className="mt-8 text-lg text-navy">{t.contact.socialsTitle}</h3>
               <div aria-hidden="true" className="gold-rule mt-3" />

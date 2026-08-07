@@ -1,14 +1,13 @@
 import type {
-  BeautyCategory,
-  BeautyService,
   GalleryImage,
   PastEvent,
   SiteEvent,
+  Sponsor,
   Testimonial,
 } from "./types";
 
 /**
- * Conteúdo estruturado do site.
+ * Conteúdo estruturado do site Beleza Sem Fronteiras.
  * Listas vazias fazem com que a seção correspondente seja ocultada automaticamente.
  */
 
@@ -57,275 +56,95 @@ export const upcomingEvents: SiteEvent[] = [
   },
 ];
 
-/** Serviços confirmados da Camila Maia Beauty. Preço e duração ficam ocultos enquanto vazios. */
-export const beautyServices: BeautyService[] = [
+/** Eventos já realizados. */
+export const pastEvents: PastEvent[] = [
   {
-    id: "lashes",
-    image: "/images/camila/beauty-02.webp",
+    id: "holanda",
     name: {
-      pt: "Cílios",
-      it: "Ciglia",
-      es: "Pestañas",
-      en: "Lashes",
+      pt: "Beleza Sem Fronteiras — Holanda",
+      it: "Beleza Sem Fronteiras — Olanda",
+      es: "Beleza Sem Fronteiras — Holanda",
+      en: "Beleza Sem Fronteiras — Netherlands",
     },
-    description: {
-      pt: "Atendimentos dedicados à valorização do olhar, realizados de forma personalizada de acordo com o estilo e a necessidade de cada cliente.",
-      it: "Trattamenti dedicati a valorizzare lo sguardo, personalizzati in base allo stile e alle esigenze di ogni cliente.",
-      es: "Tratamientos dedicados a realzar la mirada, personalizados según el estilo y las necesidades de cada clienta.",
-      en: "Beauty treatments designed to enhance the eyes, personalized to each client's style and needs.",
+    date: {
+      pt: "Edição Realizada",
+      it: "Edizione Realizzata",
+      es: "Edición Realizada",
+      en: "Past Edition",
     },
-    imageAlt: {
-      pt: "Resultado de atendimento profissional de cílios realizado por Camila Maia.",
-      it: "Risultato di un trattamento professionale per le ciglia realizzato da Camila Maia.",
-      es: "Resultado de un tratamiento profesional de pestañas realizado por Camila Maia.",
-      en: "Result of a professional lash treatment performed by Camila Maia.",
+    location: {
+      pt: "Holanda",
+      it: "Olanda",
+      es: "Países Bajos",
+      en: "Netherlands",
     },
-    whatsappMessage: {
-      pt: "Olá, Camila! Conheci seu trabalho pelo site e gostaria de receber informações sobre os atendimentos de cílios.",
-      it: "Ciao Camila! Ho conosciuto il tuo lavoro attraverso il sito e vorrei ricevere informazioni sui trattamenti per le ciglia.",
-      es: "¡Hola, Camila! Conocí tu trabajo a través del sitio y me gustaría recibir información sobre los servicios de pestañas.",
-      en: "Hello, Camila! I discovered your work through the website and would like more information about your lash services.",
-    },
+    image: "/images/camila/bsf-holanda.jpg",
   },
   {
-    id: "eyebrows",
-    image: "/images/camila/beauty-01.webp",
+    id: "sardenha",
     name: {
-      pt: "Sobrancelhas",
-      it: "Sopracciglia",
-      es: "Cejas",
-      en: "Eyebrows",
+      pt: "Beleza Sem Fronteiras — Sardenha",
+      it: "Beleza Sem Fronteiras — Sardegna",
+      es: "Beleza Sem Fronteiras — Cerdeña",
+      en: "Beleza Sem Fronteiras — Sardinia",
     },
-    description: {
-      pt: "Design e cuidados pensados para harmonizar as sobrancelhas com os traços do rosto e valorizar a expressão de cada cliente.",
-      it: "Design e trattamenti pensati per armonizzare le sopracciglia con i lineamenti del viso e valorizzare l’espressione di ogni cliente.",
-      es: "Diseño y cuidados pensados para armonizar las cejas con los rasgos del rostro y realzar la expresión de cada clienta.",
-      en: "Design and care tailored to harmonize the eyebrows with the facial features and enhance each client's expression.",
+    date: {
+      pt: "Edição Realizada",
+      it: "Edizione Realizzata",
+      es: "Edición Realizada",
+      en: "Past Edition",
     },
-    imageAlt: {
-      pt: "Resultado de design e cuidado profissional de sobrancelhas realizado por Camila Maia.",
-      it: "Risultato di un trattamento professionale per le sopracciglia realizzato da Camila Maia.",
-      es: "Resultado de un diseño y cuidado profesional de cejas realizado por Camila Maia.",
-      en: "Result of professional eyebrow design and care performed by Camila Maia.",
+    location: {
+      pt: "Sardenha, Itália",
+      it: "Sardegna, Italia",
+      es: "Cerdeña, Italia",
+      en: "Sardinia, Italy",
     },
-    whatsappMessage: {
-      pt: "Olá, Camila! Conheci seu trabalho pelo site e gostaria de receber informações sobre os atendimentos de sobrancelhas.",
-      it: "Ciao Camila! Ho conosciuto il tuo lavoro attraverso il sito e vorrei ricevere informazioni sui trattamenti per le sopracciglia.",
-      es: "¡Hola, Camila! Conocí tu trabajo a través del sitio y me gustaría recibir información sobre los servicios de cejas.",
-      en: "Hello, Camila! I discovered your work through the website and would like more information about your eyebrow services.",
-    },
-  },
-];
-
-/** Eventos já realizados. Manter vazio até termos informações confirmadas. */
-export const pastEvents: PastEvent[] = [];
-
-/** Categorias de procedimentos da Camila Maia Beauty & Benessere. */
-export const beautyCategories: BeautyCategory[] = [
-  {
-    id: "lashes",
-    name: { pt: "Cílios", it: "Ciglia", es: "Pestañas", en: "Lashes" },
-    procedures: [
-      {
-        id: "lash-extension",
-        name: {
-          pt: "Extensão de cílios — diversas técnicas",
-          it: "Extension ciglia — diverse tecniche",
-          es: "Extensión de pestañas — diversas técnicas",
-          en: "Lash extensions — various techniques",
-        },
-      },
-      {
-        id: "lash-lifting",
-        name: {
-          pt: "Lash Lifting",
-          it: "Lash Lifting",
-          es: "Lash Lifting",
-          en: "Lash Lifting",
-        },
-      },
-    ],
-    whatsappMessage: {
-      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os procedimentos de cílios.",
-      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sui trattamenti per le ciglia.",
-      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los procedimientos de pestañas.",
-      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your lash procedures.",
-    },
+    image: "/images/camila/bsf-sardenha.jpg",
   },
   {
-    id: "eyebrows",
-    name: { pt: "Sobrancelhas", it: "Sopracciglia", es: "Cejas", en: "Eyebrows" },
-    procedures: [
-      {
-        id: "brow-design",
-        name: {
-          pt: "Design de sobrancelhas personalizado",
-          it: "Design sopracciglia personalizzato",
-          es: "Diseño de cejas personalizado",
-          en: "Personalized eyebrow design",
-        },
-      },
-      {
-        id: "brow-henna",
-        name: {
-          pt: "Design de sobrancelhas com henna",
-          it: "Design sopracciglia con henné",
-          es: "Diseño de cejas con henna",
-          en: "Eyebrow design with henna",
-        },
-      },
-      {
-        id: "brow-reconstruction",
-        name: {
-          pt: "Reconstrução de sobrancelhas",
-          it: "Ricostruzione delle sopracciglia",
-          es: "Reconstrucción de cejas",
-          en: "Eyebrow reconstruction",
-        },
-      },
-      {
-        id: "brow-lamination",
-        name: {
-          pt: "Brow Lamination",
-          it: "Brow Lamination",
-          es: "Brow Lamination",
-          en: "Brow Lamination",
-        },
-      },
-    ],
-    whatsappMessage: {
-      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os procedimentos de sobrancelhas.",
-      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sui trattamenti per le sopracciglia.",
-      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los procedimientos de cejas.",
-      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your eyebrow procedures.",
-    },
-  },
-  {
-    id: "facial",
+    id: "fortaleza",
     name: {
-      pt: "Tratamentos Faciais",
-      it: "Trattamenti Viso",
-      es: "Tratamientos Faciales",
-      en: "Facial Treatments",
+      pt: "Beleza Sem Fronteiras — Fortaleza",
+      it: "Beleza Sem Fronteiras — Fortaleza",
+      es: "Beleza Sem Fronteiras — Fortaleza",
+      en: "Beleza Sem Fronteiras — Fortaleza",
     },
-    procedures: [
-      {
-        id: "deep-cleansing",
-        name: {
-          pt: "Limpeza de pele",
-          it: "Pulizia del viso",
-          es: "Limpieza facial",
-          en: "Deep facial cleansing",
-        },
-      },
-      {
-        id: "pele-de-seda",
-        name: {
-          pt: "Método Pele de Seda",
-          it: "Metodo Pele de Seda",
-          es: "Método Pele de Seda",
-          en: "Pele de Seda method",
-        },
-      },
-      {
-        id: "bb-glow",
-        name: { pt: "BB Glow", it: "BB Glow", es: "BB Glow", en: "BB Glow" },
-      },
-    ],
-    whatsappMessage: {
-      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os tratamentos faciais.",
-      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sui trattamenti viso.",
-      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los tratamientos faciales.",
-      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your facial treatments.",
+    date: {
+      pt: "Edição Realizada",
+      it: "Edizione Realizzata",
+      es: "Edición Realizada",
+      en: "Past Edition",
     },
+    location: {
+      pt: "Fortaleza, Brasil",
+      it: "Fortaleza, Brasile",
+      es: "Fortaleza, Brasil",
+      en: "Fortaleza, Brazil",
+    },
+    image: "/images/camila/bsf-fortaleza.jpg",
   },
   {
-    id: "micropigmentation",
+    id: "milao",
     name: {
-      pt: "Micropigmentação",
-      it: "Trucco Semipermanente",
-      es: "Micropigmentación",
-      en: "Micropigmentation",
+      pt: "Beleza Sem Fronteiras — Milão",
+      it: "Beleza Sem Fronteiras — Milano",
+      es: "Beleza Sem Fronteiras — Milán",
+      en: "Beleza Sem Fronteiras — Milan",
     },
-    procedures: [
-      {
-        id: "lip-micro",
-        name: {
-          pt: "Micropigmentação labial",
-          it: "Trucco semipermanente labbra",
-          es: "Micropigmentación labial",
-          en: "Lip micropigmentation",
-        },
-      },
-      {
-        id: "brow-micro",
-        name: {
-          pt: "Micropigmentação de sobrancelhas",
-          it: "Trucco semipermanente sopracciglia",
-          es: "Micropigmentación de cejas",
-          en: "Eyebrow micropigmentation",
-        },
-      },
-      {
-        id: "microblading",
-        name: {
-          pt: "Técnica Microblading",
-          it: "Tecnica Microblading",
-          es: "Técnica Microblading",
-          en: "Microblading technique",
-        },
-      },
-      {
-        id: "shadow",
-        name: {
-          pt: "Técnica Esfumada — Shadow",
-          it: "Tecnica Sfumata — Shadow",
-          es: "Técnica Difuminada — Shadow",
-          en: "Shadow technique",
-        },
-      },
-    ],
-    whatsappMessage: {
-      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre os procedimentos de micropigmentação.",
-      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sul trucco semipermanente.",
-      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre los procedimientos de micropigmentación.",
-      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your micropigmentation procedures.",
+    date: {
+      pt: "Edição Realizada",
+      it: "Edizione Realizzata",
+      es: "Edición Realizada",
+      en: "Past Edition",
     },
-  },
-  {
-    id: "integrative",
-    name: {
-      pt: "Terapias Integrativas",
-      it: "Terapie Integrative",
-      es: "Terapias Integrativas",
-      en: "Integrative Therapies",
+    location: {
+      pt: "Milão, Itália",
+      it: "Milano, Italia",
+      es: "Milán, Italia",
+      en: "Milan, Italy",
     },
-    procedures: [
-      {
-        id: "access-bars",
-        name: {
-          pt: "Barras de Access",
-          it: "Access Bars",
-          es: "Barras de Access",
-          en: "Access Bars",
-        },
-      },
-      {
-        id: "energetic-facelift",
-        name: {
-          pt: "Face Lift Energético — Access Consciousness",
-          it: "Face Lift Energetico — Access Consciousness",
-          es: "Face Lift Energético — Access Consciousness",
-          en: "Energetic Face Lift — Access Consciousness",
-        },
-      },
-    ],
-    whatsappMessage: {
-      pt: "Olá, Camila! Conheci a Camila Maia Beauty & Benessere pelo site e gostaria de informações sobre as terapias integrativas.",
-      it: "Ciao Camila! Ho conosciuto Camila Maia Beauty & Benessere dal sito e vorrei informazioni sulle terapie integrative.",
-      es: "¡Hola, Camila! Conocí Camila Maia Beauty & Benessere por el sitio y me gustaría información sobre las terapias integrativas.",
-      en: "Hello, Camila! I discovered Camila Maia Beauty & Benessere through the website and would like information about your integrative therapies.",
-    },
+    image: "/images/camila/bsf-milao.jpg",
   },
 ];
 
@@ -334,6 +153,36 @@ export const testimonials: Testimonial[] = [];
 
 /** Galeria editorial do projeto Beleza Sem Fronteiras. */
 export const bsfGallery: GalleryImage[] = [
+  {
+    id: "bsf-holanda-01",
+    src: "/images/camila/bsf-holanda-01.jpg",
+    alt: "Registro do evento Beleza Sem Fronteiras na Holanda",
+  },
+  {
+    id: "bsf-holanda-02",
+    src: "/images/camila/bsf-holanda-02.jpg",
+    alt: "Profissionais reunidas no Beleza Sem Fronteiras Holanda",
+  },
+  {
+    id: "bsf-holanda-03",
+    src: "/images/camila/bsf-holanda-03.jpg",
+    alt: "Networking no Beleza Sem Fronteiras Holanda",
+  },
+  {
+    id: "bsf-holanda-04",
+    src: "/images/camila/bsf-holanda-04.jpg",
+    alt: "Experiência Beleza Sem Fronteiras na Holanda",
+  },
+  {
+    id: "bsf-holanda-05",
+    src: "/images/camila/bsf-holanda-05.jpg",
+    alt: "Encontro de profissionais da beleza na Holanda",
+  },
+  {
+    id: "bsf-holanda-06",
+    src: "/images/camila/bsf-holanda-06.jpg",
+    alt: "Conexões internacionais no Beleza Sem Fronteiras",
+  },
   {
     id: "evento-01",
     src: "/images/camila/evento-01.webp",
@@ -366,55 +215,5 @@ export const bsfGallery: GalleryImage[] = [
   },
 ];
 
-/** Fotografias dos serviços da Camila Maia Beauty. */
-export const beautyGallery: GalleryImage[] = [
-  {
-    id: "beauty-01",
-    src: "/images/camila/beauty-01.webp",
-    alt: "Resultado profissional de design e embelezamento de sobrancelhas",
-  },
-  {
-    id: "beauty-02",
-    src: "/images/camila/beauty-02.webp",
-    alt: "Resultado profissional de extensão e valorização dos cílios",
-  },
-];
-
-/** Parceiros, selos e certificações. Manter vazio até confirmação. */
-export const partners: {
-  id: string;
-  name: string;
-  logo?: string;
-}[] = [];
-
-/**
- * Patrocinadores e parceiros do Beleza Sem Fronteiras.
- * Cadastrar apenas marcas confirmadas e autorizadas.
- * Enquanto a lista estiver vazia, a seção não é exibida.
- */
-export interface Sponsor {
-  id: string;
-  name: string;
-  /** Caminho do logo oficial (ex.: "/images/patrocinadores/marca.png"). */
-  logo?: string;
-  /** Categoria opcional (ex.: "Cosméticos"). */
-  category?: string;
-  /** Link para o site ou Instagram oficial. */
-  url?: string;
-  type: "sponsor" | "partner";
-}
-
+/** Patrocinadores e parceiros do Beleza Sem Fronteiras. */
 export const sponsors: Sponsor[] = [];
-
-/**
- * Texto opcional sobre parcerias/patrocínios da Universe Beauty.
- * Enquanto vazio, nenhuma informação de patrocínio é exibida no site.
- */
-export const universeBeautyPartnershipText = "";
-
-/** Produtos em destaque da Universe Beauty. Vazio = nada é exibido. */
-export const universeBeautyHighlights: {
-  id: string;
-  name: string;
-  image?: string;
-}[] = [];

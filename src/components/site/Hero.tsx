@@ -42,15 +42,22 @@ export function Hero() {
             {t.hero.subheadline}
           </p>
 
-          <div style={{ animationDelay: "430ms" }} className="hero-in mt-9 flex">
+          <div style={{ animationDelay: "430ms" }} className="hero-in mt-9 flex flex-wrap gap-4">
             <a
-              href="#beauty"
+              href="#eventos"
               className="btn-motion inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy hover:bg-gold-light"
             >
               {t.hero.ctaPrimary}
               <ArrowRight size={16} aria-hidden="true" className="btn-arrow" />
             </a>
+            <a
+              href="#contato"
+              className="btn-motion inline-flex items-center justify-center gap-2 border border-gold/30 bg-transparent px-7 py-3.5 text-sm font-medium text-cream hover:bg-white/5"
+            >
+              {t.hero.ctaSecondary}
+            </a>
           </div>
+
         </div>
 
         <div className="relative mx-auto w-full max-w-md lg:max-w-none">

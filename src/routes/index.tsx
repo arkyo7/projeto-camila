@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { AboutSection } from "@/components/site/AboutSection";
-import { BeautySection } from "@/components/site/BeautySection";
 import { BsfSection } from "@/components/site/BsfSection";
 import { ContactSection } from "@/components/site/ContactSection";
 import { EventsSection } from "@/components/site/EventsSection";
@@ -10,12 +9,11 @@ import { Hero } from "@/components/site/Hero";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import { SponsorsSection } from "@/components/site/SponsorsSection";
 import { TestimonialsSection } from "@/components/site/TestimonialsSection";
-import { UniverseBeautySection } from "@/components/site/UniverseBeautySection";
 import { siteConfig } from "@/config/siteConfig";
 
-const title = "Camila Maia Beauty & Benessere | Beleza, Estética Facial e Bem-Estar";
+const title = "Beleza Sem Fronteiras | Eventos e conexões para profissionais da beleza";
 const description =
-  "Procedimentos personalizados de beleza, estética facial e bem-estar com Camila Maia: cílios, sobrancelhas, tratamentos faciais, micropigmentação e terapias integrativas.";
+  "O Beleza Sem Fronteiras conecta profissionais brasileiras da beleza e da estética por meio de encontros, experiências, palestras, networking e oportunidades no Brasil e no exterior.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,29 +34,32 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "Person",
-              name: "Camila Maia",
-              jobTitle: "Empreendedora e profissional da beleza",
-              description:
-                "Profissional da beleza à frente da Camila Maia Beauty e idealizadora do Beleza Sem Fronteiras.",
-              sameAs: [siteConfig.instagram.url],
-            },
-            {
               "@type": "Organization",
               name: "Beleza Sem Fronteiras",
               description:
                 "Projeto de conexões, eventos e experiências para profissionais brasileiras da beleza e da estética.",
-              founder: { "@type": "Person", name: "Camila Maia" },
+              founder: { 
+                "@type": "Person", 
+                name: "Camila Maia",
+                jobTitle: "Idealizadora, consultora e palestrante"
+              },
               sameAs: [siteConfig.instagram.url],
             },
             {
-              "@type": "Organization",
-              name: "Universe Beauty",
-              description: "Marca de beleza liderada por Camila Maia como CEO.",
-              sameAs: [siteConfig.socials.universeBeauty.url],
-              areaServed: "Veneto, Italy",
-              employee: { "@type": "Person", name: "Camila Maia" },
-            },
+              "@type": "Event",
+              "name": "Beleza Sem Fronteiras — Barcelona 2027",
+              "startDate": "2027-05-21",
+              "endDate": "2027-05-23",
+              "location": {
+                "@type": "Place",
+                "name": "Barcelona",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Barcelona",
+                  "addressCountry": "ES"
+                }
+              }
+            }
           ],
         }),
       },
@@ -71,14 +72,12 @@ function Index() {
   return (
     <SiteLayout>
       <Hero />
-      <BeautySection />
-      <AboutSection />
-      <TestimonialsSection />
       <BsfSection />
-      <SponsorsSection />
       <EventsSection />
-      <UniverseBeautySection />
+      <TestimonialsSection />
+      <AboutSection />
       <HighlightsSection />
+      <SponsorsSection />
       <ContactSection />
       <FinalCta />
     </SiteLayout>

@@ -4,53 +4,17 @@ import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
+import { pastEvents, bsfGallery } from "@/data/siteContent";
+import type { PastEvent } from "@/data/types";
 
-interface BsfEdition {
-  id: "sardenha" | "holanda" | "fortaleza" | "milao";
-  title: string;
-  location: string;
-  cover: string;
+interface BsfEdition extends PastEvent {
   images: { src: string; alt: string }[];
 }
-
-const editions: BsfEdition[] = [
-  {
-    id: "sardenha",
-    title: "BSF Sardenha",
-    location: "Olbia · Itália",
-    cover: "/images/camila/bsf-sardenha.jpg",
-    images: Array.from({ length: 6 }, (_, index) => ({
-      src: `/images/camila/evento-0${index + 1}.webp`,
-      alt: `Registro do Beleza Sem Fronteiras Sardenha ${index + 1}`,
-    })),
-  },
-  {
-    id: "holanda",
-    title: "BSF Holanda",
-    location: "Amsterdã · Países Baixos",
-    cover: "/images/camila/bsf-holanda.jpg",
-    images: [],
-  },
-  {
-    id: "fortaleza",
-    title: "BSF Fortaleza",
-    location: "Ceará · Brasil",
-    cover: "/images/camila/bsf-fortaleza.jpg",
-    images: [],
-  },
-  {
-    id: "milao",
-    title: "BSF Milão",
-    location: "Itália",
-    cover: "/images/camila/bsf-milao.jpg",
-    images: [],
-  },
-];
 
 const galleryCopy = {
   pt: {
     heading: "Edições realizadas",
-    intro: "Escolha uma edição para conhecer alguns dos momentos que marcaram cada encontro.",
+    intro: "Conheça alguns dos momentos que marcaram cada encontro pelo mundo.",
     open: "Ver fotos",
     close: "Fechar galeria",
     previous: "Foto anterior",
@@ -60,7 +24,7 @@ const galleryCopy = {
   },
   it: {
     heading: "Edizioni realizzate",
-    intro: "Scegli un'edizione per scoprire alcuni dei momenti che hanno segnato ogni incontro.",
+    intro: "Scopri alcuni dei momenti che hanno segnato ogni incontro nel mondo.",
     open: "Vedi foto",
     close: "Chiudi galleria",
     previous: "Foto precedente",
@@ -70,7 +34,7 @@ const galleryCopy = {
   },
   es: {
     heading: "Ediciones realizadas",
-    intro: "Elige una edición para conocer algunos de los momentos que marcaron cada encuentro.",
+    intro: "Conoce algunos de los momentos que marcaron cada encuentro por el mundo.",
     open: "Ver fotos",
     close: "Cerrar galería",
     previous: "Foto anterior",
@@ -80,7 +44,7 @@ const galleryCopy = {
   },
   en: {
     heading: "Past editions",
-    intro: "Choose an edition to discover some of the moments that shaped each gathering.",
+    intro: "Discover some of the moments that shaped each gathering around the world.",
     open: "View photos",
     close: "Close gallery",
     previous: "Previous photo",
@@ -98,6 +62,7 @@ function EditionGallery({
   copy: (typeof galleryCopy)[keyof typeof galleryCopy];
 }) {
   const [activeImage, setActiveImage] = useState(0);
+  const { lang } = useI18n();
 
   useEffect(() => setActiveImage(0), [edition.id]);
 
@@ -107,8 +72,10 @@ function EditionGallery({
         id={`galeria-${edition.id}`}
         className="animate-in fade-in slide-in-from-top-6 border border-cream/15 bg-navy-soft/50 p-8 duration-700 sm:p-10"
       >
-        <p className="text-[0.65rem] uppercase tracking-[0.24em] text-gold">{edition.location}</p>
-        <h3 className="mt-2 text-2xl text-cream sm:text-3xl">{edition.title}</h3>
+        <p className="text-[0.65rem] uppercase tracking-[0.24em] text-gold">
+          {edition.location[lang]}
+        </p>
+        <h3 className="mt-2 text-2xl text-cream sm:text-3xl">{edition.name[lang]}</h3>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-cream/60">{copy.pending}</p>
       </div>
     );
@@ -125,8 +92,10 @@ function EditionGallery({
     >
       <div className="mb-5 flex items-end justify-between gap-4">
         <div>
-          <p className="text-[0.65rem] uppercase tracking-[0.24em] text-gold">{edition.location}</p>
-          <h3 className="mt-2 text-2xl text-cream sm:text-3xl">{edition.title}</h3>
+          <p className="text-[0.65rem] uppercase tracking-[0.24em] text-gold">
+            {edition.location[lang]}
+          </p>
+          <h3 className="mt-2 text-2xl text-cream sm:text-3xl">{edition.name[lang]}</h3>
         </div>
         <p className="shrink-0 text-xs uppercase tracking-[0.18em] text-cream/50">
           {activeImage + 1} / {edition.images.length} {copy.counter}
@@ -142,7 +111,7 @@ function EditionGallery({
                 key={image.src}
                 type="button"
                 onClick={() => setActiveImage(index)}
-                aria-label={`${copy.open}: ${edition.title}, ${index + 1}`}
+                aria-label={`${copy.open}: ${edition.name[lang]}, ${index + 1}`}
                 aria-pressed={isActive}
                 className={`relative min-w-0 overflow-hidden border transition-[flex-basis,opacity,border-color] duration-700 ease-out focus-visible:z-10 ${
                   isActive
@@ -189,8 +158,19 @@ function EditionGallery({
 export function BsfSection() {
   const { t, lang } = useI18n();
   const copy = galleryCopy[lang];
-  const [openEdition, setOpenEdition] = useState<BsfEdition["id"] | null>(null);
+  const [openEdition, setOpenEdition] = useState<string | null>(null);
   const galleryRef = useRef<HTMLDivElement>(null);
+
+  // Mapeia eventos passados para a estrutura esperada pela galeria
+  const editions: BsfEdition[] = pastEvents.map((event) => ({
+    ...event,
+    // Atribuímos imagens específicas para algumas edições conhecidas, 
+    // fallback para galeria geral filtrada se necessário.
+    images: event.id === "holanda" 
+      ? bsfGallery.filter(img => img.id.includes("holanda")) 
+      : []
+  }));
+
   const selectedEdition = editions.find((edition) => edition.id === openEdition) ?? null;
 
   useEffect(() => {
@@ -203,12 +183,12 @@ export function BsfSection() {
     return () => window.cancelAnimationFrame(frame);
   }, [openEdition]);
 
-  const toggleEdition = (id: BsfEdition["id"]) => {
+  const toggleEdition = (id: string) => {
     setOpenEdition((current) => (current === id ? null : id));
   };
 
   return (
-    <section id="beleza-sem-fronteiras" className="relative overflow-hidden bg-navy py-20 lg:py-28">
+    <section id="sobre-o-projeto" className="relative overflow-hidden bg-navy py-20 lg:py-28">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-60"
@@ -248,7 +228,7 @@ export function BsfSection() {
           ))}
         </ul>
 
-        <Reveal className="mt-16 max-w-2xl">
+        <Reveal delay={270} className="mt-16 max-w-2xl">
           <p className="text-[0.68rem] uppercase tracking-[0.28em] text-gold">{copy.heading}</p>
           <p className="mt-3 text-sm leading-relaxed text-cream/60">{copy.intro}</p>
         </Reveal>
@@ -268,8 +248,8 @@ export function BsfSection() {
                   }`}
                 >
                   <img
-                    src={edition.cover}
-                    alt={`Capa ${edition.title}`}
+                    src={edition.image}
+                    alt={`Capa ${edition.name[lang]}`}
                     loading="lazy"
                     decoding="async"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
@@ -280,7 +260,9 @@ export function BsfSection() {
                   />
                   <span className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 p-5">
                     <span>
-                      <span className="block font-serif text-xl text-cream">{edition.title}</span>
+                      <span className="block font-serif text-xl text-cream">
+                        {edition.name[lang]}
+                      </span>
                       <span className="mt-1 block text-[0.62rem] uppercase tracking-[0.2em] text-gold-light">
                         {isOpen ? copy.close : copy.open}
                       </span>

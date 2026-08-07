@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Monogram } from "./Monogram";
+
 import { navItems } from "./navigation";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -45,11 +45,11 @@ export function Header() {
           to="/"
           hash="inicio"
           className="flex min-w-0 items-center gap-3 text-cream"
-          aria-label="Camila Maia"
+          aria-label="Beleza Sem Fronteiras"
         >
-          <Monogram className="h-9 w-9 shrink-0 text-gold" />
+          
           <span className="min-w-0 truncate font-serif text-lg leading-tight tracking-wide">
-            Camila Maia
+            Beleza Sem Fronteiras
           </span>
         </Link>
 
@@ -69,13 +69,14 @@ export function Header() {
         <div className="flex shrink-0 items-center gap-3">
           <LanguageSwitcher tone="light" />
           <a
-            href={whatsappLink(t.float.message)}
+            href={whatsappLink(t.bsf.message)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-motion hidden border border-gold bg-gold px-5 py-2.5 text-sm font-medium text-navy hover:bg-gold-light sm:inline-flex"
           >
             {t.nav.cta}
           </a>
+
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -104,7 +105,7 @@ export function Header() {
               </Link>
             ))}
             <a
-              href={whatsappLink(t.float.message)}
+              href={whatsappLink(t.bsf.message)}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
@@ -112,6 +113,7 @@ export function Header() {
             >
               {t.nav.cta}
             </a>
+
           </nav>
         </div>
       ) : null}

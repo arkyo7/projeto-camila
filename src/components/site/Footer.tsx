@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle } from "lucide-react";
-import { Monogram } from "./Monogram";
+
 import { navItems } from "./navigation";
 import { siteConfig } from "@/config/siteConfig";
 import { useI18n } from "@/i18n";
@@ -16,8 +16,8 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-3">
           <div className="min-w-0">
             <div className="flex items-center gap-3 text-cream">
-              <Monogram className="h-9 w-9 shrink-0 text-gold" />
-              <span className="font-serif text-lg">Camila Maia</span>
+              
+              <span className="font-serif text-lg">Beleza Sem Fronteiras</span>
             </div>
             <p className="mt-5 text-sm leading-relaxed">{t.footer.tagline}</p>
           </div>
@@ -44,14 +44,15 @@ export function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               <li>
                 <a
-                  href={whatsappLink(t.float.message)}
+                  href={whatsappLink(t.bsf.message)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 transition-colors hover:text-gold"
                 >
                   <MessageCircle size={15} aria-hidden="true" className="text-gold" />
-                  {siteConfig.whatsapp.display}
+                  WhatsApp
                 </a>
+
               </li>
               <li>
                 <a

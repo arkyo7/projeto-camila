@@ -1,4 +1,4 @@
-import { ArrowUpRight, BookOpen, Mic, Sparkles } from "lucide-react";
+import { ArrowUpRight, BookOpen, Mic } from "lucide-react";
 import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
@@ -7,9 +7,7 @@ import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 
 /**
- * Destaques da trajetória: podcast, publicação na revista e o projeto
- * Voz Sem Fronteiras (apresentado apenas como projeto realizado).
- * Links e imagens ficam em `siteConfig.media` e `siteConfig.logos`.
+ * Destaques da trajetória: podcast e publicação na revista.
  */
 export function HighlightsSection() {
   const { t } = useI18n();
@@ -26,7 +24,7 @@ export function HighlightsSection() {
           />
         </Reveal>
 
-        <ul className="mt-14 grid gap-6 lg:grid-cols-3">
+        <ul className="mt-14 grid gap-6 lg:grid-cols-2">
           <Reveal as="li" className="flex">
             <article className="interactive-card flex w-full flex-col border border-border bg-background">
               <BrandImage
@@ -106,43 +104,6 @@ export function HighlightsSection() {
                     <ArrowUpRight size={15} aria-hidden="true" className="btn-arrow" />
                   </a>
                 ) : null}
-              </div>
-            </article>
-          </Reveal>
-
-          <Reveal as="li" delay={180} className="flex">
-            <article className="interactive-card flex w-full flex-col border border-border bg-background">
-              <div className="card-media flex h-[203px] items-center justify-center border-b border-border bg-navy p-6">
-                {siteConfig.logos.voice ? (
-                  <img
-                    src={siteConfig.logos.voice}
-                    alt={t.highlights.voice.imageAlt}
-                    loading="lazy"
-                    decoding="async"
-                    className="max-h-full max-w-full object-contain"
-                  />
-                ) : (
-                  <p
-                    aria-hidden="true"
-                    className="px-6 text-center font-serif text-2xl leading-snug text-gold"
-                  >
-                    Voz Sem Fronteiras
-                  </p>
-                )}
-              </div>
-              <div className="flex flex-1 flex-col p-7">
-                <p className="flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.24em] text-gold">
-                  <Sparkles size={14} aria-hidden="true" />
-                  {t.highlights.voice.category}
-                </p>
-                <h3 className="mt-4 text-xl leading-snug text-navy">{t.highlights.voice.title}</h3>
-                <div aria-hidden="true" className="gold-rule mt-4" />
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-muted-foreground">
-                  {t.highlights.voice.description}
-                </p>
-                <span className="mt-7 self-start border border-border px-3 py-1 text-[0.65rem] uppercase tracking-[0.18em] text-muted-foreground">
-                  {t.highlights.voice.badge}
-                </span>
               </div>
             </article>
           </Reveal>

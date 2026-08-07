@@ -1,13 +1,6 @@
-import type { Language } from "@/config/siteConfig";
+export type Language = "pt" | "it" | "es" | "en";
 
-/** Texto localizado. PT é obrigatório e serve de fallback. */
-export type LocalizedText = { pt: string } & Partial<Record<Language, string>>;
-
-export interface Service {
-  id: string;
-  icon: string;
-  waKey: string;
-}
+export interface LocalizedText extends Record<Language, string> {}
 
 export interface SiteEvent {
   id: string;
@@ -16,64 +9,51 @@ export interface SiteEvent {
   city: LocalizedText;
   country: LocalizedText;
   description?: LocalizedText;
-  image?: string;
+  image: string;
   imageAlt?: LocalizedText;
   status: "open" | "waitlist" | "closed";
-  link?: string;
 }
 
 export interface PastEvent {
   id: string;
-  name: string;
-  place: string;
-  year: string;
-  description?: string;
-  image?: string;
+  name: LocalizedText;
+  date: LocalizedText;
+  location: LocalizedText;
+  image: string;
 }
 
 export interface Testimonial {
   id: string;
   name: string;
+  quote: string;
+  photo: string;
   role: string;
   location: string;
-  quote: string;
   result?: string;
-  photo?: string;
 }
 
 export interface GalleryImage {
   id: string;
-  src?: string;
+  src: string;
   alt: string;
 }
 
-export interface BeautyService {
+export interface Sponsor {
   id: string;
-  name: LocalizedText;
-  description: LocalizedText;
-  image: string;
-  imageAlt: LocalizedText;
-  whatsappMessage: LocalizedText;
-  price?: string;
-  duration?: LocalizedText;
+  name: string;
+  logo: string;
+  url: string;
+  type: "sponsor" | "partner";
+  category?: string;
 }
 
-export interface BeautyProcedure {
-  id: string;
-  name: LocalizedText;
-}
-
-export interface BeautyCategory {
-  id: string;
-  name: LocalizedText;
-  procedures: BeautyProcedure[];
-  whatsappMessage: LocalizedText;
-}
-
-export interface FAQ {
-  question: string;
-  answer: string;
-}
 
 export type ContactInterest =
-  "consultoria" | "palestra" | "bsf" | "beauty" | "universe" | "parcerias" | "outro";
+  | "bsf_participation"
+  | "bsf_events"
+  | "talks"
+  | "consulting"
+  | "sponsorship"
+  | "partnership"
+  | "press"
+  | "other";

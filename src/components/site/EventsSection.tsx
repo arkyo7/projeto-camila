@@ -3,7 +3,7 @@ import { BrandImage } from "./BrandImage";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { pastEvents, upcomingEvents } from "@/data/siteContent";
-import type { LocalizedText } from "@/data/types";
+import type { Language } from "@/config/siteConfig";
 import { imageSizes } from "@/lib/images";
 import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -12,7 +12,7 @@ export function EventsSection() {
   const { t, lang } = useI18n();
   const featured = upcomingEvents.length === 1;
 
-  const getText = (value: LocalizedText) => value[lang] ?? value.pt;
+  const getText = (value: Record<Language, string>) => value[lang] ?? value.pt;
 
   return (
     <section id="eventos" className="border-t border-gold/20 bg-cream py-20 lg:py-28">
@@ -117,7 +117,7 @@ export function EventsSection() {
                       ) : null}
 
                       <a
-                        href={event.link ?? whatsappLink(whatsappMessage)}
+                        href={whatsappLink(whatsappMessage)}
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${buttonText}: ${name}`}
@@ -163,7 +163,7 @@ export function EventsSection() {
                   <article className="interactive-card border border-border bg-card">
                     <BrandImage
                       src={event.image}
-                      alt={event.name}
+                      alt={getText(event.name)}
                       width={720}
                       height={520}
                       sizes={imageSizes.gallery}
@@ -172,22 +172,23 @@ export function EventsSection() {
                     />
 
                     <div className="p-6">
-                      <h4 className="text-lg text-navy">{event.name}</h4>
+                      <h4 className="text-lg text-navy">{getText(event.name)}</h4>
 
-                      <p className="mt-2 text-sm text-muted-foreground">
-                        {event.place} — {event.year}
-                      </p>
-
-                      {event.description ? (
-                        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                          {event.description}
-                        </p>
-                      ) : null}
+                      <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
+                        <MapPin size={14} className="shrink-0 text-gold" />
+                        {getText(event.location)}
+                      </div>
+                      
+                      <div className="mt-1 flex items-center gap-2 text-[0.68rem] uppercase tracking-wider text-muted-foreground">
+                        <CalendarDays size={14} className="shrink-0 text-gold" />
+                        {getText(event.date)}
+                      </div>
                     </div>
                   </article>
                 </Reveal>
               ))}
             </ul>
+
           </>
         ) : null}
       </div>
