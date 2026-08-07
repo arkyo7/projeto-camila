@@ -44,14 +44,15 @@ export function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               <li>
                 <a
-                  href={whatsappLink(t.float.message)}
+                  href={whatsappLink(t.bsf.message)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 transition-colors hover:text-gold"
                 >
                   <MessageCircle size={15} aria-hidden="true" className="text-gold" />
-                  {siteConfig.whatsapp.display}
+                  WhatsApp
                 </a>
+
               </li>
               <li>
                 <a
