@@ -2,6 +2,7 @@ import type {
   GalleryImage,
   PastEvent,
   SiteEvent,
+  Sponsor,
   Testimonial,
 } from "./types";
 
