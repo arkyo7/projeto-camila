@@ -69,8 +69,14 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
 
+const fallbackValue: I18nValue = {
+  lang: siteConfig.defaultLanguage,
+  setLang: () => {},
+  t: dictionaries[siteConfig.defaultLanguage],
+};
+
 export function useI18n(): I18nValue {
   const ctx = useContext(I18nContext);
-  if (!ctx) throw new Error("useI18n must be used inside I18nProvider");
-  return ctx;
+  // Fallback evita tela em branco caso o contexto se perca (ex.: HMR / árvore parcial).
+  return ctx ?? fallbackValue;
 }
