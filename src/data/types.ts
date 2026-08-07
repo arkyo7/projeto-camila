@@ -1,3 +1,13 @@
+export type ContactInterest = 
+  | "bsf_participation" 
+  | "bsf_events" 
+  | "consultoria" 
+  | "palestra" 
+  | "patrocinio" 
+  | "parceria" 
+  | "imprensa" 
+  | "outro";
+
 export interface SiteEvent {
   id: string;
   name: Record<string, string>;
