@@ -17,13 +17,14 @@ import { useI18n } from "@/i18n";
 import { whatsappLink } from "@/lib/whatsapp";
 
 const interestKeys: ContactInterest[] = [
-  "beauty",
-  "bsf",
-  "universe",
-  "consultoria",
-  "palestra",
-  "parcerias",
-  "outro",
+  "bsf_participation",
+  "bsf_events",
+  "talks",
+  "consulting",
+  "sponsorship",
+  "partnership",
+  "press",
+  "other",
 ];
 
 type FieldName = "name" | "email" | "phone" | "country" | "interest" | "message" | "consent";
@@ -138,8 +139,6 @@ export function ContactSection() {
 
   const socialEntries = [
     { label: t.contact.socials.main, ...siteConfig.socials.main },
-    { label: t.contact.socials.beauty, ...siteConfig.socials.beauty },
-    { label: t.contact.socials.universe, ...siteConfig.socials.universeBeauty },
   ];
 
   return (
