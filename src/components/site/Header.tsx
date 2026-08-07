@@ -83,7 +83,7 @@ export function Header() {
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? t.nav.closeMenu : t.nav.openMenu}
-            className="inline-flex h-10 w-10 items-center justify-center border border-cream/20 text-cream transition-colors hover:border-gold hover:text-gold lg:hidden"
+            className="relative z-[70] inline-flex h-10 w-10 items-center justify-center border border-cream/20 text-cream transition-colors hover:border-gold hover:text-gold lg:hidden"
           >
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
