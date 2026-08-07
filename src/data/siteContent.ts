@@ -59,28 +59,6 @@ export const upcomingEvents: SiteEvent[] = [
 /** Eventos já realizados. */
 export const pastEvents: PastEvent[] = [
   {
-    id: "holanda",
-    name: {
-      pt: "Beleza Sem Fronteiras — Holanda",
-      it: "Beleza Sem Fronteiras — Olanda",
-      es: "Beleza Sem Fronteiras — Holanda",
-      en: "Beleza Sem Fronteiras — Netherlands",
-    },
-    date: {
-      pt: "Edição Realizada",
-      it: "Edizione Realizzata",
-      es: "Edición Realizada",
-      en: "Past Edition",
-    },
-    location: {
-      pt: "Holanda",
-      it: "Olanda",
-      es: "Países Bajos",
-      en: "Netherlands",
-    },
-    image: "/images/camila/bsf-holanda.jpg",
-  },
-  {
     id: "sardenha",
     name: {
       pt: "Beleza Sem Fronteiras — Sardenha",
@@ -103,12 +81,12 @@ export const pastEvents: PastEvent[] = [
     image: "/images/camila/bsf-sardenha.jpg",
   },
   {
-    id: "fortaleza",
+    id: "holanda",
     name: {
-      pt: "Beleza Sem Fronteiras — Fortaleza",
-      it: "Beleza Sem Fronteiras — Fortaleza",
-      es: "Beleza Sem Fronteiras — Fortaleza",
-      en: "Beleza Sem Fronteiras — Fortaleza",
+      pt: "Beleza Sem Fronteiras — Holanda",
+      it: "Beleza Sem Fronteiras — Olanda",
+      es: "Beleza Sem Fronteiras — Holanda",
+      en: "Beleza Sem Fronteiras — Netherlands",
     },
     date: {
       pt: "Edição Realizada",
@@ -117,12 +95,12 @@ export const pastEvents: PastEvent[] = [
       en: "Past Edition",
     },
     location: {
-      pt: "Fortaleza, Brasil",
-      it: "Fortaleza, Brasile",
-      es: "Fortaleza, Brasil",
-      en: "Fortaleza, Brazil",
+      pt: "Holanda",
+      it: "Olanda",
+      es: "Países Bajos",
+      en: "Netherlands",
     },
-    image: "/images/camila/bsf-fortaleza.jpg",
+    image: "/images/camila/bsf-holanda.jpg",
   },
   {
     id: "milao",
@@ -145,6 +123,28 @@ export const pastEvents: PastEvent[] = [
       en: "Milan, Italy",
     },
     image: "/images/camila/bsf-milao.jpg",
+  },
+  {
+    id: "fortaleza",
+    name: {
+      pt: "Beleza Sem Fronteiras — Fortaleza",
+      it: "Beleza Sem Fronteiras — Fortaleza",
+      es: "Beleza Sem Fronteiras — Fortaleza",
+      en: "Beleza Sem Fronteiras — Fortaleza",
+    },
+    date: {
+      pt: "Edição Realizada",
+      it: "Edizione Realizzata",
+      es: "Edición Realizada",
+      en: "Past Edition",
+    },
+    location: {
+      pt: "Fortaleza, Brasil",
+      it: "Fortaleza, Brasile",
+      es: "Fortaleza, Brasil",
+      en: "Fortaleza, Brazil",
+    },
+    image: "/images/camila/bsf-fortaleza.jpg",
   },
 ];
 
