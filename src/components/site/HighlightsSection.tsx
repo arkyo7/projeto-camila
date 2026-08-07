@@ -29,7 +29,7 @@ export function HighlightsSection() {
             <article className="interactive-card flex w-full flex-col border border-border bg-background">
               <BrandImage
                 src="/images/camila/capa-podcast-camila-maia-web.webp"
-                alt={t.highlights.podcast.imageAlt}
+                alt="Camila Maia no podcast A Vida Lá Fora"
                 width={720}
                 height={405}
                 sizes={imageSizes.gallery}
