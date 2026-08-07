@@ -386,3 +386,7 @@
     transform: scaleX(0) !important;
   }
 }
+
+#lovable-badge {
+  display: none !important;
+}
