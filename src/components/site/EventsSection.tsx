@@ -174,14 +174,21 @@ export function EventsSection() {
                     <div className="p-6">
                       <h4 className="text-lg text-navy">{getText(event.name)}</h4>
 
-                      <p className="mt-2 text-sm text-muted-foreground">
-                        {getText(event.location)} — {getText(event.date)}
-                      </p>
+                      <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
+                        <MapPin size={14} className="shrink-0 text-gold" />
+                        {getText(event.location)}
+                      </div>
+                      
+                      <div className="mt-1 flex items-center gap-2 text-[0.68rem] uppercase tracking-wider text-muted-foreground">
+                        <CalendarDays size={14} className="shrink-0 text-gold" />
+                        {getText(event.date)}
+                      </div>
                     </div>
                   </article>
                 </Reveal>
               ))}
             </ul>
+
           </>
         ) : null}
       </div>
