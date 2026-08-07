@@ -21,7 +21,7 @@ export function FinalCta() {
           </p>
           <div className="mt-10 flex justify-center">
             <a
-              href={whatsappLink(t.hero.message)}
+              href={whatsappLink(t.bsf.message)}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-motion inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy hover:bg-gold-light"
@@ -30,6 +30,7 @@ export function FinalCta() {
               <ArrowRight size={16} aria-hidden="true" className="btn-arrow" />
             </a>
           </div>
+
         </Reveal>
       </div>
     </section>
