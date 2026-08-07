@@ -200,7 +200,12 @@ export function BsfSection() {
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <SectionHeading eyebrow={t.bsf.eyebrow} title={t.bsf.title} tone="light" />
+          <div className="mb-10">
+            <SectionHeading eyebrow="EXPERIÊNCIAS" title="Por onde já passamos" tone="light" />
+            <p className="mt-5 text-base leading-relaxed text-cream/70">
+              Encontros que conectaram profissionais brasileiras da beleza em diferentes destinos.
+            </p>
+          </div>
         </Reveal>
 
         <Reveal delay={90} className="mt-8 max-w-3xl">
@@ -284,15 +289,17 @@ export function BsfSection() {
           </div>
         ) : null}
 
-        <a
-          href={whatsappLink(t.bsf.message)}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-motion mt-12 inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy hover:bg-gold-light"
-        >
-          {t.bsf.cta}
-          <ArrowRight size={16} aria-hidden="true" className="btn-arrow" />
-        </a>
+        {t.bsf.cta ? (
+          <a
+            href={whatsappLink(t.bsf.message)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-motion mt-12 inline-flex items-center justify-center gap-2 bg-gold px-7 py-3.5 text-sm font-medium text-navy hover:bg-gold-light"
+          >
+            {t.bsf.cta}
+            <ArrowRight size={16} aria-hidden="true" className="btn-arrow" />
+          </a>
+        ) : null}
       </div>
     </section>
   );

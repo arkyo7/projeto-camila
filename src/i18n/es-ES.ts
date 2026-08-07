@@ -23,7 +23,7 @@ export const esES: Dictionary = {
     eyebrow: "CONEXIONES, CONOCIMIENTO Y OPORTUNIDADES",
     headline: "Belleza que conecta profesionales y atraviesa fronteras.",
     subheadline:
-      "Beleza Sem Fronteiras conecta a profesionales brasileñas de la belleza y la estética a través de encuentros, experiencias, conferencias, networking y oportunidades de desarrollo en Brasil y en el extranjero.",
+      "Beleza Sem Fronteiras conecta a profesionales brasileñas de la belleza y la estética a través de encuentros, experiencias, networking y oportunidades de desarrollo en Brasil y en el extranjero.",
     ctaPrimary: "Conocer el próximo evento",
     
     badgeName: "Camila Maia",
@@ -36,7 +36,7 @@ export const esES: Dictionary = {
     eyebrow: "QUIÉN IDEALIZÓ EL PROYECTO",
     title: "Una trayectoria de conexiones internacionales",
     paragraphs: [
-      "Camila Maia es idealizadora de Beleza Sem Fronteiras, consultora y conferencista. Originaria de Fortaleza y licenciada en Gestión de Marketing, construyó una trayectoria internacional entre Brasil, Irlanda e Italia.",
+      "Camila Maia es la idealizadora de Beleza Sem Fronteiras. Originaria de Fortaleza y licenciada en Gestión de Marketing, construyó una trayectoria internacional entre Brasil, Irlanda e Italia.",
       "Su experiencia en el mercado de la belleza y su pasión por conectar personas dieron origen a un proyecto dedicado al desarrollo, la visibilidad y la creación de oportunidades para profesionales brasileñas de la belleza.",
     ],
     quote:
@@ -69,7 +69,7 @@ export const esES: Dictionary = {
     eyebrow: "EL PROYECTO",
     title: "Beleza Sem Fronteiras",
     headline: "Conexiones que transforman carreras y acercan a las mujeres.",
-    text: "El proyecto es una plataforma de desarrollo y networking que ofrece experiencias reales de aprendizaje y conexión entre profesionales y marcas.",
+    text: "Beleza Sem Fronteiras promueve encuentros y experiencias que acercan a las profesionales brasileñas de la belleza, estimulando el aprendizaje, el networking y nuevas oportunidades entre profesionales y marcas.",
     pillars: [
       {
         title: "Conexión",
@@ -82,13 +82,13 @@ export const esES: Dictionary = {
       { title: "Experiencia", description: "Vivencia del mercado de la belleza en la práctica." },
       { title: "Oportunidad", description: "Nuevos caminos para carreras y negocios." },
     ],
-    cta: "Quiero participar en los próximos encuentros",
+    cta: "",
     message: "¡Hola! Me gustaría saber cómo participar en los próximos eventos de Beleza Sem Fronteiras.",
     galleryLabel: "Galería de experiencias",
   },
   events: {
-    eyebrow: "Agenda",
-    title: "Eventos y experiencias",
+    eyebrow: "PRÓXIMO ENCUENTRO",
+    title: "Beleza Sem Fronteiras — Barcelona 2027",
     upcomingTitle: "Próximo evento",
     nextDestination: "Próximo destino",
     interestLabel: "Lista de interés",
@@ -121,8 +121,8 @@ export const esES: Dictionary = {
   },
   highlights: {
     eyebrow: "Mídia",
-    title: "Destacados de la trayectoria",
-    subtitle: "Presencia en medios y proyectos que refuerzan la autoridad del proyecto.",
+    title: "Beleza Sem Fronteiras en los medios",
+    subtitle: "Conversaciones y publicaciones que presentan la historia, el propósito y el impacto del proyecto.",
     podcast: {
       category: "Podcast",
       title: "Camila Maia en el podcast A vida lá fora",
@@ -195,7 +195,7 @@ export const esES: Dictionary = {
       message: "Mensaje",
     },
     intro: "Nuevo contacto por el sitio web Beleza Sem Fronteiras:",
-    submit: "Hablar con Camila",
+    submit: "Enviar mensaje",
     preparing: "Preparando...",
     ready: "Mensaje preparado con éxito.",
     fallback: "Si WhatsApp no se abrió automáticamente, usa los botones de abajo.",

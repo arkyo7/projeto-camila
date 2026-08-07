@@ -28,13 +28,14 @@ export function HighlightsSection() {
           <Reveal as="li" className="flex">
             <article className="interactive-card flex w-full flex-col border border-border bg-background">
               <BrandImage
-                src={podcast.image || undefined}
-                alt={t.highlights.podcast.imageAlt}
+                src="/images/camila/capa-podcast-camila-maia-web.webp"
+                alt="Camila Maia no podcast A Vida Lá Fora"
                 width={720}
                 height={405}
                 sizes={imageSizes.gallery}
                 tone="navy"
                 className="card-media border-b border-border"
+                imgClassName="object-cover object-center"
               />
               <div className="flex flex-1 flex-col p-7">
                 <p className="flex items-center gap-2 text-[0.65rem] uppercase tracking-[0.24em] text-gold">

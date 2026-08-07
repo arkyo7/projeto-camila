@@ -15,20 +15,13 @@ export function EventsSection() {
   const getText = (value: Record<Language, string>) => value[lang] ?? value.pt;
 
   return (
-    <section id="eventos" className="border-t border-gold/20 bg-cream py-16 lg:py-24">
+    <section id="eventos" className="bg-cream py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
-        <div aria-hidden="true" className="mx-auto mb-12 h-px w-16 bg-gold/50" />
+        
         <Reveal>
           <SectionHeading eyebrow={t.events.eyebrow} title={t.events.title} />
         </Reveal>
 
-        <Reveal
-          as="div"
-          delay={90}
-          className="mt-14 text-sm font-medium uppercase tracking-[0.22em] text-muted-foreground"
-        >
-          <h3>{t.events.upcomingTitle}</h3>
-        </Reveal>
 
         {upcomingEvents.length > 0 ? (
           <ul className={featured ? "mt-6" : "mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3"}>
@@ -76,11 +69,6 @@ export function EventsSection() {
                           : "flex flex-1 flex-col p-7"
                       }
                     >
-                      {featured ? (
-                        <p className="text-[0.65rem] font-medium uppercase tracking-[0.24em] text-gold">
-                          {t.events.nextDestination}
-                        </p>
-                      ) : null}
 
                       <span
                         className={`self-start border border-gold px-3 py-1 text-[0.65rem] uppercase tracking-[0.18em] text-navy ${

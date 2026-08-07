@@ -21,7 +21,7 @@ export const ptBR = {
     eyebrow: "CONEXÕES, CONHECIMENTO E OPORTUNIDADES",
     headline: "Beleza que conecta profissionais e atravessa fronteiras.",
     subheadline:
-      "O Beleza Sem Fronteiras conecta profissionais brasileiras da beleza e da estética por meio de encontros, experiências, palestras, networking e oportunidades de desenvolvimento no Brasil e no exterior.",
+      "O Beleza Sem Fronteiras conecta profissionais brasileiras da beleza e da estética por meio de encontros, experiências, networking e oportunidades de desenvolvimento no Brasil e no exterior.",
     ctaPrimary: "Conhecer o próximo evento",
     
     badgeName: "Camila Maia",
@@ -34,7 +34,7 @@ export const ptBR = {
     eyebrow: "QUEM IDEALIZOU O PROJETO",
     title: "Camila Maia, idealizadora do Beleza Sem Fronteiras",
     paragraphs: [
-      "Camila Maia é idealizadora do Beleza Sem Fronteiras, consultora e palestrante. Nordestina de Fortaleza e graduada em Gestão de Marketing, construiu uma trajetória internacional entre Brasil, Irlanda e Itália.",
+      "Camila Maia é a idealizadora do Beleza Sem Fronteiras. Nordestina de Fortaleza e graduada em Gestão de Marketing, construiu uma trajetória internacional entre Brasil, Irlanda e Itália.",
       "Sua experiência no mercado da beleza e sua paixão por conectar pessoas deram origem a um projeto dedicado ao desenvolvimento, à visibilidade e à criação de oportunidades para profissionais brasileiras da beleza.",
     ],
     quote:
@@ -67,7 +67,7 @@ export const ptBR = {
     eyebrow: "O PROJETO",
     title: "Beleza Sem Fronteiras",
     headline: "Conexões que transformam carreiras e aproximam mulheres.",
-    text: "O projeto é uma plataforma de desenvolvimento e networking que oferece experiências reais de aprendizado e conexão entre profissionais e marcas.",
+    text: "O Beleza Sem Fronteiras promove encontros e experiências que aproximam profissionais brasileiras da beleza, estimulando aprendizado, networking e novas oportunidades entre profissionais e marcas.",
     pillars: [
       {
         title: "Conexão",
@@ -77,14 +77,14 @@ export const ptBR = {
       { title: "Experiência", description: "Vivência do mercado da beleza na prática." },
       { title: "Oportunidade", description: "Novos caminhos para carreiras e negócios." },
     ],
-    cta: "Quero participar dos próximos encontros",
+    cta: "",
     message:
       "Olá! Gostaria de saber como participar dos próximos eventos do Beleza Sem Fronteiras.",
     galleryLabel: "Galeria de experiências",
   },
   events: {
-    eyebrow: "Agenda",
-    title: "Eventos e experiências",
+    eyebrow: "PRÓXIMO ENCONTRO",
+    title: "Beleza Sem Fronteiras — Barcelona 2027",
     upcomingTitle: "Próximo evento",
     nextDestination: "Próximo destino",
     interestLabel: "Lista de interesse",
@@ -119,8 +119,8 @@ export const ptBR = {
   },
   highlights: {
     eyebrow: "Mídia",
-    title: "Destaques da trajetória",
-    subtitle: "Presença na mídia e projetos que reforçam a autoridade do projeto.",
+    title: "Beleza Sem Fronteiras na mídia",
+    subtitle: "Conversas e publicações que apresentam a história, o propósito e o impacto do projeto.",
     podcast: {
       category: "Podcast",
       title: "Camila Maia no podcast A vida lá fora",
@@ -193,7 +193,7 @@ export const ptBR = {
       message: "Mensagem",
     },
     intro: "Novo contato pelo site Beleza Sem Fronteiras:",
-    submit: "Falar com a Camila",
+    submit: "Enviar mensagem",
     preparing: "Preparando...",
     ready: "Mensagem preparada com sucesso.",
     fallback: "Caso o WhatsApp não tenha aberto, use os botões abaixo.",
