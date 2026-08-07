@@ -228,7 +228,7 @@ export function BsfSection() {
           ))}
         </ul>
 
-        <Reveal id="edicoes-realizadas" className="mt-16 max-w-2xl">
+        <Reveal delay={270} className="mt-16 max-w-2xl">
           <p className="text-[0.68rem] uppercase tracking-[0.28em] text-gold">{copy.heading}</p>
           <p className="mt-3 text-sm leading-relaxed text-cream/60">{copy.intro}</p>
         </Reveal>
